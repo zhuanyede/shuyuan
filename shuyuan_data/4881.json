@@ -1,0 +1,69 @@
+[
+  {
+    "bookSourceComment": "20241025修复发现\n20240222By_zhbyjm77833\n免费：vip=0\n全部：vip=9",
+    "bookSourceGroup": "自写1003",
+    "bookSourceName": "纵横中文网api[搜书专用]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.zongheng.com/##zhbyjm7783",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort = [];\npush = (title, url, type) => sort.push({\n    title: title,\n    url: url,\n    style: {\n        layout_flexBasisPercent: type\n    }\n});\n\npush(\"༺ˇ»`ʚ 排行榜 ɞ´«ˇ༻\", null, 1);\n [\n        [\"月票榜\", \"1\"],\n        [\"新书榜\", \"4\"],\n        [\"点击榜\", \"5\"],\n        [\"推荐榜\", \"6\"],\n        [\"捧场榜\",\"7\"],\n        [\"完结榜\",\"8\"],\n        [\"新书订阅\", \"9\"],\n        [\"24h畅销\",\"3\"],\n        [\"24h更新\",\"10\"],\n        [\"作者人气\",\"12\"]\n].map([title, Id] => {\n    title=title,\n    url= `https://www.zongheng.com/api/rank/details,{\"method\":\"POST\",\"body\":\"cateFineId=0&cateType=0&pageNum={{page}}&pageSize=20&period=0&rankNo=&rankType=${Id}\"}`,\n    push(title, url, 0.29)\n    });\n\npush(\"༺ˇ»`ʚ 男生 ɞ´«ˇ༻\", null, 1);\n [\n        [\"全部\", \"0\",\"\"],\n        [\"玄幻奇幻\", \"8101\",\"\"],\n        [\"王朝争霸\", \"8101\",\"8411\"],\n        [\"诸天万界\", \"8101\",\"8412\"],\n        [\"西方奇幻\", \"8101\",\"8413\"],\n        [\"异世大陆\", \"8101\",\"8414\"],\n        [\"东方玄幻\", \"8101\",\"8415\"],\n        [\"武侠仙侠\", \"8102\",\"\"],\n        [\"古典仙侠\", \"8102\",\"8351\"],\n        [\"上古洪荒\", \"8102\",\"8352\"],\n        [\"幻想修真\", \"8102\",\"8353\"],\n        [\"传统武侠\", \"8102\",\"8354\"],\n        [\"武侠幻想\", \"8102\",\"8355\"],\n        [\"都市\",\"8103\",\"\"],\n        [\"热血校园\",\"8103\",\"8471\"],\n        [\"商战职场\",\"8103\",\"8472\"],\n        [\"都市高手\",\"8103\",\"8473\"],\n        [\"乡村生活\",\"8103\",\"8474\"],\n        [\"明星娱乐\",\"8103\",\"8475\"],\n        [\"都市生活\",\"8103\",\"8476\"],\n        [\"都市高武\",\"8103\",\"8477\"],\n        [\"灵气复苏\",\"8103\",\"8478\"],\n        [\"官场\",\"8103\",\"8479\"],\n        [\"历史\",\"8104\",\"\"],\n        [\"架空历史\",\"8104\",\"8291\"],\n        [\"历史传记\",\"8104\",\"8292\"],\n        [\"穿越历史\",\"8104\",\"8293\"],\n        [\"科幻\",\"8105\",\"\"],\n        [\"未来幻想\",\"8105\",\"8441\"],\n        [\"末世危机\",\"8105\",\"8442\"],\n        [\"星际机甲\",\"8105\",\"8443\"],\n        [\"奇闻异事\",\"8106\",\"\"],\n        [\"侦探推理\",\"8106\",\"8321\"],\n        [\"寻宝探险\",\"8106\",\"8322\"],\n        [\"恐怖灵异\",\"8106\",\"8323\"],\n        [\"奇门秘术\",\"8106\",\"8324\"],\n        [\"游戏\", \"8107\",\"\"],\n        [\"虚拟网游\", \"8107\",\"8381\"],\n        [\"电子竞技\", \"8107\",\"8382\"],\n        [\"N次元\",\"8108\",\"\"],\n        [\"衍生同人\",\"8108\",\"8201\"],\n        [\"原生幻想\",\"8108\",\"8202\"],\n        [\"轻小说\",\"8108\",\"8203\"],\n        [\"现实题材\",\"8109\",\"\"],\n        [\"现实百态\",\"8109\",\"8501\"],\n        [\"体育\", \"8110\",\"\"],\n        [\"足球天下\", \"8110\",\"8231\"],\n        [\"篮球风云\", \"8110\",\"8232\"],\n        [\"其他竞技\", \"8110\",\"8233\"],\n        [\"军事\",\"8111\",\"\"],\n        [\"战争幻想\",\"8111\",\"8261\"],\n        [\"谍战特工\",\"8111\",\"8262\"],\n        [\"抗战烽火\",\"8111\",\"8263\"],\n        [\"现代军事\",\"8111\",\"8264\"]\n].map([title, Id, id] => {\n    title=title,\n    url= `https://www.zongheng.com/api2/catefine/storeSearch,{\"method\":\"POST\",\"body\":\"worksTypes=${Id}&bookType=0&subWorksTypes=${id}&totalWord=0&serialStatus=9&vip=9&categoryId=${id}&categoryPid=${Id}&naodongFilter=0&pageNum={{page}}&pageSize=20\"}`,\n    push(title, url, 0.29)\n    });\n    \npush(\"༺ˇ»`ʚ 女生 ɞ´«ˇ༻\", null, 1);\n [\n        [\"全部\", \"0\",\"\"],       \n        [\"现代言情\", \"8161\",\"\"],\n        [\"总裁豪门\", \"8161\",\"8531\"],\n        [\"都市奇幻\", \"8161\",\"8532\"],\n        [\"年代重生\", \"8161\",\"8533\"],\n        [\"现实生活\", \"8161\",\"8534\"],\n        [\"青春校园\", \"8161\",\"8535\"],\n        [\"娱乐明星\", \"8161\",\"8536\"],\n        [\"民国旧影\", \"8161\",\"8537\"],\n        [\"职场情缘\", \"8161\",\"8538\"],\n        [\"现代悬疑\", \"8161\",\"8539\"],\n        [\"古代言情\", \"8162\",\"\"],\n        [\"远古大陆\", \"8162\",\"8561\"],\n        [\"武侠江湖\", \"8162\",\"8562\"],\n        [\"权谋天下\", \"8162\",\"8563\"],\n        [\"古代情缘\", \"8162\",\"8564\"],\n        [\"宫闱宅斗\", \"8162\",\"8565\"],\n        [\"种田经商\", \"8162\",\"8566\"],\n        [\"古代悬疑\", \"8162\",\"8567\"],\n        [\"幻想言情\",\"8163\",\"\"],\n        [\"异世幻想\",\"8163\",\"8591\"],\n        [\"末世求生\",\"8163\",\"8592\"],\n        [\"无限快穿\",\"8163\",\"8593\"],\n        [\"未来科幻\",\"8163\",\"8594\"],\n        [\"玄幻仙侠\",\"8163\",\"8595\"],\n        [\"衍生言情\", \"8164\",\"\"],\n        [\"经典衍生\", \"8164\",\"8651\"],\n        [\"次元衍生\", \"8164\",\"8652\"],\n        [\"游戏竞技\", \"8165\",\"\"],\n        [\"运动竞技\", \"8165\",\"8621\"],\n        [\"网游电竞\", \"8165\",\"8622\"],\n        [\"现实主义\",\"8166\",\"\"],\n        [\"现实故事\",\"8166\",\"8711\"]\n].map([title, Id, id] => {\n    title=title,\n    url= `https://www.zongheng.com/api2/catefine/storeSearch,{\"method\":\"POST\",\"body\":\"worksTypes=${Id}&bookType=1&subWorksTypes=${id}&totalWord=0&serialStatus=9&vip=9&categoryId=${id}&categoryPid=${Id}&naodongFilter=0&pageNum={{page}}&pageSize=20\"}`,\n    push(title, url, 0.29)\n    });\n\nJSON.stringify(sort);",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\"}",
+    "lastUpdateTime": "1730100768469",
+    "loginUrl": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "",
+      "canReName": "",
+      "coverUrl": "",
+      "downloadUrls": "",
+      "init": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".content@p@text"
+    },
+    "ruleExplore": {
+      "author": "pseudonym||authorName",
+      "bookList": "result.resultList||result.bookList",
+      "bookUrl": "https://bookapi.zongheng.com/api/chapter/getChapterList,{\"method\":\"POST\",\"body\":\"bookId={{$.bookId}}\"}",
+      "coverUrl": "bookCover||picUrl",
+      "intro": "description",
+      "kind": "{{$.cateFineName||$.categoryName}}\n{{$.latestChapterTime||$.orderColumnInfo}}\n连载{{$.serialStatus}}完结@js:result.replace(/连载1完结/g,'完结').replace(/连载0完结/g,'连载')",
+      "lastChapter": "{{$.latestChapterName||$.theNewChapter}}{{$.latestChapterTime||$.orderColumnInfo}}",
+      "name": "bookName||name",
+      "wordCount": "number||totalWords"
+    },
+    "ruleSearch": {
+      "author": "authorName",
+      "bookList": "data.datas.list",
+      "bookUrl": "https://bookapi.zongheng.com/api/chapter/getChapterList,{\"method\":\"POST\",\"body\":\"bookId={$.bookId}\"}",
+      "checkKeyWord": "",
+      "coverUrl": "https://static.zongheng.com/upload{{$.coverUrl}}",
+      "intro": "description",
+      "kind": "{{$.cateFineName&&$.tomeName&&$.catePName&&$.keyword&&$.updateTime}}\n连载{{$.serialStatus}}完结##\\<font color\\=\\\"RED\\\"\\>|\\<\\/font\\>\n@js:result.replace(/连载1完结/g,'完结').replace(/连载0完结/g,'连载')",
+      "lastChapter": "chapterName&&updateTime",
+      "name": "name##\\<font color\\=\\\"RED\\\"\\>|\\<\\/font\\>",
+      "wordCount": "totalWord"
+    },
+    "ruleToc": {
+      "chapterList": "result.chapterList[*].chapterViewList[*]",
+      "chapterName": "chapterName",
+      "chapterUrl": "https://read.zongheng.com/chapter/{$.bookId}/{$.chapterId}.html",
+      "formatJs": "",
+      "isVip": "level",
+      "preUpdateJs": "",
+      "updateTime": "{{$.createTime}} 字数：{{$.wordNums}}"
+    },
+    "searchUrl": "https://search.zongheng.com/search/book?keyword={{key}}&sort=null&pageNo=1&pageNum=20&isFromHuayu=0",
+    "weight": 0
+  }
+]
