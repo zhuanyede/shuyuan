@@ -36,7 +36,10 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
  ``` bash
 http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
  ```
-
+#### 🚩 uz影视源
+```
+http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/UZ.json
+```
 #### 🚩 IPTV源
  ```
 https://iptv.228088.xyz/cn.m3u
