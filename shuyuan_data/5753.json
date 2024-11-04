@@ -1,0 +1,75 @@
+[
+  {
+    "bookSourceComment": "规则by源仓库，更换正文规则，增加目录会员标识\n⚠️注意：\n①源URL不能修改\n②登录才能看会员章节\n③网站有CF验证，请将更多设置里的预下载设置为0，不要一次性缓存过多章节，否则需要进入网页进行验证",
+    "bookSourceGroup": "不可描述",
+    "bookSourceName": "👔 UAA小说🚀",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.uaa.com/api/novel/app/novel/",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nsort = [];\npush = (title, url, type) => sort.push({\n  title: title,\n  url: url,\n  style: {\n    layout_flexGrow: 1,\n    layout_flexBasisPercent: type\n  }\n});\n$ = (x) => `search?${x}&orderType=2&page={{page}}&searchType=1&size=40`;\nu = source.key;\n[[\"题材\", \"category\"],\n[\"标签\", \"includeTags\"]].map([a, b] => {\n  push(`・${a}・`, $(\"\"), 1);\n  d = /y/.test(b) ? \"categories\": \"tags\";\n  c = JSON.parse(java.ajax(u + d)).model;\n  for (i = 0; i < c.length; ++i) {\n    push(\n      c[i].name,\n      $(b + \"=\" + encodeURIComponent(c[i].name)),\n      null\n    );\n  };\n});\npush(\"・状态・\", null, 1);\n[\"连载中\", \"已完结\"].map((p, q) => {\n  push(p, $(`finished=${q}`), null);\n});\npush(\"・篇幅・\", null, 1);\n[\"短篇\", \"中篇\", \"长篇\"].map((p, q) => {\n  push(p, $(`space=${q + 1}`), null);\n});\npush(\"・来源・\", null, 1);\n[\"原创首发\", \"会员上传\"].map((p, q) => {\n  push(p, $(`source=${q + 1}`), null);\n});\nJSON.stringify(sort);",
+    "header": "",
+    "lastUpdateTime": "1730715755383",
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "https://www.uaa.com/",
+    "respondTime": 6928,
+    "ruleBookInfo": {
+      "author": ".info_box@a.0@text",
+      "coverUrl": ".cover@img@src",
+      "init": "",
+      "intro": "&nbsp;\n🕰 最新：{{@@class.info_box@class.item.0@text##最新：}}\n📜 篇幅：{{@@class.props_box@ul@li.1@text}}\n🔖 标签：{{org.jsoup.Jsoup.parse(src).select('.tag_box a').text().replaceAll('#','')}}\n🗿 肉量：{{@@class.props_box@ul@li.0@text}}\n✏  评分：{{@@class.score_box@span@text}}\n👁 观看：{{@@class.props_box@ul@li.2@text}}        ❤️ 收藏：{{@@class.props_box@ul@li.3@text}}\n🏷 简介：{{@@class.brief@text##小说简介：}}",
+      "kind": "",
+      "lastChapter": "",
+      "name": ".info_box@h1@text",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".article@html",
+      "imageStyle": "",
+      "replaceRegex": "##UAA地址发布页： uaadizhi.com",
+      "sourceRegex": "",
+      "title": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "authors",
+      "bookList": "model.data",
+      "bookUrl": "https://www.uaa.com/novel/intro?id={{$.id}}",
+      "checkKeyWord": "",
+      "coverUrl": "coverUrl",
+      "intro": "brief",
+      "kind": "{{result.finished == 1 ? \"完结\" : \"连载\"}}\n{{$.pornRateDesc##\\((.*)\\)##$1###}}\n{{$.categories}}",
+      "lastChapter": "latestUpdate",
+      "name": "title",
+      "wordCount": "wordCount"
+    },
+    "ruleToc": {
+      "chapterList": ".volume@ul li||.catalog_ul@li",
+      "chapterName": "a.0@ownText",
+      "chapterUrl": "a@href",
+      "isVip": "",
+      "isVolume": "",
+      "preUpdateJs": "",
+      "updateTime": "span@text"
+    },
+    "searchUrl": "search?keyword={{key}}&page={{page}}&size=40",
+    "variableComment": "",
+    "weight": 0
+  }
+]

@@ -1,14 +1,14 @@
 #### 🚩 目前唯一的书源论坛！已有多位大佬入驻！
 - [源论坛](https://link3.cc/yuanluntan)
   
-**自动更新时间** 2024-11-04 18:19:54 CST+0800
+**自动更新时间** 2024-11-04 18:39:42 CST+0800
 #### 🚩 最新阅读书源修复-每隔3天自动更新一次（安卓阅读3.0+读不舍手+千阅+源阅读+花火阅读通用）
 #### 🚩 获取后的书源会自动效验
 
 <!-- 更新位置开始 -->
 | 阅读源总数 | 有效书源数 | 无效书源数 | 重复书源数 |
 |------------|------------|------------|--------------|
-| <span style="color:green;">1130</span> | <span style="color:blue;">843</span> | <span style="color:red;">287</span> | <span style="color:orange;">21</span> |
+| <span style="color:green;">6418</span> | <span style="color:blue;">4159</span> | <span style="color:red;">2259</span> | <span style="color:orange;">2031</span> |
 <!-- 更新位置结束 -->
 ![shuyuan.png](icons/shuyuan.png)
 #### 🚩 效验书源链接
@@ -30,7 +30,7 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
-**自动更新时间** 2024-11-04 18:19:54 CST+0800
+**自动更新时间** 2024-11-04 18:39:42 CST+0800
  
  ``` bash
 http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
