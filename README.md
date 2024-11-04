@@ -1,6 +1,6 @@
 #### 🚩 目前唯一的书源论坛！已有多位大佬入驻！
 - [源论坛](https://link3.cc/yuanluntan)
-  
+- [TG交流群](https://t.me/dahuilang888)  
 **自动更新时间** 2024-11-04 18:39:42 CST+0800
 #### 🚩 最新阅读书源修复-每隔3天自动更新一次（安卓阅读3.0+读不舍手+千阅+源阅读+花火阅读通用）
 #### 🚩 获取后的书源会自动效验
@@ -26,7 +26,6 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 ```
 http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
 ```
-- TG交流群[点我](https://t.me/dahuilang888)
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
