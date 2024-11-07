@@ -4,7 +4,7 @@ services:
   app:
     build: .
     ports:
-      - "5003:5000"
+      - "5555:5000"
     volumes:
       - ./redis/redis.conf:/etc/redis/redis.conf
       - redis_data:/data
