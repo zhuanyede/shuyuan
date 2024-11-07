@@ -8,7 +8,6 @@ services:
     volumes:
       - ./redis/redis.conf:/etc/redis/redis.conf
       - redis_data:/data
-      - /root/api-qingtian:/app  # 将容器的整个工作目录挂载到主机的当前目录
 
   redis:
     image: "redis:alpine"
