@@ -1,0 +1,39 @@
+[
+  {
+    "ruleContent": {
+      "content": ".tjc-cot@html"
+    },
+    "ruleExplore": [],
+    "weight": 0,
+    "searchUrl": "/index.php/book/search?key={{key}}",
+    "ruleSearch": {
+      "author": ".inf2 span.0@text",
+      "bookList": ".tjshu li",
+      "kind": ".inf2 span.1@text",
+      "intro": ".decs@text",
+      "checkKeyWord": "",
+      "coverUrl": ".photo img@src",
+      "name": ".name@text",
+      "bookUrl": "a@href"
+    },
+    "enabledExplore": true,
+    "ruleBookInfo": [],
+    "ruleToc": {
+      "chapterUrl": "a@href",
+      "chapterList": "#chapterlsit li",
+      "chapterName": "a@text"
+    },
+    "bookSourceUrl": "https://www.xsbook.top",
+    "lastUpdateTime": "1731209276518",
+    "customOrder": 2741,
+    "bookSourceType": 0,
+    "enabled": true,
+    "bookSourceName": "🚭 相思阁",
+    "header": "{\n\t\"User-Agents\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.92 Safari/537.36\",\n \"Referer\": \"{{baseUrl}}\"\n}",
+    "bookSourceComment": "同站：\n禁书之家 https://www.jinshuzhijia.com",
+    "respondTime": 186575,
+    "exploreUrl": "                                  全  部                                   ::/index.php/book/category/tags/0<,/page/{{page}}>\n  最新  ::/index.php/book/category/order/addtime<,/page/{{page}}>\n  连载  ::/index.php/book/category/order/addtime/finish/1<,/page/{{page}}>\n  完结  ::/index.php/book/category/order/addtime/finish/2<,/page/{{page}}>\n  古典  ::/index.php/book/category/tags/1<,/page/{{page}}>\n  都市  ::/index.php/book/category/tags/2<,/page/{{page}}>\n  武侠  ::/index.php/book/category/tags/3<,/page/{{page}}>\n  历史  ::/index.php/book/category/tags/4<,/page/{{page}}>\n  乡土  ::/index.php/book/category/tags/5<,/page/{{page}}>\n  言情  ::/index.php/book/category/tags/6<,/page/{{page}}>\n  耽美  ::/index.php/book/category/tags/7<,/page/{{page}}>\n  校园  ::/index.php/book/category/tags/8<,/page/{{page}}>\n  玄幻  ::/index.php/book/category/tags/9<,/page/{{page}}>\n  官场  ::/index.php/book/category/tags/10<,/page/{{page}}>\n  女尊  ::/index.php/book/category/tags/11<,/page/{{page}}>\n  穿越  ::/index.php/book/category/tags/12<,/page/{{page}}>\n  惊悚  ::/index.php/book/category/tags/13<,/page/{{page}}>\n  同人  ::/index.php/book/category/tags/14<,/page/{{page}}>\n  网游  ::/index.php/book/category/tags/15<,/page/{{page}}>\n  异能  ::/index.php/book/category/tags/16<,/page/{{page}}>\n  仙侠  ::/index.php/book/category/tags/17<,/page/{{page}}>",
+    "enabledCookieJar": true,
+    "bookSourceGroup": ""
+  }
+]

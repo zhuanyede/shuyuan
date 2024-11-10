@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceName": "新笔趣阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.tnnd.lol",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "header": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0",
+    "lastUpdateTime": "1731163699690",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "class.bookdes@tag.p.0@text",
+      "coverUrl": "class.rank@img@src",
+      "init": "",
+      "intro": "class.bookintro@text##小说简介：",
+      "kind": "class.breadcrumb@tag.li.1@text",
+      "name": "tag.h1@text",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.read-content j_readContent@html",
+      "title": "class.j_chapterName@text"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "tag.dd.1@text##[连载中|已完结].*?字.+",
+      "bookList": "class.content@tag.dl",
+      "bookUrl": "tag.a@href",
+      "coverUrl": "img@data-src",
+      "intro": "tag.dd.0@text",
+      "kind": "tag.span.2@text",
+      "name": "tag.dt@text",
+      "wordCount": "tag.span.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.all@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/search.html?keyword={{key}}&page={{page}}",
+    "weight": 0
+  }
+]

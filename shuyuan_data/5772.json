@@ -1,0 +1,78 @@
+[
+  {
+    "bookSourceComment": "导航页 https://www.2xiuren.com/",
+    "bookSourceGroup": "秀人",
+    "bookSourceName": "秀人集",
+    "bookSourceType": 2,
+    "bookSourceUrl": "http://98.987328.xyz/",
+    "bookUrlPattern": "",
+    "concurrentRate": "",
+    "coverDecodeJs": "",
+    "customOrder": -466,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreScreen": "",
+    "exploreUrl": "最近更新::http://98.987328.xyz/new.html\n站长推荐::http://98.987328.xyz/hot.html\n秀人网::http://98.987328.xyz/XiuRen//{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n模范学院::http://98.987328.xyz/MFStar/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n魅妍社::http://98.987328.xyz/MiStar/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n美媛馆::http://98.987328.xyz/MyGirl/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\nImiss爱蜜社::http://98.987328.xyz/IMiss/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n兔几盟::http://98.987328.xyz/BoLoli/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n尤物馆::http://98.987328.xyz/YouWu/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n优星馆::http://98.987328.xyz/Uxing/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n蜜桃社::http://98.987328.xyz/MiiTao/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n嗲囡囡::http://98.987328.xyz/FeiLin/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n影私荟::http://98.987328.xyz/WingS/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n顽味生活::http://98.987328.xyz/Taste/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n星乐园::http://98.987328.xyz/LeYuan/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\nHuaYan花の颜::http://98.987328.xyz/HuaYan/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\nDKGirl御女郎::http://98.987328.xyz/DKGirl/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\nMintYe薄荷叶::http://98.987328.xyz/MintYe/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n尤蜜荟::http://98.987328.xyz/YouMi/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n糖果画报::http://98.987328.xyz/Candy/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\nMTMeng模特联盟::http://98.987328.xyz/MTMeng/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\nMicat猫萌榜::http://98.987328.xyz/Micat/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n花漾::http://98.987328.xyz/HuaYang/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n星颜社::http://98.987328.xyz/XingYan/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n画语界::http://98.987328.xyz/XiaoYu/{{page - 1 == 0 ? \"\" : \"index\"+page+\".html\"}}\n奶瓶土肥圆::http://98.987328.xyz/zhouyanxi.html\n女神杨晨晨::http://98.987328.xyz/yangchenchen.html\nEgg-尤妮丝::http://98.987328.xyz/younisi.html\n就是阿朱啊::http://98.987328.xyz/azhu.html\n妲己_Toxic::http://98.987328.xyz/daji.html\n女神王雨纯::http://98.987328.xyz/wangyuchun.html\n女神周于希::http://98.987328.xyz/zhouyuxi.html\n女神朱可儿::http://98.987328.xyz/zhukeer.html\n女神芝芝Booty::http://98.987328.xyz/zhizhi_Booty.html\n女神绯月樱::http://98.987328.xyz/feiyueying.html\n女神顾奈奈::http://98.987328.xyz/gunainaijiang.html\n女神娜露Selena::http://98.987328.xyz/nalu_Selena.html\n模特陆萱萱::http://98.987328.xyz/luxuanxuan.html\n女神王馨瑶yanni::http://98.987328.xyz/wangxinyao.html\n模特唐安琪::http://98.987328.xyz/tanganqi.html\n模特美桃酱::http://98.987328.xyz/meitaojiang.html\n模特鱼子酱::http://98.987328.xyz/yuzijiang.html\n模特熊小诺::http://98.987328.xyz/xiongxiaonuo.html\n模特婠婠么::http://98.987328.xyz/wanwanmo.html\n模特江真真::http://98.987328.xyz/jiangzhenzhen.html\n模特林珊珊::http://98.987328.xyz/linshanshan.html\n模特利世::http://98.987328.xyz/lishi.html\n模特媛媛酱::http://98.987328.xyz/yaunyuanjiang.html\n模特小海臀::http://98.987328.xyz/xiaohaitun.html",
+    "header": "",
+    "lastUpdateTime": "1731225903245",
+    "loginCheckJs": "",
+    "loginUi": "",
+    "loginUrl": "",
+    "respondTime": 176,
+    "ruleBookInfo": {
+      "author": "",
+      "canReName": "",
+      "coverUrl": "a.1@href##.+\\D((\\d+)\\d{3})\\D##https://www.quanjixiu.com/uploadfile/pic/$1.webp###",
+      "init": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "class.title",
+      "tocUrl": "class.title",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "p@tag.img@html",
+      "imageStyle": "",
+      "nextContentUrl": "text.下页@href",
+      "replaceRegex": "",
+      "sourceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "class.postlist-imagenum@span@text",
+      "bookList": "class.i_list list_n2",
+      "bookUrl": "@tag.a@href",
+      "coverUrl": "@tag.img@src",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "class.meta-title@text",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "",
+      "bookList": "class.sousuo||class",
+      "bookUrl": "a@href",
+      "coverUrl": "a.1@href##.+\\D((\\d+)\\d{3})\\D##https://www.quanjixiu.com/uploadfile/pic/$1.webp###",
+      "intro": "p@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": "h2@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "tag.h1",
+      "chapterName": "@text",
+      "chapterUrl": "a@href",
+      "isVip": "",
+      "isVolume": "",
+      "nextTocUrl": "",
+      "updateTime": ""
+    },
+    "searchUrl": "http://98.987328.xyz/plus/search/index.asp?keyword={{key}}&searchtype=titlekeywords&p={{page}}",
+    "variableComment": "",
+    "weight": 0
+  }
+]
