@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "造化图小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://z.zaohuatu.org",
+    "bookUrlPattern": "https://z.zaohuatu.org/book/.d+.html",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "{\n\n       “User-Agent”:“Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1”\n}",
+    "lastUpdateTime": "1731291935105",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".ttl@a@text",
+      "init": "",
+      "name": ".lh1d2@text"
+    },
+    "ruleContent": {
+      "content": "id.TextContent@html",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "class.vam mr10.1@text",
+      "bookList": "class.ser-ret lh1d5@li",
+      "bookUrl": "h3@a@href",
+      "checkKeyWord": "",
+      "coverUrl": "class.g_thumb pa l0 oh@img@src",
+      "intro": "class.fs16 mb10 c_strong g_ells@text",
+      "kind": "class.vam mr10.0@text",
+      "lastChapter": "class.vam.3@text",
+      "name": "h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.w33p",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}\nhttps://z.zaohuatu.org/search/,{\n\t\"method\":\"POST\",\n\t\"body\":\"searchkey={{key}}\"\n\t}",
+    "weight": 0
+  }
+]
