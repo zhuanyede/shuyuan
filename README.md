@@ -3,14 +3,14 @@
 - [TG交流群](https://t.me/dahuilang888)
 
 
-**自动更新时间** 2024-11-13 18:18:51 CST+0800
+**自动更新时间** 2024-11-13 18:38:24 CST+0800
 #### 🚩 最新阅读书源修复-每隔3天自动更新一次（安卓阅读3.0+读不舍手+千阅+源阅读+花火阅读通用）
 #### 🚩 获取后的书源会自动效验
 
 <!-- 更新位置开始 -->
 | 阅读源总数 | 有效书源数 | 无效书源数 | 重复书源数 |
 |------------|------------|------------|--------------|
-| <span style="color:green;">487</span> | <span style="color:blue;">306</span> | <span style="color:red;">181</span> | <span style="color:orange;">5</span> |
+| <span style="color:green;">3794</span> | <span style="color:blue;">2774</span> | <span style="color:red;">1020</span> | <span style="color:orange;">319</span> |
 <!-- 更新位置结束 -->
 ![shuyuan.png](icons/shuyuan.png)
 #### 🚩 效验书源链接
@@ -31,7 +31,7 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
-**自动更新时间** 2024-11-13 18:18:51 CST+0800
+**自动更新时间** 2024-11-13 18:38:24 CST+0800
  
  ``` bash
 http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
