@@ -1,0 +1,68 @@
+[
+  {
+    "bookSourceComment": "搜索不好用了，所以添加了两个规则，能用。\n#11111，“#”加上书页网址html前面的数字，可以添加该书\n@穿越，“@”加上标签名，可以列出该标签下的小说\n需要挂梯子，自用修改\n<js>\nif(result.match(/Just a moment/)){\ncookie.removeCookie(source.bookSourceUrl)\nvar x=baseUrl;\nvar s=java.startBrowserAwait(x,\"验证\").body()\nresult=s;\n\t}else{\n\t\tresult=result;\n\t\t}\nresult\n</js>",
+    "bookSourceGroup": "-69",
+    "bookSourceName": "69书吧（自用，新增搜索模式）",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://69shuba.cx/",
+    "bookUrlPattern": "https://69shu.biz/b/[0-9]+.html",
+    "concurrentRate": "",
+    "coverDecodeJs": "",
+    "customOrder": -43355,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "个人书架::/modules/article/bookcase.php\n克苏鲁::/booklist/tag/克苏鲁/\n书::/b/49112.html",
+    "header": "",
+    "lastUpdateTime": "1731514677822",
+    "loginUrl": "https://69shu.biz/index.html",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content\n<js>\nif(baseUrl.match(\"cdn/images/nc.jpg\")){baseUrl=\"\";}</js>",
+      "init": "",
+      "intro": "更新：\n{{@@[property$=update_time]@content}}\n详情：\n{{@@class.booknav2.0@p.2@text}}\n简介：\n{{@@class.content@p@all}}",
+      "kind": "<js>\nlet tags=[];\ntry{tags=String(java.getElement('@@script')[0]).match(/.*[tags]+\\: \\'(.*?)\\|\\'.*/)[0].replace(/.*[tags]+\\: \\'(.*?)\\|\\'.*/,'$1').split('\\|');}catch(error){let tag='';}\ntags.push(String(java.getElement('@@class.booknav2.0@p.2').text()).match(/(连载|全本)/)[0]);\ntags.push(String(java.getElement('@@class.booknav2.0@p.3').text()).replace('更新：',''));\ntags.unshift(String(java.getElement('@@class.booknav2.0@p.1').text()).replace('分类：',''));\ntags</js>",
+      "lastChapter": "[property$=chapter_name]@content\n##\\d+\\.|（.*|\\(.*|【.*|(零|一|二|三|四|五|六|七|八|九|十|百|千|万)(.|\\s)*章|“|”\n@js:result\n.replace(\"••\",\"\")\n.replace(/^(\\d+).第/,'第')\n.replace(/^(正文|VIP章节|最新章节)?(\\s+|_)|[\\(\\{（｛【].*[求更谢乐发推票盟补加字Kk\\/].*[\\)\\}）｝】]/g,'')\n.replace(/^(\\d+)[、．]第.+章/,'第$1章')\n.replace(/^(\\d+)、\\d+、/,'第$1章 ')\n.replace(/^(\\d+)、\\d+/,'第$1章')\n.replace(/^(第.+章)\\s?\\d+/,'$1')\n.replace(/^(\\d+)、/,'第$1章 ')\n.replace(/^(第.+章)\\s?第.+章/,'$1')\n.replace(/第\\s(.+)\\s章/,'第$1章')\n.replace(/.*(chapter|Chapter)\\s?(\\d+)\\s?/,'$1 $2 ')\n.replace(/\\(.+\\)/,'')\n.replace(/\\[|。/,'')\n.replace(/第([零一二三四五六七八九十百千]+)章/g,java.toNumChapter(result))\n##(章)([^\\s]+)(\\s·)##$1 $2$3",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "text.开始阅读@href||class.btn more-btn@href##.*?com",
+      "wordCount": ".infolist@li.0@textNodes"
+    },
+    "ruleContent": {
+      "content": "class.txtnav@html",
+      "nextContentUrl": "",
+      "payAction": "",
+      "replaceRegex": "##.*作者：.*|\\(本章完\\)|PS：.*求推荐！|PS：.*求收藏！|感谢.*打赏.*|感谢.*推荐票.*|感谢.*月票.*|（.*月票.*）|（为大家的.*票加更.*）|第二更在.*|loadAdv.*",
+      "title": "h1@text"
+    },
+    "ruleExplore": {
+      "author": "div.0@class.labelbox@label.0@text",
+      "bookList": "\n#article_list_content ul@li||#checkform@div.0@div.0@ul@li||class.newlistbox@ul@li",
+      "bookUrl": "div@h3@a@href",
+      "coverUrl": "a@img@src\n<js>\nif(baseUrl.match(\"cdn/images/nc.jpg\")){baseUrl=\"\";}</js>",
+      "intro": "div.0@ol@text||div.0@class.zxzj@p@all",
+      "name": "div@h3@a@span@text||div@h3@a@text"
+    },
+    "ruleSearch": {
+      "author": "tag.label.0@text||div.0@class.labelbox@label.0@text",
+      "bookList": "<js>\nif(result.match(/Just a moment/)){\ncookie.removeCookie(source.bookSourceUrl)\nvar x=baseUrl;\nvar s=java.startBrowserAwait(x,\"验证\").body()\nresult=s;\n\t}else{\n\t\tresult=result;\n\t\t}\nresult\n</js>\nclass.newbox@ul@li\n#article_list_content ul@li||#checkform@div.0@div.0@ul@li||class.newlistbox@ul@li",
+      "bookUrl": "class.btn btn-tp@href",
+      "checkKeyWord": "@克苏鲁",
+      "coverUrl": "tag.img@src\n<js>\nif(baseUrl.match(\"cdn/images/nc.jpg\")){baseUrl=\"\";}</js>",
+      "intro": "tag.ol.0@text",
+      "kind": "tag.label.1@text&&tag.label.2@text",
+      "name": "h3@text||div@h3@a@span@text||div@h3@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "\n\t#catalog@ul@li[-1:0]@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "isPay": "",
+      "isVip": "\n",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "<js>\nif(key.match(/#/)){\nresult='https://69shu.biz/b/'+encodeURI(key.match(/^(?:#|＃)(.*)/)[1])+'.html';}\nelse if(key.match(/@/)){\nresult='https://69shu.biz/booklist/tag/'+encodeURI(key.match(/^@(.*)/)[1])+'/';}\nelse{\tresult='https://69shu.biz/modules/article/search.php,{\"charset\": \"gbk\", \"method\": \"POST\", \"body\": \"searchkey='+key+'&submit=Search\"}';}\nresult</js>",
+    "variableComment": "<js>\nlet date=\"Mobile \"+Date.now();\nresult = JSON.stringify({\"User-Agent\": String(date)})\n</js>",
+    "weight": 0
+  }
+]

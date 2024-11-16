@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceName": "免费读网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.mianfeidu.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"🔹小说🔹\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"全部小说\",\"url\":\"/all/id/43.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史演义\",\"url\":\"/all/id/47.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"神魔幻想\",\"url\":\"/all/id/48.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"侠义公案\",\"url\":\"/all/id/49.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"才子佳人\",\"url\":\"/all/id/50.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"世情小说\",\"url\":\"/all/id/51.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"文言笔记\",\"url\":\"/all/id/52.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"英雄传奇\",\"url\":\"/all/id/92.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"讽刺小说\",\"url\":\"/all/id/94.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"🔹典籍🔹\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"全部典籍\",\"url\":\"/all/id/66.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"儒家经典\",\"url\":\"/all/id/68.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"道家经典\",\"url\":\"/all/id/69.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"佛教经典\",\"url\":\"/all/id/70.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.29,\"layout_flexGrow\":-1}},{\"title\":\"易学典籍\",\"url\":\"/all/id/107.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.29,\"layout_flexGrow\":-1}},{\"title\":\"🔹史传🔹\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"全部史传\",\"url\":\"/all/id/65.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"二十四史\",\"url\":\"/all/id/71.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"野史笔记\",\"url\":\"/all/id/72.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"传记方志\",\"url\":\"/all/id/108.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.29,\"layout_flexGrow\":-1}},{\"title\":\"编年纪传\",\"url\":\"/all/id/113.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.29,\"layout_flexGrow\":-1}},{\"title\":\"🔹百家🔹\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"全部百家\",\"url\":\"/all/id/67.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"文化艺术\",\"url\":\"/all/id/87.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"医学方技\",\"url\":\"/all/id/88.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"天文算经\",\"url\":\"/all/id/89.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"诸子百家\",\"url\":\"/all/id/91.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"阴阳术数\",\"url\":\"/all/id/96.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"农工百技\",\"url\":\"/all/id/97.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.29,\"layout_flexGrow\":-1}},{\"title\":\"🔹诗文🔹\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"全部诗文\",\"url\":\"/all/id/64.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"诗词歌赋\",\"url\":\"/all/id/81.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"词文别集\",\"url\":\"/all/id/82.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"诗话词话\",\"url\":\"/all/id/101.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.29,\"layout_flexGrow\":-1}},{\"title\":\"文论文平\",\"url\":\"/all/id/111.html?page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.29,\"layout_flexGrow\":-1}}]",
+    "lastUpdateTime": "1731520086263",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "name": ""
+    },
+    "ruleContent": {
+      "content": "class.read-content j_readContent@html"
+    },
+    "ruleExplore": {
+      "author": "dd@p.0@a.0@text",
+      "bookList": ".listboxw@dl",
+      "bookUrl": "dd@a.0@href",
+      "coverUrl": ".lazyimg@data-original",
+      "intro": "class.big-book-info@text",
+      "kind": "dd@p.0@a.1@text&&class.clicknum@em[0,1,2]@text",
+      "lastChapter": "dd@p.-1@a@text##最近更新\\s",
+      "name": "dd@a.0@text"
+    },
+    "ruleSearch": {
+      "author": "dd@p.0@a.0@text",
+      "bookList": "class.secd-rank-list",
+      "bookUrl": "class.bigpic-book-name@href",
+      "checkKeyWord": "汉",
+      "coverUrl": "dt@a@img@data-original",
+      "intro": "class.big-book-info@text",
+      "kind": "dd@p.0@a.1@text&&class.clicknum@em[0,1,2]@text",
+      "lastChapter": "dd@p.-1@a@text##最近更新\\s",
+      "name": "class.bigpic-book-name@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.cate-list@li@a",
+      "chapterName": ".chapter_name@text",
+      "chapterUrl": "href",
+      "updateTime": ".chapter_date@text"
+    },
+    "searchUrl": "/search.html?keyword={{key}}",
+    "weight": 0
+  }
+]
