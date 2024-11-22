@@ -1,0 +1,41 @@
+[
+  {
+    "bookSourceComment": "//2024.11.15\n//添加正文解密by河鹅和",
+    "bookSourceGroup": "写源",
+    "bookSourceName": "落叶书屋by.GEd520",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.quanmai.net/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "jsLib": "{\"example\":\"https://unpkg.com/crypto-js@4.2.0/crypto-js.js\"}",
+    "lastUpdateTime": "1732246626224",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "img@src"
+    },
+    "ruleContent": {
+      "content": ".readcontent>p@textNodes##本章未完.*\n@js:\njava.log(result)\nfunction x(encryptedData, key, iv) {\n  const ciphertext = CryptoJS.enc.Base64.parse(encryptedData);\n  const ivBytes = CryptoJS.enc.Base64.parse(iv);\n  const keyBytes = CryptoJS.enc.Utf8.parse(key);\n  const decrypted = CryptoJS.AES.decrypt(\n    { ciphertext: ciphertext },\n    keyBytes,\n    { iv: ivBytes, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.ZeroPadding }\n  );\n  const decryptedText = decrypted.toString(CryptoJS.enc.Utf8);\n return decryptedText;\n}\nmatch=src.match(/#booktxthtml'\\).html\\((x\\(\"[^\"]+\"[^,]*,[^\"]*\"[^\"]+\"[^,]*,[^\"]*\"[^\"]+\"\\))/)\nif(match){\nresult=result+eval(match[1])}else result",
+      "nextContentUrl": "@js:\nvar list = [];\nvar ml = result.match(/\\<small\\>\\(第\\d+\\/(\\d+)页\\)/);\nif (ml&&!/_/.test(baseUrl)){\n  //java.log(ml[1]);\n  for (let i = 2; i <= ml[1]; i++) {\n    var m = baseUrl.replace(/\\.html/, `_${i}.html`);\n    //java.log(m);\n    list.push(m);\n    list\n  }\n}",
+      "replaceRegex": "",
+      "title": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".author.0@text",
+      "bookList": ".bookbox",
+      "bookUrl": "h4@a.0@href",
+      "intro": ".update@text",
+      "lastChapter": ".cat@a.0@text",
+      "name": "h4@a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "#list-chapterAll@dd",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}/search,{\n \"body\": \"searchkey={{key}}&action=login&searchtype=all&submit=\",\n \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceComment": "//2024.9.25◎GEd520◎",
+    "bookSourceGroup": "写源",
+    "bookSourceName": "说说520",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.shuquta.com/",
+    "customOrder": 0,
+    "enabled": false,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"全部\",\"url\":\"/xclass/0/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"玄幻魔法\",\"url\":\"/xclass/1/1.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"武侠修真\",\"url\":\"/xclass/2/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市言情\",\"url\":\"/xclass/3/1.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"历史军事\",\"url\":\"/xclass/4/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"网游竞技\",\"url\":\"/xclass/5/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻小说\",\"url\":\"/xclass/6/1.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"恐怖灵异\",\"url\":\"/xclass/7/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"其他类型\",\"url\":\"/xclass/8/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},]",
+    "lastUpdateTime": "1732244466823",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "canReName": "",
+      "downloadUrls": "text.TXT下载@href",
+      "intro": ".review@text",
+      "tocUrl": "text.开始阅读@href"
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##.*免费小说.*"
+    },
+    "ruleExplore": {
+      "author": ".author@text",
+      "bookList": "#main@class.hot_sale",
+      "bookUrl": "a.0@href",
+      "coverUrl": "a.0@img@data-original",
+      "intro": ".review@text",
+      "name": ".title@text"
+    },
+    "ruleSearch": {
+      "author": ".author.0@text##.*作者：",
+      "bookList": ".hot_sale ",
+      "bookUrl": "a.0@href",
+      "coverUrl": "a.0@href<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\nsource.bookSourceUrl + 'files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+      "kind": ".author.0@text##\\s\\|\\s作者.*",
+      "lastChapter": ".author.1@text##更新：",
+      "name": ".title@text"
+    },
+    "ruleToc": {
+      "chapterList": "#chapterlist@a!0",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/s.php,{\n \"body\": \"keyword={{key}}&t=1\",\n \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "bookSourceName": "笔趣阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.biquge345.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1732148119546",
+    "loginCheckJs": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "coverUrl": "img@src@js:url=\"https://m.biquge345.com\"+result",
+      "intro": ".jianjie@p@text",
+      "kind": ".p2@li[1:2:3]@text##(类型|状态|更新)："
+    },
+    "ruleContent": {
+      "content": "#txt@html",
+      "nextContentUrl": "text下一页@href",
+      "replaceRegex": "##一秒记住【.*】|.*更新快，无弹窗！"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "span[1]@text",
+      "bookList": ".liebiao2 li",
+      "bookUrl": "a@href",
+      "checkKeyWord": "斗罗大陆",
+      "name": "span[0]@text"
+    },
+    "ruleToc": {
+      "chapterList": ".mululist ul li a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/waps.php,{\n  \"body\": \"s={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

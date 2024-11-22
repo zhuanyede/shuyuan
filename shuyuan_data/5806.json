@@ -1,0 +1,54 @@
+[
+  {
+    "bookSourceGroup": "写源",
+    "bookSourceName": "新御书屋🔞",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.xyushuwu.one/#防",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"全部分类\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"校园言情\",\"url\":\"https://m.xyushuwu.one/sort/1/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"都市言情\",\"url\":\"https://m.xyushuwu.one/sort/2/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"古代言情\",\"url\":\"https://m.xyushuwu.one/sort/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"罗曼史\",\"url\":\"https://m.xyushuwu.one/sort/4/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"耽美\",\"url\":\"https://m.xyushuwu.one/sort/5/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"百合\",\"url\":\"https://m.xyushuwu.one/sort/6/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"同人\",\"url\":\"https://m.xyushuwu.one/sort/7/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"奇幻玄幻\",\"url\":\"https://m.xyushuwu.one/sort/8/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"网络竞技\",\"url\":\"https://m.xyushuwu.one/sort/9/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"科幻异能\",\"url\":\"https://m.xyushuwu.one/sort/10/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"恐怖异灵\",\"url\":\"https://m.xyushuwu.one/sort/11/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"惊悚推理\",\"url\":\"https://m.xyushuwu.one/sort/12/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"武侠仙侠\",\"url\":\"https://m.xyushuwu.one/sort/13/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"历史军事\",\"url\":\"https://m.xyushuwu.one/sort/14/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"穿越重生\",\"url\":\"https://m.xyushuwu.one/sort/15/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"综合其他\",\"url\":\"https://m.xyushuwu.one/sort/16/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n]",
+    "lastUpdateTime": "1732244347005",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".fss.1@text##\\d+字",
+      "coverUrl": "img@src",
+      "intro": "#introl@text##\\s",
+      "kind": ".fr.0@text",
+      "lastChapter": ".c_row.1@text##最新：",
+      "name": "h4.0@text##.*]",
+      "tocUrl": "text.目录@href",
+      "wordCount": ".fr.1@text"
+    },
+    "ruleContent": {
+      "content": "#acontent@html"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "coverUrl": "img@src",
+      "intro": "",
+      "kind": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": ".gray@text##(\\|.*)$",
+      "bookList": "#jieqi_page_contents@.c_row",
+      "bookUrl": "a@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "img@src",
+      "intro": ".gray@text##.* |",
+      "lastChapter": "",
+      "name": ".row_text@h4@text"
+    },
+    "ruleToc": {
+      "chapterList": "dd@a",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "https://m.xyushuwu.one/modules/article/search.php,{\n\"body\": \"searchkey={{key}}&page={{page}}\",\n\"charset\": \"utf–8\", \n\"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

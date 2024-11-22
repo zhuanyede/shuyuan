@@ -1,0 +1,51 @@
+[
+  {
+    "bookSourceComment": "//正文解密代码 by.夜泽川\n//目录>章节地址 by.游客大佬\n//完善 by.河鹅和",
+    "bookSourceGroup": "写源by河鹅和",
+    "bookSourceName": "随梦小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.suimeng.la",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "header": "{'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',\n\"Referer\":\"https://www.suimeng.la\"}",
+    "lastUpdateTime": "1732243312312",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "init": "<js>\nR=result\nlis=java.getElement(\".yanqing_list.1\");\njava.put(\"lis\",lis);\nresult=R\n</js>",
+      "intro": "[property=\"og:description\"]@content##简介[:：]",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content||[property=\"og:novel:lastest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": "<js>\nvar bes = result.match(/PHA\\+[A-Za-z0-9+\\/]+={0,2}/g);\nif (!bes) {\n    var ml = java.webView(null,baseUrl,null);\n    java.setContent(ml)\n    var txt = java.getString(\".info_dv1>p!-1@text\");\n    java.longToast(\"正文解密失败，转为webView动态加载。\");\n} else {\nvar result = [];\nfor (var i = 0; i < bes.length; i++) {\n    // 遍历数组，使用阅读内置Base64解码方法\n    var bsej = java.base64Decode(bes[i]);\n    var txtt = String(bsej);\n    result.push(txtt);\n      }\n\tvar txt = result.join('\\n');\n}\ntxt;\n</js>",
+      "nextContentUrl": "text.下一@href\n@js:\nvar next=/_\\d+\\.html/.test(result) ? result : '';\nnext;"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".s3@text",
+      "bookList": "#novel-search li",
+      "bookUrl": ".s2 a@href",
+      "checkKeyWord": "",
+      "kind": ".s1@text##\\[|\\]",
+      "lastChapter": ".s4@text",
+      "name": ".s2@text",
+      "wordCount": ".s5@text"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nif(/index\\/\\d+\\/1\\//.test(baseUrl)){\n\tjava.log('a')\n\tlis=java.get('lis')\n\tlist=java.getElement(\".yanqing_list\")\n\tresult=lis+list\n\t}\nresult\n</js>\n.yanqing_list li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href||a@onclick\n@js:\nvar bu = book.bookUrl.toString();\ncu = \"/files\" + bu.split(\"/files\")[1];\nvar read_tz = cid => `${cu}${cid}.html`;\nif(/read_tz/.test(result)){\n\tresult = eval(result.toString());\n\t}\n\t//java.log(result)\n\tresult",
+      "nextTocUrl": "select.0@option!0@value",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "/search.html,{\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\",\n  \"body\": \"s={{key}}\"\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "24.11.20\n有人机验证\n有10s搜索间隔\n网站支持搜索标签\n过完验证搜不到东西就等搜索间隔过了再搜一次\n目录分卷代码—Thomas喲",
+    "bookSourceGroup": "🍒精选❶",
+    "bookSourceName": "🍒霹雳书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.pilishuwu.com/",
+    "customOrder": 9,
+    "enabled": false,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[\n{\n    \"title\":\"༺ˇ»`ʚ排行榜ɞ´«ˇ༻\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n  {\n    \"title\":\"最新入库\",\n    \"url\":\"top/list/0/1/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"全部点击\",\n    \"url\":\"top/list/0/2/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"本年点击\",\n    \"url\":\"top/list/0/3/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"本月点击\",\n    \"url\":\"top/list/0/4/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"本周点击\",\n    \"url\":\"top/list/0/5/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"本日点击\",\n    \"url\":\"top/list/0/6/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"全部收藏\",\n    \"url\":\"top/list/0/7/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"本年收藏\",\n    \"url\":\"top/list/0/8/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"本月收藏\",\n    \"url\":\"top/list/0/9/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"本周收藏\",\n    \"url\":\"top/list/0/10/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"本日收藏\",\n    \"url\":\"top/list/0/11/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"全部推荐\",\n    \"url\":\"top/list/0/12/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  \n  \n  {\n    \"title\":\"༺ˇ»`ʚ书库ɞ´«ˇ༻\",\n    \"url\":\"\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":1\n    }\n  },\n  {\n    \"title\":\"全部小说\",\n    \"url\":\"0/list/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"男频网文\",\n    \"url\":\"1/list/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"女频言情\",\n    \"url\":\"2/list/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"电子图书\",\n    \"url\":\"3/list/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"无cp小说\",\n    \"url\":\"4/list/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"纯爱小说\",\n    \"url\":\"5/list/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"百合小说\",\n    \"url\":\"6/list/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  {\n    \"title\":\"轻小说\",\n    \"url\":\"8/list/{{page}}.html\",\n    \"style\":{\n      \"layout_flexGrow\":1,\n      \"layout_flexBasisPercent\":0.25\n    }\n  },\n  ]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10.0; SM-T540 Build/QP1A.190711.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.122 Safari/537.36 com.quark.android\"}",
+    "lastUpdateTime": "1732196256821",
+    "loginCheckJs": "",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "##作者：([^<]+)<##$1###",
+      "coverUrl": ".x-book__coverbox.0@img@data-cfsrc##^##https://www.pilishuwu.com",
+      "intro": "&nbsp;🕰  更新：{{@@.x-catalog__update@text##\\s.*|更新于：}}\n\n👁  阅读：{{@@##阅读：([^<]+)<##$1###}}\n\n❤️  顶：{{@@class.x-detail__ticket--item.0@textNodes}}\n\n💔  踩：{{@@class.x-detail__ticket--item.1@textNodes}}\n\n🏷  标签：{{@@.x-detail__intro--tags@a@text##\\n##·}}\n\n📜  简介：{{@@.x-detail__intro--content@html}}",
+      "kind": "{{@@##进程：([^<]+)<##$1###}}\n{{@@##分类：([^<]+)<##$1###}}\n{{@@.x-catalog__update@text##\\s.*|更新于：}}",
+      "lastChapter": "{{@@.x-catalog__new@textNodes##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求含理更谢乐发推票盟补加字].*?[】）\\)]}}·{{@@.x-catalog__update@text##\\s.*|更新于：}}\n@js:result\n.replace(\"••\",\"\")\n.replace(/^(\\d+).第/,'第')\n.replace(/^(\\d+)[、．]第.+章/,'第$1章')\n.replace(/^(\\d+)、\\d+、/,'第$1章 ')\n.replace(/^(\\d+)、\\d+/,'第$1章')\n.replace(/^(第.+章)\\s?\\d+/,'$1')\n.replace(/^(\\d+)、/,'第$1章 ')\n.replace(/^(第.+章)\\s?第.+章/,'$1')\n.replace(/第\\s(.+)\\s章/,'第$1章')\n.replace(/.*(chapter|Chapter)\\s?(\\d+)\\s?/,'$1 $2 ')\n.replace(/\\(.+\\)/,'')\n.replace(/\\[|。/,'')\n.replace(/第([零一二两三四五六七八九十百千]+)章/g,java.toNumChapter(result))\n##(章)([^\\s]+)(\\s·)##$1 $2$3",
+      "name": ".x-detail__info--title@text",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": ".read-section@p@html"
+    },
+    "ruleExplore": {
+      "author": ".x-info__author@span@text||.x-book__info--author@textNodes",
+      "bookList": ".x-book",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@data-src",
+      "intro": ".x-info__intro@text||.x-book__info--chapter@text",
+      "kind": "{{@@.x-info__author@textNodes}}\n{{@@.red@text}}\n{{@@.x-book__tags@span@text}}",
+      "name": ".x-info__name@text||.x-book__info--name@text",
+      "wordCount": ".blue@text"
+    },
+    "ruleSearch": {
+      "author": ".book-status@text",
+      "bookList": "<js>\nif (result.match(/Just a moment/)) {\n\tcookie.removeCookie(baseUrl);\n\tjava.startBrowserAwait(baseUrl,\"验证\");\n\tresult=java.ajax(baseUrl);\n}\nresult;\n</js>\n.x-book",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "诡秘之主",
+      "coverUrl": "img@data-cfsrc",
+      "intro": ".x-book__intro@text",
+      "kind": ".book-fenlei@text",
+      "name": ".x-book__info--name@text",
+      "wordCount": ".book-wordcount@text"
+    },
+    "ruleToc": {
+      "chapterList": "@css:\n.volumes, .chapter\n\n@js:\nlist=[]\n$=result\nfor(i in $){\nif(String($[i]).match(/class=\"volumes/)){\n\tt=String($[i].text()).replace(new RegExp(book.name,''),'').replace(/（.*/g,'');\n\t\tlist.push({\n\t\t\t\ttext: \"🏮〖\"+t+\"〗🏮\",\n\t\t\t\tvolume: true\n\t\t\t})\n\t}\nelse{\n\t\t$[i].select(\"a\").forEach(a=>{\n\t\t\t\tlist.push({\n\t\t\t\t\t\ttext: a.text(),\n\t\t\t\t\t\thref: a.attr(\"href\")\n\t\t\t\t\t})\n\t\t\t})\n\t}\n}\nlist",
+      "chapterName": "text",
+      "chapterUrl": "href##$##,{\"webView\": true}",
+      "isVolume": "volume"
+    },
+    "searchUrl": "search/0/{{key}}/{{page}}.html",
+    "weight": 0
+  }
+]

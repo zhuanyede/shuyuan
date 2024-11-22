@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceGroup": "写源by河鹅和",
+    "bookSourceName": "简搜",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.jianshou.net",
+    "bookUrlPattern": "https://m.jianshou.net/shu/\\d+",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"玄幻\",\"url\":\"/sh/xuanhuan/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"修仙\",\"url\":\"/sh/xiuzhen/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市\",\"url\":\"/sh/dushi/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"历史\",\"url\":\"/sh/lishi/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"悬疑\",\"url\":\"/sh/kehuan/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"竞技\",\"url\":\"/sh/jingji/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"女生\",\"url\":\"/sh/nvsheng/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"其他\",\"url\":\"/sh/qita/{{page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
+    "lastUpdateTime": "1732243766874",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": ".cover img@src",
+      "intro": ".book_about dd@text##展开全部.*",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content||[property=\"og:novel:lastest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": ".book_more a@href"
+    },
+    "ruleContent": {
+      "content": "#article@html",
+      "nextContentUrl": "#next_url@href"
+    },
+    "ruleExplore": {
+      "author": "span@text",
+      "bookList": ".item",
+      "bookUrl": ".image a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "name": "img@alt"
+    },
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author@text##作者.",
+      "bookList": ".item",
+      "bookUrl": ".image a@href",
+      "coverUrl": "img@src",
+      "kind": "{{java.timeFormat(java.getString(\".uptime@text\").replaceAll(\".+：\",\"\")*1000)}},{{@@.cat@text##.+：}}",
+      "lastChapter": ".update a@text",
+      "name": ".bookname@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "dd a[1:]",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.key)}}\n/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]

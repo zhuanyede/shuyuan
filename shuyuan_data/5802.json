@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "写源by河鹅和",
+    "bookSourceName": "不格小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.bugexs.com",
+    "bookUrlPattern": "",
+    "concurrentRate": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
+    "header": "{\"accept-language\":\"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\"}",
+    "jsLib": "",
+    "lastUpdateTime": "1732243689101",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content||[property=\"og:novel:lastest_chapter_name\"]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "[property=\"og:novel:read_url\"]@content"
+    },
+    "ruleContent": {
+      "content": "#txt p@text",
+      "payAction": "",
+      "replaceRegex": "##.*不格小说.*",
+      "title": ".headline@text"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".info span@textNodes||[property=\"og:novel:author\"]@content",
+      "bookList": ".clearfix li||head",
+      "bookUrl": "class.tit@href",
+      "checkKeyWord": "穿进赛博游戏后干掉BOSS成功上位",
+      "coverUrl": "img@data-original||[property=\"og:image\"]@content",
+      "intro": ".intro@text||[property=\"og:description\"]@content",
+      "kind": ".type@text||[property~=category|status|update_time]@content",
+      "name": ".tit@text||[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleToc": {
+      "chapterList": ".list a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/s.php?s={{key}}&page={{page}}",
+    "weight": 0
+  }
+]

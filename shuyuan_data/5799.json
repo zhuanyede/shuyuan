@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceGroup": "写源by河鹅和",
+    "bookSourceName": "蓝海搜书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.lansebook.com/",
+    "bookUrlPattern": "https://www.lansebook.com/book/\\d+",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"‌古‎代‍\",\"url\":\"/s/%E5%8F%A4%E4%BB%A3/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‎‎‍现‌代‍\",\"url\":\"/s/%E7%8E%B0%E4%BB%A3/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍‌‍男‎‌‍性‎\",\"url\":\"/s/%E7%94%B7%E7%94%B7/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌女‌性‌\",\"url\":\"/s/%E5%A5%B3%E5%A5%B3/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍‎励‎志‎‎\",\"url\":\"/s/%E5%8A%B1%E5%BF%97/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌清‌水‎‍‌\",\"url\":\"/s/%E6%B8%85%E6%B0%B4/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍甜‎‎文‌‍‎\",\"url\":\"/s/%E7%94%9C%E6%96%87/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍‌校‎园‌‎‍\",\"url\":\"/s/%E6%A0%A1%E5%9B%AD/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌‌‎职‍场‍‌\",\"url\":\"/s/%E8%81%8C%E5%9C%BA/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‎种‍田‌\",\"url\":\"/s/%E7%A7%8D%E7%94%B0/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍年‌‎下‍\",\"url\":\"/s/%E5%B9%B4%E4%B8%8B/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍‌‎A‌‎B‌‍O‎‎\",\"url\":\"/s/abo/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍‎‎1‎‍V‎‎‍1‍‌‎\",\"url\":\"/s/1%20V%201/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌‍‎腹‍‎‍黑‍‎‍\",\"url\":\"/s/%E8%85%B9%E9%BB%91/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‎‍N‌‎‍P‍‎‎\",\"url\":\"/s/np/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌美‌人‎‎\",\"url\":\"/s/%E7%BE%8E%E4%BA%BA/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‎‍B‎‌‍L‎‍\",\"url\":\"/s/bl/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍‍‎同‍‎同‍\",\"url\":\"/s/%E5%90%8C%E6%80%A7/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‎‍百‎合‍‌‍\",\"url\":\"/s/%E7%99%BE%E5%90%88/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌‎强‎‍‌强‎‍‌\",\"url\":\"/s/%E5%BC%BA%E5%BC%BA/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌‌‎爽‎文‎‎\",\"url\":\"/s/%E7%88%BD%E6%96%87/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌狗‎‍‎血‌\",\"url\":\"/s/%E7%8B%97%E8%A1%80/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌‍‌娱‎‎‍乐‌‍圈‎\",\"url\":\"/s/%E5%A8%B1%E4%B9%90%E5%9C%88/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌‎快‌‍‎穿‍\",\"url\":\"/s/%E5%BF%AB%E7%A9%BF/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌‍言‌情‍‎‌\",\"url\":\"/s/%E8%A8%80%E6%83%85/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‎‍耽‌美‍‌‌\",\"url\":\"/s/%E8%80%BD%E7%BE%8E/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌同‌‍‎人‌‌‍\",\"url\":\"/s/%E5%90%8C%E4%BA%BA/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌‍综‌‍合‍‌‎\",\"url\":\"/s/%E7%BB%BC%E5%90%88/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍‌‎P‎‍‍0‎1‎8‍‍\",\"url\":\"/s/PO%2018//{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‎‍都‍市‍\",\"url\":\"/s/%E9%83%BD%E5%B8%82/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍‌‌现‍言‎‎‍\",\"url\":\"/s/%E7%8E%B0%E8%A8%80/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‎古‎言‎‍‍\",\"url\":\"/s/%E5%8F%A4%E8%A8%80/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌轻‎‍小‌‍‎说‎‍\",\"url\":\"/s/%E8%BD%BB%E5%B0%8F%E8%AF%B4/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍‌‍原‎创‌\",\"url\":\"/s/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌科‎幻‌\",\"url\":\"/s/%E7%A7%91%E5%B9%BB/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‎仙‍‎侠‍‍‎\",\"url\":\"/s/%E4%BB%99%E4%BE%A0/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‎奇‍幻‍\",\"url\":\"/s/%E5%A5%87%E5%B9%BB/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‌‌‍玄‌幻‍\",\"url\":\"/s/%E7%8E%84%E5%B9%BB/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}},{\"title\":\"‍衍‎‍生‌‎‎\",\"url\":\"/s/%E5%90%8C%E4%BA%BA%E8%A1%8D%E7%94%9F/{{page-1==0?\\\"\\\":page}}/\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.2}}]",
+    "jsLib": "",
+    "lastUpdateTime": "1732243098097",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".author span@text",
+      "coverUrl": "img.1@src",
+      "intro": "#intro@html",
+      "kind": ".category span@text&&.time span@text",
+      "lastChapter": ".newestChapter span@text",
+      "name": "h1@text",
+      "tocUrl": ".site.0@a.1@href"
+    },
+    "ruleContent": {
+      "content": "<js>\nmatch=result.match(/d\\(\".+\"[^\"]+\".+\"\\)/)\nfunction d(a, b){\n\tb = java.md5Encode(b)\n\tiv = b.substring(0, 16)\n\tkey = b.substring(16)\n\tCipher=java.createSymmetricCrypto(\"AES/CBC/PKCS7Padding\" ,key,iv)\n\treturn Cipher.decryptStr(a)}\neval(match[0])\n</js>\np@text",
+      "webJs": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "$3",
+      "bookList": ":<p>[^\"]+\"([^\"]+)\" title=\"([^\"]+)\">[^\"]+\"[^\"]+\"[^>]+>([^<]+)</a>[^\"]+\"[^>]+>([^<]+)</a[^p]+pan>[^\"]+(?=\"intro\")\"intro\">(.+)(?=</p>)</p>",
+      "bookUrl": "$1",
+      "checkKeyWord": "",
+      "intro": "$5##简介[:：]",
+      "kind": "$4",
+      "name": "$2"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\ntemp=result\nR=org.jsoup.Jsoup.parse(temp).select(\".BCsectionTwo-top-chapter a\")\nc=[]\nR.forEach(r=>{\n\ti=String(r.attr('href')).replace(/.+\\/\\d+\\/(\\d+)\\.html/,`$1`)\n\t//java.log(i)\n\tc.push({\n\t\tname:r.text(),\n\t\turl:r.attr('href'),\n\t\tindex:i\n\t\t})\n\t})\ntry{\n\to=temp.match(/originalOrder[^=]*=[^\\[]*\\[([^\\]]+)\\]/)[1]\n\to=o.split(\",\")\n\tc.sort((a,b)=>o[c.indexOf(a)]-o[c.indexOf(b)])\n\t}catch (err){\n\t\tjava.log(err)\n\t\tc.sort((a,b)=>a.index-b.index)\n\t\t}\n\tresult=c\n</js>",
+      "chapterName": "name",
+      "chapterUrl": "url",
+      "nextTocUrl": "text.尾页@href@js:\ntry {\n\tmaxPage = 0\n\ttempUrl = String(result[0]).replace(/\\/(\\d+)\\.html$/, (_match, _$1) => {\n\t\tmaxPage = _$1\n\t\treturn '/$page.html'\n\t})\n\tresult = []\n\tfor (let i = 2; i <= maxPage; i++) {\n\t\tresult.push(tempUrl.replace(/\\$page/, i))\n\t}\n\tresult\n} catch (err) {\n\t[]\n}"
+    },
+    "searchUrl": "/s/{{key}}/{{page - 1 == 0 ? \"\": page}}",
+    "weight": 0
+  }
+]
