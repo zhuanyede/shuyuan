@@ -48,7 +48,7 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
  ```
 https://iptv.228088.xyz/cn.m3u
  ```
-感谢您使用此项目！
+#### 🚩 感谢您使用此项目！
 ![zanshang.jpg](icons/zanshang.jpg)
 
 #### 🚩 ESign/AltStore/SideStore/锤子助手 巨魔商店应用
