@@ -1,8 +1,0 @@
-psutil
-requests
-flask
-bs4
-lxml
-cryptography
-redis
-resend
