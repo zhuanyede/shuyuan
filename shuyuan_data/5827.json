@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "//11.25 by河鹅和",
+    "bookSourceGroup": "写源by河鹅和",
+    "bookSourceName": "笔趣阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.glimpsewave.com",
+    "bookUrlPattern": "https://www.glimpsewave.com/book/\\d+/",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "lastUpdateTime": "1732508573101",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property~=las?test_chapter_name]@content",
+      "name": "[property=\"og:novel:book_name\"]@content"
+    },
+    "ruleContent": {
+      "content": "#htmlContent@textNodes\n@js:\nvar base64Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';\nfunction customAtob(encodedStr) {\n    var cleanedStr = String(encodedStr).replace(/=+$/, '');\n    var decodedStr = '';\n    for (var i = 0, acc = 0, charCode, idx = 0; charCode = cleanedStr.charAt(idx++); ~charCode && (acc = i % 4 ? acc * 64 + charCode : charCode, i++ % 4) ? decodedStr += String.fromCharCode(0xff & acc >> (-2 * i & 6)) : 0) {\n        charCode = base64Chars.indexOf(charCode);\n    }\n    return decodedStr;\n}\n\nfunction unicodeArrayToString(unicodeArray) {\n    var resultStr = '';\n    for (var i = 0; i < unicodeArray.length; i++) {\n        resultStr += String.fromCharCode(unicodeArray[i]);\n    }\n    return decodeURIComponent(escape(resultStr));\n}\n\nfunction reverseArray(array) {\n    return array.slice().reverse();\n}\n\nfunction xorDecode(base64Str1, base64Str2) {\n    var decodedArray1 = customAtob(base64Str2).split('').map((char)=>{ return char.charCodeAt(0); });\n    var reversedArray1 = reverseArray(decodedArray1);\n    var decodedArray2 = customAtob(base64Str1).split('').map((char)=>{ return char.charCodeAt(0); });\n    var xorArray = decodedArray2.map((value, index)=>{ return value ^ reversedArray1[index % reversedArray1.length]; });\n    return unicodeArrayToString(xorArray);\n}\nmatch=src.match(/await _.+?\\('(.+?)','(.+?)'\\)/)\nif (match) {result=result+xorDecode(match[1],match[2])}\nelse {result=result}\nresult",
+      "nextContentUrl": "##location\\.href\\=\\'(\\d+\\_\\d+)\\.idx\\'##$1.html###",
+      "replaceRegex": "##{{source.key}}|笔趣阁|{{chapter.title}}.*",
+      "title": ""
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": "#search_result li",
+      "bookUrl": "a@href",
+      "coverUrl": "a@href##(\\d+)##$1###\n@js:\nbid=parseInt(result)\naid=parseInt(bid/1000)\nresult=`/image/${aid}/${bid}/${bid}s.jpg`",
+      "kind": ".type@text&&.status@text",
+      "name": ".name@text"
+    },
+    "ruleToc": {
+      "chapterList": "#detail_chapter .box_content.1@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "##i<=([^;]+)##$1###\n@js:\npageSum=parseInt(result)\nburl=String(book.tocUrl)\nresult=Array.from({length:pageSum-1},(_,i)=>`${burl}${i+2}.html`)\nresult"
+    },
+    "searchUrl": "/search/{{key}}.html",
+    "weight": 0
+  }
+]

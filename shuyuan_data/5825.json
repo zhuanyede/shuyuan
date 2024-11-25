@@ -1,0 +1,52 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "天章小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.tianzhangs.com",
+    "bookUrlPattern": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\",\"referer\":\"{{baseUrl}}\"\n\t}",
+    "lastUpdateTime": "1732461982256",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".novel_info_title@i.0@text",
+      "coverUrl": ".novel_info_main@img@src",
+      "init": "",
+      "intro": ".intro@text",
+      "kind": "",
+      "lastChapter": ".to100@a@text",
+      "name": "h1@text",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "#article@html",
+      "nextContentUrl": "#next_url@href",
+      "replaceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "p.0@text## .*",
+      "bookList": ".searchresult",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "img@src",
+      "intro": ".searchresult_p@text",
+      "kind": "",
+      "lastChapter": "p.2@text",
+      "name": "h3@text"
+    },
+    "ruleToc": {
+      "chapterList": "#ul_all_chapters@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "/search/,{\n  \"body\": \"searchkey={{key}}&searchtype=all&Submit=\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
