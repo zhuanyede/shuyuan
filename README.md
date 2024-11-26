@@ -56,5 +56,5 @@ https://iptv.228088.xyz/cn.m3u
 https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/ipa.json
 ```
 
-[![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)
+##[![Stargazers over time](https://starchart.cc/shidahuilang/shuyuan.svg)](https://starchart.cc/shidahuilang/shuyuan)
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=shidahuilang)](https://github.com/anuraghazra/github-readme-stats)
