@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "优特小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.utexs.com",
+    "bookUrlPattern": "http://m.utexs.com/ute.asp\\?id\\=\\d+",
+    "concurrentRate": "8000",
+    "customOrder": 1738,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::http://m.utexs.com/uteclass.asp?id=1\n架空::http://m.utexs.com/uteclass.asp?id=14\n仙侠::http://m.utexs.com/uteclass.asp?id=3\n总裁::http://m.utexs.com/uteclass.asp?id=25\n竞技::http://m.utexs.com/uteclass.asp?id=10\n言情::http://m.utexs.com/uteclass.asp?id=5\n穿越::http://m.utexs.com/uteclass.asp?id=11\n网游::http://m.utexs.com/uteclass.asp?id=9\n官场::http://m.utexs.com/uteclass.asp?id=13\n乡村::http://m.utexs.com/uteclass.asp?id=21\n名著::http://m.utexs.com/uteclass.asp?id=20\n都市::http://m.utexs.com/uteclass.asp?id=4\n灵异::http://m.utexs.com/uteclass.asp?id=17\n热门::http://m.utexs.com/uteclass.asp?id=24\n短篇::http://m.utexs.com/uteclass.asp?id=22\n耽美::http://m.utexs.com/uteclass.asp?id=15\n武侠::http://m.utexs.com/uteclass.asp?id=2\n科幻::http://m.utexs.com/uteclass.asp?id=16\n重生::http://m.utexs.com/uteclass.asp?id=12\n军事::http://m.utexs.com/uteclass.asp?id=8",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 11) Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1732543922200",
+    "loginUrl": "",
+    "respondTime": 13041,
+    "ruleBookInfo": {
+      "author": "class.jie@tag.span.5@tag.a@text",
+      "coverUrl": "class.pic@tag.img@src",
+      "intro": "class.novelinfo@textNodes",
+      "kind": "span.5:4@text##.*：",
+      "lastChapter": ".sso_a@li.-1@text",
+      "name": "class.selected@tag.a@text",
+      "wordCount": "span.7@text##.*："
+    },
+    "ruleContent": {
+      "content": "class.novelinfvie@html##\\s*(?=\\<)|(?<=\\>)\\s*",
+      "imageStyle": "TEXT"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.main@tag.span.1@text##作者:|时间:.+|更新:.+",
+      "bookList": "class.booklist_a@tag.ul@tag.li||class.list_a",
+      "bookUrl": "class.main@tag.a@href",
+      "coverUrl": "class.img@tag.a@tag.img@src",
+      "kind": "class.main@tag.span.0@text",
+      "name": "class.main@tag.a@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.sso_a@tag.ul@tag.li",
+      "chapterName": "tag.a@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "/search.asp?word={{key}}&page={{page}},{\n  \"charset\": \"gb2312\"\n}",
+    "weight": 0
+  }
+]
