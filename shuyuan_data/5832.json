@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceGroup": "",
+    "bookSourceName": "66小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.66story.com",
+    "bookUrlPattern": "http://www.66story.com/index.php/book/info/.*",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\n\t\"User-Agent\":\"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\",\"referer\":\"{{baseUrl}}\"\n\t}",
+    "lastUpdateTime": "1732800048125",
+    "loginUrl": "http://www.66story.com",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".story-detail__info@.author@text",
+      "coverUrl": ".novel_info_main@img@src",
+      "init": "",
+      "intro": ".intro@text",
+      "kind": "",
+      "lastChapter": ".to100@a@text",
+      "name": ".story-detail__info@.title@text",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".chapter-preview@html",
+      "nextContentUrl": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".comic-author.0@text",
+      "bookList": ".search-result@.comic-list-item",
+      "bookUrl": ".comic-name@a@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "img.0@src",
+      "intro": ".comic-author.1@text",
+      "kind": "",
+      "lastChapter": "",
+      "name": ".comic-name@text"
+    },
+    "ruleToc": {
+      "chapterList": "#j-catalog-datalist@.item",
+      "chapterName": ".title-text@text",
+      "chapterUrl": ".item-link@a@href",
+      "nextTocUrl": ""
+    },
+    "searchUrl": "/index.php/book/search?key={{key}}",
+    "weight": 0
+  }
+]
