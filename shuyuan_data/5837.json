@@ -1,0 +1,59 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "📚 出版",
+    "bookSourceName": "📚 九九藏书",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.99csw.com",
+    "bookUrlPattern": "https://www.99csw.com/book/\\d+/index.htm",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"排行榜单\",\"url\":\"/top/index.php\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"传记回忆\",\"url\":\"/book/index.php?type=传记回忆&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"英文读本\",\"url\":\"/book/index.php?type=英文读本&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"杂文随笔\",\"url\":\"/book/index.php?type=杂文随笔&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"现代小说\",\"url\":\"/book/index.php?type=现代小说&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"言情小说\",\"url\":\"/book/index.php?type=言情小说&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史小说\",\"url\":\"/book/index.php?type=历史小说&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"侦探推理\",\"url\":\"/book/index.php?type=侦探推理&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"惊悚悬疑\",\"url\":\"/book/index.php?type=惊悚悬疑&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"网络玄幻\",\"url\":\"/book/index.php?type=网络玄幻&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"寓言童话\",\"url\":\"/book/index.php?type=寓言童话&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"青春都市\",\"url\":\"/book/index.php?type=青春都市&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"社会心理\",\"url\":\"/book/index.php?type=社会心理&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"外国小说\",\"url\":\"/book/index.php?type=外国小说&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻小说\",\"url\":\"/book/index.php?type=科幻小说&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"当代小说\",\"url\":\"/book/index.php?type=当代小说&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"武侠小说\",\"url\":\"/book/index.php?type=武侠小说&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"纪实报告\",\"url\":\"/book/index.php?type=纪实报告&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"世界历史\",\"url\":\"/book/index.php?type=世界历史&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"中国历史\",\"url\":\"/book/index.php?type=中国历史&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科普学习\",\"url\":\"/book/index.php?type=科普学习&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"诗歌戏曲\",\"url\":\"/book/index.php?type=诗歌戏曲&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"宗教哲学\",\"url\":\"/book/index.php?type=宗教哲学&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"文学理论\",\"url\":\"/book/index.php?type=文学理论&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"日语读物\",\"url\":\"/book/index.php?type=日语读物&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"作品合集\",\"url\":\"/book/index.php?type=作品集&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"国学古籍\",\"url\":\"/book/index.php?type=国学%2F古籍&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"战争军事\",\"url\":\"/book/index.php?type=战争军事&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"政治经济\",\"url\":\"/book/index.php?type=政治经济&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"古典文学\",\"url\":\"/book/index.php?type=古典文学&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"官场小说\",\"url\":\"/book/index.php?type=官场小说&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"轻の小说\",\"url\":\"/book/index.php?type=轻小说&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 14; LGE-AN00 Build/HONORLGE-AN00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.193 Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1733280107632",
+    "loginCheckJs": "var res = result;\nurl = key ? (baseUrl + java.ruleUrl) : res.url();\nif(res.body().includes('no-js')){\n    cookie.removeCookie(baseUrl);\n    result = java.startBrowserAwait(url,\"验证\");\n}\nresult;",
+    "loginUrl": "",
+    "respondTime": 39813,
+    "ruleBookInfo": {
+      "author": "#book_info@h4.0@text",
+      "coverUrl": "#book_info img@src",
+      "init": "",
+      "intro": ".intro@html",
+      "lastChapter": "#dir a.-1@text",
+      "name": "#book_info@h2@text"
+    },
+    "ruleContent": {
+      "content": "@css:#content > div@html",
+      "imageStyle": "FULL",
+      "replaceRegex": "##\\s*(([ｈh].+)?([wｗ]+.)?[９9]+[ｌl][ｉi][ｂb].[ｎn][ｅe][ｔt]|九.?九.{1,5}书.?网?)\\s*"
+    },
+    "ruleExplore": {
+      "author": "a.2@text",
+      "bookList": ".list_box li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "intro": "p@text##\\s",
+      "kind": "a.3@text",
+      "name": "a.0@text"
+    },
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".list_box li",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "intro": "p@text",
+      "kind": "a.3@text",
+      "lastChapter": "",
+      "name": "h2@text"
+    },
+    "ruleToc": {
+      "chapterList": "#dir dd a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/book/search.php?s=13139900387823019677&type=站内&q={{key}},{\n\t  \"headers\": {\n    \"Referer\": \"{{baseUrl}}/\",\n    \"X-Requested-With\": \"XMLHttpRequest\"\n  }\n}",
+    "weight": 0
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "12.4解决了搜索没加载完的问题，发现页照猫画虎还没有画好。",
+    "bookSourceGroup": "🚫绿",
+    "bookSourceName": "NTR story 牛头人士多利",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://ntrstory.com",
+    "customOrder": -5067,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js: var result = [];\njava.toast(\"🔥动态获取发现中……\");\nvar push=(title,url,size)=>result.push({\n  \t\"title\": title,\n  \t\"url\": \"https://ntrstory.com?page={{page - 1 == 0 ? \\\"\\\": page}}\",\n  \t\"style\": {\n   \"layout_flexGrow\": 1,\n   \"layout_flexBasisPercent\": size\n   }\n });\nvar top = java.ajax(\"https://ntrstory.com\");\nif (top) {\nform=org.jsoup.Jsoup.parse(top).select(\"ul.dropdown-menu a.text-item\")\n    for(i in form){\n        title=form[i].text()\n        url=\"#\"\n        size=0.25;\n  url=String(url).replace(\"1\",\"{{page}}\")\n        push(title,url,size)\n    };\n     } else { \n      java.toast(\"🚫发现获取失败……\");\n}\nJSON.stringify(result);",
+    "lastUpdateTime": "1733297634073",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": "class.content-wrap card@text##搜索结果.*",
+      "lastChapter": "class.content@tag.h4@text",
+      "name": "tag.h1@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "tag.p@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##广告信息.*",
+      "title": ""
+    },
+    "ruleExplore": {
+      "bookList": "class.grid-card",
+      "bookUrl": "tag.a@href",
+      "intro": "class.grid-card-content@tag.p@text",
+      "name": "class.grid-card-content@tag.h2@text"
+    },
+    "ruleSearch": {
+      "bookList": "class.book   entity-list-item",
+      "bookUrl": "tag.a@href",
+      "checkKeyWord": "我的",
+      "intro": "class.content@class.entity-item-snippet@tag.p@text",
+      "name": "class.content@tag.h4@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.page   entity-list-item",
+      "chapterName": "class.content@tag.h4@text",
+      "chapterUrl": "tag.a@href"
+    },
+    "searchUrl": "https://ntrstory.com/search?term={{key}} {type:book}&page={{page - 1 == 0 ? \"\": page}}",
+    "weight": 0
+  }
+]
