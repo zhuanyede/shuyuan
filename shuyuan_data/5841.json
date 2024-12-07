@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceComment": "24.11.20\n有人机验证\n有10s搜索间隔\n网站支持搜索标签\n过完验证搜不到东西就等搜索间隔过了再搜一次\n登录代码—游客2580\n目录分卷代码—Thomas喲",
+    "bookSourceGroup": "🍒精选❶",
+    "bookSourceName": "🍒霹雳书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "昨夜醉眠西浦月，今宵独钓南溪雪。",
+    "customOrder": -26,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\n\neval(String(source.loginUrl));\n\nvar sort=[],\npush=(title,surl,size)=>sort.push({\n    title: title,\n    url: surl?url+surl:\"\",\n    style: {\n      layout_flexGrow: 1,\n      layout_flexBasisPercent: size,\n     }\n  });\n\nvar shuku=[\"༺ˇ»`ʚ全部小说ɞ´«ˇ༻\",\"男频网文\",\n\"女频言情\",\"电子图书\",\"无cp小说\",\n\"纯爱小说\",\"百合小说\"];\nshuku.map((title,i)=>{\n\tlink=`/${i}/list/0_0_0_0_0_0_0_{{page}}.html`;\n\tif(i==0){\n\t\tsize=1\n\t\t}else{size=0.25}\n\tpush(title,link,size)\n\t});\n\t\n\t\n\tpush(\"轻小说\",\"/8/list/0_0_0_0_0_0_0_{{page}}.html\",1)\n\t\n\t\nvar paihang=[\"༺ˇ»`ʚ最新入库ɞ´«ˇ༻\",\"全部点击\",\n\"本年点击\",\"本月点击\",\"本周点击\",\n\"本日点击\",\"全部收藏\",\"本年收藏\",\n\"本月收藏\",\"本周收藏\",\"本日收藏\",\"全部推荐\",\"本年推荐\",\"本月推荐\",\"本周推荐\",\"本日推荐\",\"评论数量\",\"点赞数量\",\"讨厌数量\",\"评分分数\",\"全本字数\",\"章节数量\"];\npaihang.map((title,i)=>{\n\tlink=`/top/list/0/${i}/{{page}}.html`;\n\tif(i==0){\n\t\tsize=1\n\t\t}else{size=0.25}\n\tpush(title,link,size)\n\t});\n\n\nJSON.stringify(sort)",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10.0; SM-T540 Build/QP1A.190711.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/81.0.4044.122 Safari/537.36 com.quark.android\"}",
+    "lastUpdateTime": "1733410645390",
+    "loginCheckJs": "",
+    "loginUi": "[\n    {\n    \tname: \"设置搜索接口\",\n    \ttype: \"button\",\n    \taction: \"java.toast('点击下面按钮即可设置，更改接口后需长按发现列表刷新。')\"\n    \t},\n    \t{\n    \t\tname: \"显示当前接口\",\n    \t\ttype: \"button\",\n    \t\taction: \"get(sz)\"\n    \t\t},\n    \t\t{\n        name: \"接口0：霹雳主站\",\n        type: \"button\",\n        action: \"set(0)\"\n    },\n    {\n        name: \" 接口1：霹雳二站\",\n        type: \"button\",\n        action: \"set(1)\"\n    },\n    {\n        name: \" 接口2：霹雳三站，推荐使用。\",\n        type: \"button\",\n        action: \"set(2)\"\n    }\n]",
+    "loginUrl": "//接口设置，以及链接\nvar sz=source.getVariable(),\nu0=\"https://www.pilishuwu.com\";\ndata={0:[\"霹雳书屋\",String(u0)],\n1:[\"霹雳二站\",\n\"https://www.pilibook.net\"\n],\n2:[\"霹雳三站\",\"https://www.xiarishuwu.com\"],\n\"-1\":[\"霹雳三站\",\n\"https://www.xiarishuwu.com/\"]\n};//接口数据\n//判断接口是否为空\nif(sz==null||sz==\"\"){\n\tsz=-1;source.setVariable(sz);\n  java.toast(\"未设置接口，使用霹雳三站。切换接口需长按发现列表刷新，不然不生效。\");\n  }else{sz=sz}\n  //设置保存接口\nfunction set(num){\n\tvar show=\"设置成功！\\n当前接口：\",\n\ttips=\"\\n接口已更改，长按发现列表刷新后生效。\",\n\tmsg=show+\"\\n\"+data[num]+tips;\n\tjava.longToast(msg);\n\treturn source.setVariable(num);\n\t}\n\t//获取接口显示\nfunction get(sz){\n\tvar show=\"当前接口：\\n\";\n\treturn java.longToast(show+data[sz]);\n\t}\n//按接口获取网址\nvar url;\nurl=data[sz];\nurl=url[1];\nurl;",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "##作者：([^<]+)<##$1###",
+      "coverUrl": ".x-book__coverbox.0@img@data-cfsrc||.x-book__coverbox.0@img@src",
+      "intro": "&nbsp;🕰  更新：{{@@.x-catalog__update@text##\\s.*|更新于：}}\n\n👁  阅读：{{@@##阅读：([^<]+)<##$1###}}\n\n❤️  顶：{{@@class.x-detail__ticket--item.0@textNodes}}\n\n💔  踩：{{@@class.x-detail__ticket--item.1@textNodes}}\n\n🏷  标签：{{@@.x-detail__intro--tags@a@text##\\n##·}}\n\n📜  简介：{{@@.x-detail__intro--content@html}}",
+      "kind": "{{@@##进程：([^<]+)<##$1###}}\n{{@@##分类：([^<]+)<##$1###}}\n{{@@.x-catalog__update@text##\\s.*|更新于：}}",
+      "lastChapter": "{{@@.x-catalog__new@textNodes##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求含理更谢乐发推票盟补加字].*?[】）\\)]}}·{{@@.x-catalog__update@text##\\s.*|更新于：}}\n@js:result\n.replace(\"••\",\"\")\n.replace(/^(\\d+).第/,'第')\n.replace(/^(\\d+)[、．]第.+章/,'第$1章')\n.replace(/^(\\d+)、\\d+、/,'第$1章 ')\n.replace(/^(\\d+)、\\d+/,'第$1章')\n.replace(/^(\\d+)、/,'第$1章 ')\n.replace(/^(第.+章)\\s?第.+章/,'$1')\n.replace(/第\\s(.+)\\s章/,'第$1章')\n.replace(/.*(chapter|Chapter)\\s?(\\d+)\\s?/,'$1 $2 ')\n.replace(/\\(.+\\)/,'')\n.replace(/\\[|。/,'')\n.replace(/第([零一二两三四五六七八九十百千]+)章/g,java.toNumChapter(result))\n##(章)([^\\s]+)(\\s·)##$1 $2$3",
+      "name": ".x-detail__info--title@text",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": ".read-section@p@html"
+    },
+    "ruleExplore": {
+      "author": ".x-info__author@span@text||.x-book__info--author@textNodes",
+      "bookList": ".x-book",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@data-src||img@src",
+      "intro": ".x-info__intro@text||.x-book__info--chapter@text",
+      "kind": "{{@@.x-info__author@textNodes}}\n{{@@.red@text}}\n{{@@.x-book__tags@span@text}}",
+      "name": ".x-info__name@text||.x-book__info--name@text",
+      "wordCount": ".blue@text"
+    },
+    "ruleSearch": {
+      "author": ".book-status@text",
+      "bookList": "<js>\nif (result.match(/Just a moment/)) {\n\tcookie.removeCookie(baseUrl);\n\tjava.startBrowserAwait(baseUrl,\"验证\");\n\tresult=java.ajax(baseUrl);\n}\nresult;\n</js>\n.x-book",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "诡秘之主",
+      "coverUrl": "img@data-cfsrc||img@data-src||img@src",
+      "intro": ".x-book__intro@text",
+      "kind": ".book-fenlei@text",
+      "name": ".x-book__info--name@text",
+      "wordCount": ".book-wordcount@text"
+    },
+    "ruleToc": {
+      "chapterList": "@css:\n.volumes, .chapter\n\n@js:\nlist=[]\n$=result\nfor(i in $){\nif(String($[i]).match(/class=\"volumes/)){\n\tt=String($[i].text()).replace(new RegExp(book.name,''),'').replace(/（.*/g,'');\n\t\tlist.push({\n\t\t\t\ttext: \"🏮〖\"+t+\"〗🏮\",\n\t\t\t\tvolume: true\n\t\t\t})\n\t}\nelse{\n\t\t$[i].select(\"a\").forEach(a=>{\n\t\t\t\tlist.push({\n\t\t\t\t\t\ttext: a.text(),\n\t\t\t\t\t\thref: a.attr(\"href\")\n\t\t\t\t\t})\n\t\t\t})\n\t}\n}\nlist",
+      "chapterName": "text",
+      "chapterUrl": "href##$##,{\"webView\": true}",
+      "isVolume": "volume"
+    },
+    "searchUrl": "@js:\neval(String(source.loginUrl));\nvar so=\"/search/0/\";\nvar key=`{{key}}/{{page}}.html`;\nif(sz&&url){\n\ttry{\n\t\turl+so+key\n\t\t}catch(e){\n\t\t\tjava.log(e);\n\t\t\tjava.longToast(\"搜索出错！其它设置打开Cronet重启应用，或登录切换接口。\");\n\t\t\t}\n\t}else{\n\t\tjava.toast(\"接口获取失败！\");\n\t\tthrow Error(\"应用或版本错误，接口获取失败！\")\n\t\t}\n",
+    "weight": 0
+  }
+]

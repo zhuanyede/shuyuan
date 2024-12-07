@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "@Mr.无名\n解决网站原目录列表出现空\n目录列表规则: @游客大佬",
+    "bookSourceGroup": "秋霞小说",
+    "bookSourceName": "秋霞小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.qiuxiaxs.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "header": "{\n\"User-Agent\":\"Mozilla/5.0 (Android 14; Mobile; rv:120.0) Gecko/120.0 Firefox/120.0\"\n}",
+    "lastUpdateTime": "1733334616068",
+    "respondTime": 81025,
+    "ruleBookInfo": {
+      "author": "class.book-cell@tag.p[0]@text##作者：",
+      "coverUrl": "class.book-layout@tag.img@data-echo",
+      "intro": "class.book-summary@text##\\[展开\\]",
+      "kind": "class.book-cell@tag.p[1]@text##分类：",
+      "lastChapter": "class.book-chapter-list[0]@tag.a[0]@text",
+      "name": "class.book-cell@tag.h1@text",
+      "tocUrl": "text.章节目录@href",
+      "wordCount": "class.book-cell@tag.p[3]@text##字数："
+    },
+    "ruleContent": {
+      "content": "class.chapter-content@tag.p@text"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "class.book-meta-l@text",
+      "bookList": "class.book-li",
+      "bookUrl": "a@href",
+      "checkKeyWord": "黄昏分界",
+      "coverUrl": "img@data-echo",
+      "kind": "em@text",
+      "name": "tag.h4@text"
+    },
+    "ruleToc": {
+      "chapterList": "class.book-chapter-list[0]@tag.li@tag.a\n@js:\nvar list = [],\narr = result.toArray();\narr.forEach((a,i)=>{\n\tif(/javascript/i.test(arr[i])){\n\t\t//修补章节链接缺失 \n\t\tprevurl=arr[i-1].attr('href');\n\t\td=java.ajax('https://www.qiuxiaxs.com'+prevurl)\t; href=org.jsoup.Jsoup.parse(d).select(\".next\").attr(\"href\");\n\t\tname=a.text();\n\t\tlist.push({text:name,href:href});\n\t\t}\n\t\telse{\n\t\t\tname=a.text(),\n\t\t\turl=arr[i].attr(\"href\");\n\t\t\tlist.push({text:name,href:url});\n\t\t\t}\n\t});\njava.log(JSON.stringify(list))\nlist;",
+      "chapterName": "text",
+      "chapterUrl": "href\n",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.getKey())}}\n/search,{\n  \"body\": \"searchkey={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n  }",
+    "weight": 0
+  }
+]

@@ -1,48 +1,58 @@
 [
   {
-    "bookSourceComment": "12.4解决了搜索没加载完的问题，发现页照猫画虎还没有画好。",
-    "bookSourceGroup": "🚫绿",
+    "bookSourceComment": "//12.5写源by河鹅和\n//发现翻页参考了[9X阅读器🥇]书源\n//正文如果字数太多可能会加载慢\n//发现为空请尝试刷新重新获取token",
+    "bookSourceGroup": "🚫绿,源论坛",
     "bookSourceName": "NTR story 牛头人士多利",
     "bookSourceType": 0,
     "bookSourceUrl": "https://ntrstory.com",
-    "customOrder": -5067,
+    "bookUrlPattern": "https:\\/\\/ntrstory.com\\/books\\/[^\\/]+",
+    "customOrder": -1,
     "enabled": true,
-    "enabledCookieJar": false,
+    "enabledCookieJar": true,
     "enabledExplore": true,
-    "exploreUrl": "@js: var result = [];\njava.toast(\"🔥动态获取发现中……\");\nvar push=(title,url,size)=>result.push({\n  \t\"title\": title,\n  \t\"url\": \"https://ntrstory.com?page={{page - 1 == 0 ? \\\"\\\": page}}\",\n  \t\"style\": {\n   \"layout_flexGrow\": 1,\n   \"layout_flexBasisPercent\": size\n   }\n });\nvar top = java.ajax(\"https://ntrstory.com\");\nif (top) {\nform=org.jsoup.Jsoup.parse(top).select(\"ul.dropdown-menu a.text-item\")\n    for(i in form){\n        title=form[i].text()\n        url=\"#\"\n        size=0.25;\n  url=String(url).replace(\"1\",\"{{page}}\")\n        push(title,url,size)\n    };\n     } else { \n      java.toast(\"🚫发现获取失败……\");\n}\nJSON.stringify(result);",
-    "lastUpdateTime": "1733297634073",
+    "exploreUrl": "@js:\nexplore=[];\njava.toast(\"\\n🔥动态获取发现中……\");\npush=(title,url,type1,type2)=>explore.push({\n\t\ttitle: title,\n\t\turl: url,\n\t\tstyle: {\n\t\t\t\tlayout_flexGrow: type1,\n\t\t\t\tlayout_flexBasisPercent: type2\n\t\t\t}\n\t});\n$$$ = uri => `{{(()=>{if(page==1){return '${uri}'} else {return '${keyUrl}'+'/?page='+page} })()}\\}`;\nkeyUrl=java.toURL(source.key).origin.replace(`:${source.key}`,\"\")\ntry{\n\thtml=org.jsoup.Jsoup.parse(java.ajax(keyUrl))\n\tform=html.select(\"form[refs]\")\n\taction=form.attr(\"action\")\n\ttoken=form.select('[name~=token]').attr(\"value\")\n\t\n\tsorts=html.select(\"ul.dropdown-menu a\")\n\torders=[\"desc\",\"asc\"]\n\tpush(\"⬇️降序\",\"\",1,0.4)\n\tpush(\"⬆️升序\",\"\",1,0.4)\n\tsorts.forEach(sort=>{\n\t\ttitle=sort.text()\n\t\torders.forEach(order=>{\n\t\t\turi=`${action},{\"body\": \"_return=${java.encodeURI(keyUrl)}&_method=PATCH&_token=${token}&sort=${sort.attr(\"data-sort-value\")}&order=${order}\",\"method\": \"POST\"}`\n\t\t\tpush(title,$$$(uri),1,0.4)\n\t\t\t})\n\t\t})\n\t\tjava.toast(\"\\n✅发现获取成功\")\n\t}catch(e){\n\t\tjava.log(e)\n\t\tjava.toast(\"\\n🚫发现获取失败……\")\n\t\t}\nJSON.stringify(explore)",
+    "jsLib": "",
+    "lastUpdateTime": "1733376610584",
     "respondTime": 180000,
     "ruleBookInfo": {
-      "intro": "class.content-wrap card@text##搜索结果.*",
-      "lastChapter": "class.content@tag.h4@text",
-      "name": "tag.h1@text",
-      "tocUrl": ""
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "div.text-muted p@textNodes##^##&nbsp;",
+      "lastChapter": ".content h4.-1@text",
+      "name": "h1@text",
+      "tocUrl": "",
+      "wordCount": "##【?字数：(\\d+)】?##$1###"
     },
     "ruleContent": {
-      "content": "tag.p@textNodes",
+      "content": "p@textNodes",
       "nextContentUrl": "text.下一页@href",
       "replaceRegex": "##广告信息.*",
       "title": ""
     },
     "ruleExplore": {
-      "bookList": "class.grid-card",
-      "bookUrl": "tag.a@href",
-      "intro": "class.grid-card-content@tag.p@text",
-      "name": "class.grid-card-content@tag.h2@text"
+      "author": "",
+      "bookList": ".grid-card",
+      "bookUrl": "href",
+      "coverUrl": "##url\\('([^']+)'\\)##$1###",
+      "intro": ".text-muted@text##【?字数：(\\d+)】?",
+      "name": "h2@text",
+      "wordCount": "##【?字数：(\\d+)】?##$1###"
     },
     "ruleSearch": {
-      "bookList": "class.book   entity-list-item",
-      "bookUrl": "tag.a@href",
-      "checkKeyWord": "我的",
-      "intro": "class.content@class.entity-item-snippet@tag.p@text",
-      "name": "class.content@tag.h4@text"
+      "author": "",
+      "bookList": ".entity-list-item",
+      "bookUrl": "href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "intro": ".text-muted@text##【?字数：(\\d+)】?",
+      "name": "h4@text",
+      "wordCount": "##【?字数：(\\d+)】?##$1###"
     },
     "ruleToc": {
-      "chapterList": "class.page   entity-list-item",
-      "chapterName": "class.content@tag.h4@text",
-      "chapterUrl": "tag.a@href"
+      "chapterList": ".page.entity-list-item",
+      "chapterName": "h4@text",
+      "chapterUrl": "href"
     },
-    "searchUrl": "https://ntrstory.com/search?term={{key}} {type:book}&page={{page - 1 == 0 ? \"\": page}}",
+    "searchUrl": "/search?search={{key}}&types[]=book<,&page={{page}}>",
     "weight": 0
   }
 ]
