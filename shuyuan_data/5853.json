@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceComment": "@MR.无名",
+    "bookSourceGroup": "源论坛",
+    "bookSourceName": "酷酷看书网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.kuku3.com/",
+    "customOrder": 1,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "@js: var result = [];\njava.toast(\"🔥动态获取发现中……\");\nvar push=(title,url,size)=>result.push({\n  \t\"title\": title,\n  \t\"url\": url,\n  \t\"style\": {\n   \"layout_flexGrow\": 1,\n   \"layout_flexBasisPercent\": size\n   }\n });\nvar top = java.ajax(\"https://www.kuku3.com/rank\");\nvar tag = java.ajax(\"https://www.kuku3.com/quanban/sort/\")\nif (top&&tag) {\na=org.jsoup.Jsoup.parse(top).select(\".sortChannel_nav a\");\nb=org.jsoup.Jsoup.parse(tag).select(\".sortChannel_nav a\");\npush(\"排行榜\",null,1)\n    for(i in a){\n        title=a[i].text()\n        url=a[i].attr(\"href\")\n        size=0.4;\n  //url=String(url).replace(\"1\",\"{{page}}\")\n        push(title,url,size)\n    };\n    push(\"分类\",null,1)\n    for(i in b){\n        title=b[i].text()\n        url=b[i].attr(\"href\")\n        size=0.25\n        if (url.endsWith(\"sort/\")) {\n            url=url+\"1\"\n            url=String(url).replace(\"1\",\"{{page}}\")\n            push(title,url,size)\n        } else if (url.endsWith(\"sort/1/1/\")) {\n            url=String(url).replace(url,\"sort/1/{{page}}\")\n            push(title,url,size)\n        } else {\n            url=String(url).replace(\"1\",\"{{page}}\")\n            push(title,url,size)\n    }}\n      } else { \n      java.toast(\"🚫发现获取失败……\");\n}\nJSON.stringify(result);",
+    "lastUpdateTime": "1733846548929",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".author@text##作者：",
+      "coverUrl": "img@src",
+      "init": ".synopsisArea_detail",
+      "intro": ".review@text",
+      "kind": ".sort@text##类别：",
+      "lastChapter": "a[0]@text",
+      "name": "{{book.name}}",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.chaptercontent@p@text##\\(\\'|\\', \\'\\'\\)|请收藏本站.*",
+      "nextContentUrl": "text.下一页@href"
+    },
+    "ruleExplore": {
+      "author": ".author@text##作者：",
+      "bookList": ".hot_sale",
+      "bookUrl": "a@href",
+      "intro": ".review@text##简介：",
+      "name": ".title@text"
+    },
+    "ruleSearch": {
+      "author": ".author[0]@text##作者：",
+      "bookList": ".bookbox",
+      "bookUrl": "a[1]@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "img@src",
+      "kind": ".author[1]@text##类型：",
+      "lastChapter": "a[2]@text",
+      "name": "a[1]@text"
+    },
+    "ruleToc": {
+      "chapterList": ".directoryArea@p",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.key)}}\n/search/,{\n\"method\":\"POST\",\n\"body\":\"searchkey={{key}}\"\n}",
+    "weight": 0
+  }
+]

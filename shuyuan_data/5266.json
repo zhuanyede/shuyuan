@@ -1,0 +1,65 @@
+[
+  {
+    "bookSourceComment": "// Error: 搜索失效\n\n// 关闭精确搜索，能搜索部分小说 头条搜索\nby_天天的鸟蛋蛋 修复\nps：原来by_旅途\n用的是搜狗搜索\n我不会弄 原这位大佬做的搜狗搜索接口崩了\n通用的搜狗也崩了\n12月12日\n头条搜索不能用了修复必应\n必应搜索列表正常了",
+    "bookSourceGroup": "🎴 小说,⌨ 自制,搜索失效",
+    "bookSourceName": "🎴 四库书屋",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.4ksw.com##旅途",
+    "bookUrlPattern": "http://www.4ksw.com/\\d+/\\d+/",
+    "customOrder": 889,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"总排行榜\",\"url\":\"/book/allvisit-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周排行榜\",\"url\":\"/book/weekvisit-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"月排行榜\",\"url\":\"/book/monthvisit-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"总推荐榜\",\"url\":\"/book/allvote-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周推荐榜\",\"url\":\"/book/weekvote-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"月推荐榜\",\"url\":\"/book/monthvote-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"最近更新\",\"url\":\"/book/lastupdate-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"玄幻魔法\",\"url\":\"/list/1-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"仙侠修真\",\"url\":\"/list/2-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市言情\",\"url\":\"/list/3-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"历史军事\",\"url\":\"/list/4-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"网游动漫\",\"url\":\"/list/5-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻小说\",\"url\":\"/list/6-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"恐怖灵异\",\"url\":\"/list/7-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"其他类型\",\"url\":\"/list/8-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
+    "header": "{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76\"}",
+    "jsLib": "",
+    "lastUpdateTime": "1734016854911",
+    "loginUrl": "",
+    "respondTime": 187686,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "[property$=description]@content&&[name=\"description\"]content",
+      "kind": "[property~=(category|status|update_time)]@content",
+      "lastChapter": "[property=\"og:novel:latest_chapter_name\"]@content##（.*订阅.*）",
+      "name": "[property$=title]@content",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".content-body@html",
+      "imageStyle": "FULL"
+    },
+    "ruleExplore": {
+      "author": ".book_author@text||a.-1@text",
+      "bookList": "<js>\nresult=result.replace(/<\\/li>\\s*<li class=\"(author|lastchapter|lastupdate|visit|fullflag)\">(.*?)/g,'')\n</js>\n.col-lg-6||.article li",
+      "bookUrl": ".book-title a@href||a@href",
+      "coverUrl": "a.0@href<js>\nvar id = result.match(/(\\d+)\\/(\\d+)/)[2];\nvar iid = parseInt(id/1000);\n'/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+      "intro": ".book-intro-index@textNodes",
+      "kind": "textNodes##(.*-\\d{2})\\d+(.*)##$1,$2###",
+      "lastChapter": ".lastchapter@text||a.1@text##（.*求.*）",
+      "name": ".media-heading@text||a.0@text",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "h2 a@text||a h2@text##.*\\((.*)\\).*##$1",
+      "bookList": "@js:jsoup=org.jsoup.Jsoup.parse;\nfor(i=0,r=jsoup(src);i<100;i++){\ner=r.select(\".b_algo:not(:has(:matches(^(广告|推广|手游)$)))\");\nif(er.size()){break\n}else r=jsoup(java.ajax(baseUrl));\n}er",
+      "bookUrl": ".b_tpcn a@href",
+      "checkKeyWord": "",
+      "coverUrl": ".b_tpcn a@href\n<js>java.ajax(result)</js>\n[property$=image]@content",
+      "intro": "链接：{{@@.b_tpcn a@href}}\n简介：{{@@p@text}}",
+      "kind": ".b_tpcn a@href\n<js>java.ajax(result)</js>\n[property~=category|status|update_time]@content",
+      "lastChapter": ".b_tpcn a@href\n<js>java.ajax(result)</js>\n[property$=lastest_chapter_name]@content",
+      "name": "h2 a@text||a h2@text\n@js:re=String(src).replace(/\\s*(?:&nbsp;)+\\s*/g,\" \").replace(/\\s*<\\/?(?:strong|i)>\\s*/g,\"\");\nif(类=re.match(/(?:[\\s\\[\\];?!,.()、，；？！。…─（）［］〖〗【】》]|<[^a/][^>]*>|<\\/[^>]+>)(?:[分大]\\s*类|类\\s*[型别])(?:[:：\\s]|<[^>]+>)+([^\\s<\"./／｜|>]+)/))java.put(\"类\",类[1]);\nkey=java.get(\"key\");\nax=java.get(\"aut\");\njava.put(\"源\",r=(r=result.match(/(.{0,2})《([^《》]+)》(.{0,3})/))&&r[3]!=\"作品集\"&&!r[1].match(/新[书作]/)?r[2]:result);\n\nr=r.replace(/^(简介页|详情页|目录页|正版|全本|免费阅读|[\\s。.,_/|《「『【〖（(\\[\\])）〗】』」─—-]+)+/,\"\").replace(/(?!^)[^\\u4e00-\\u9fa5a-zA-Z0-9]*(?:笔趣阁|思路客|燃文|小说|漫画|手机)?(?:[.|,_/\\s「『【〖（(\\[\\])）〗】』」。─—-]|(?:人工|机器|电脑)?校正|精校|完[整结]|加料|番外|未删节|简介|全[文本集]|下载|(?:小说|漫画|大全|正版(?:小说|漫画)?|免费|免费小说|免费漫画|免费全[文本]|在线|最[新快]|全部|手机|电脑)(?:全[文本集部]|大全|免费|在线|阅读|下载|章节|小说|更新|漫画|\\.)|([^a-zA-Z0-9])(?:azw|mobi|epub|txt)(?![a-zA-Z0-9])|(?:最全)?(?:章节|目录|列表){2,}|更新章节最快|无广告|(?::顶点)?无弹窗|无防盗|小说网|手打全文|[纯全](?:手打|文字)|\\s*by\\s*(?=[\\u4e00-\\u9fa5]))[\\S\\s]*/i,\"$1\");\n\nif(ax==\"#\"||!~re.indexOf(ax)){\nax=re.match(/《([^《》]+)》作品集|[\\s\\[\\];?!,.()、，；？！。…─（）［］〖〗【】《》>]作\\s*者(?:[:：\\s“\"'(（]|<[^it\\/][^>]*>|<\\/[^>]+>)+(?![^\\s<(《“（）”》)>\\/\\[\\];?!,、，；？！。…─［］〖〗【】]*\\.{3}<)([^\\s<(《“（\"'）”》)>\\[\\];?!,、，；？！。…─［］〖〗【】/／｜|:：]+?)(?=(?:其[他它]|小说|[更最][快新]|\\.\\s*)?..[:：]|所?写?的《|[\\s<(《“（\"'）”》)>\\[\\];?!,、，；？！。─［］〖〗【】/／｜|])/);\nif(!ax){\nax=re.match(new RegExp(r+\"[^a-z0-9A-Z\\\\u4e00-\\\\u9fa5]*([^\\\\s]+?)\\\\s+著|(?:由|原创)(?:(?:原创|网络)?作[家者])?(?![\\\\u4e00-\\\\u9fa5a-zA-Z0-9_-]*(?:[书网]友|网)所?提供)([\\\\u4e00-\\\\u9fa5a-zA-Z0-9_-]+?)(?:为大家)?(?:所作|所?(?:(?:[精倾]心)?[创著]作|提供|写?的(?:《|\"+r+\")))\"));\nif(!ax)ax=result.match(/[^.|,_/\\s\\[\\]（()）【〖〗】。-]+[（(](?![^\\s]+[\\s、：；？！…─“‘《〖【，。:;?!\"'】〗》’”][^(（）)]+|(?:连载中?|完本|大结局|上|中|下|[\\s.一二三四五六七八九十百千万〇零0-9]+)[）)])([^（()）]+?)(?:(?:\\s+|所)?著|的?新书|[/／｜|][^)）]+)?[)）]/)}\nax=ax?ax[1]||ax[2]:\"\"}\n\nif(!ax.length&&~re.indexOf(key)&&!~r.indexOf(key))ax=key;\n\nif(r.indexOf(ax)>0&&!~key.indexOf(r))r=r.split(ax)[0].replace(/[:：]$/,'');\n\nzt=[(小说=key.indexOf(\"小说\"))&&小说^(长=key.length-2),(有声=key.indexOf(\"有声\"))&&有声^长];\nif(zt[0]&&zt[1]){\nrez=\"(?!^)(有声|小说|有声小说)$|^(有声|小说|有声小说)(?!$)\"\n}else if(zt[1]){\nrez=\"(?!^)有声$|^有声(?!$)\"\n}else if(zt[0]){\nrez=\"(?!^)小说$|^小说(?!$)\"\n}else rez=\"☯\";\nif((漫画=key.indexOf(\"漫画\"))&&漫画^长)rez+=\"|(?!^)漫画$|^漫画(?!$)\";\n\nix=r.replace(new RegExp(rez),\"\").split(/[：:]/);i=0;\nwhile(i<ix.length){x=ix[i];\nif(~x.indexOf(key)||~key.indexOf(x))break;i++}\nif(i==ix.length)i=0;\n\njava.put(\"au\",ax);\njava.put(\"bb\",ix.slice(i,i+2).join(\":\"))",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.list-group.1@li",
+      "chapterName": "a@text##T|T|Ｔ## (图片文字)<js>##【.*】|加更规则.*|上架感言.*|（.*求.*）</js>",
+      "chapterUrl": "a@href",
+      "formatJs": ""
+    },
+    "searchUrl": "@js:\ncookie.removeCookie(\"https://cn.bing.com\")\n\"https://cn.bing.com/search?q=site%3Awww.4ksw.com%20{{java.encodeURI(key)}} &first={{(page-1)*10+1}},\"+JSON.stringify({\n  'webView': true\n})",
+    "weight": 0
+  }
+]

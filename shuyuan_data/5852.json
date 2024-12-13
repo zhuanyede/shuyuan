@@ -1,0 +1,42 @@
+[
+  {
+    "bookSourceName": "笑佳人文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.xiaojiaren.com",
+    "customOrder": 12,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": "1733829225882",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "intro": ".intro@html",
+      "kind": ".info@p.3@text&&.info@p.1@span@text&&[property$=time]@content##^[^：]+：",
+      "tocUrl": ".load_more@href",
+      "wordCount": ".info@p.2@text##^[^：]+："
+    },
+    "ruleContent": {
+      "content": ".content@html",
+      "replaceRegex": "##广告是本站能长期运行的根本[\\s\\S]*"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "span.0@text",
+      "bookList": "dl",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "kind": "p.1@span@text",
+      "lastChapter": "a.-1@text",
+      "name": "dt@em@text",
+      "wordCount": "p.2@span@text"
+    },
+    "ruleToc": {
+      "chapterList": ".list@li",
+      "chapterName": "text",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "/search/?searchkey={{key}}",
+    "weight": 0
+  }
+]

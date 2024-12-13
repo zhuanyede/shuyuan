@@ -1,0 +1,65 @@
+[
+  {
+    "bookSourceComment": "by_天天的鸟蛋蛋\nfastapi的API\n结合fastapi写出能让阅读更好识别的源\n\n---更新日志\n24-12-11\n1.0.0\n新建文件\n\n24年12月12日\n11:22\n1.0.1修复搜索重复小说名找不到\n16:58\n1.0.2更新指定书籍（去原网站搜索[使用登录打开原网]复制链接去掉`https://`完整的搜索就可以了）\n--\n---代码开源\n公共API:https://api.ttxz.eu.org/\n源代码github仓库:https://github.com/mctiantian2501314/fastapi/tree/master\n公共API可能多多少少会有点问题，最好还是自己部署到本地\n反正就是贼不稳定 ,如果不常看而行常看的我还是建议你本地部署\n---\n\t\n---详细使用说明\n#两种搜索方式\n一种是直接搜索想要搜索的内容\n比如搜索\"我的\"\n第二种就是导入链接\n我们原来复制的是有\n\"https://\"的就像这样\"https://y.bqxs520.com/book/87_50035_23079808.shtml\"\n把它改成下面的这种格式\n\"y.bqxs520.com/book/87_50035_23079808.shtml\"\n\n#发现页面\n是用tlyanyu的\n详细去看这个书原\"http://shuyuan.cloudepay.cc/shuyuan/1a214aa40e5f67c0.json\"\n我的书源和他的书源是同源的\n只不过他的搜索内容太慢了\n发现页面应该很少有人看吧，大家应该都是用搜索的\n反正发现也是正常的，也是比较慢。\n这个发现页是随机获取的\n我修改的是他的发现页,获取目录页\n没有修改部分获取内容页，目录列表\npy是我自己写的\n#后\nfastapi这是代码底层框架\n有感兴趣的大佬也可以研究一下\n---\n___\n\n目录页获取感谢大佬指点\n\n@壬二酸 @柚屿. @关耳\n壬二酸:\ntlyanyu做了\nhttp://shuyuan.cloudepay.cc/shuyuan/1a214aa40e5f67c0.json\n(这个也能用但是速度太慢了)\n柚屿:\nhttps://shuyuan.miaogongzi.cc/shuyuan/c15c9125d8092f61473295a208355949.json\n(这个能用但是搜索会有无关内容)\n关耳：\nfunction loadmore() { if (typeof window[\"CryptoJS\"] === \"undefined\") { loadScript(\"https://www.ebookcdn.com/bookjs/js/crypto-js.min.js\", loadmore); return; } var token = CryptoJS.HmacMD5(bookID.toString(), bookID.toString()); var node = document.querySelector(\"div.chapterlist\"); var moreurl = \"/read/Chapter/\" + bookID + \".js?token=\" + token; var httpRequest = new XMLHttpRequest(); httpRequest.open('GET', moreurl, true); httpRequest.onload = function () { if (this.status === 200 || this.status === 304) { node.innerHTML = this.responseText; document.querySelectorAll(\"a.loadmore\")[0].style.display = 'none'; document.querySelectorAll(\"a.loadmore\")[1].style.display = 'none'; load = true; } } httpRequest.send(); }\n---\nhttps://www.ebookcdn.com/bookjs/js/read.js?v2\n\n正文页的解密\nvar httpRequest = new XMLHttpRequest();\n    var token = CryptoJS.HmacMD5(cid.toString(), navigator.userAgent).toString();\n    httpRequest.open('GET', `/read/Content/${cid}.js?token=${token}&t=${new Date().valueOf()}`, true);\n    httpRequest.onload = function () {\n        if (this.status === 200) {\n            var result = this.responseText;\n            var url = \"https://txt.yqkfqrc.com\";\n            url += CryptoJS.AES.decrypt(result, CryptoJS.enc.Utf8.parse(token.substr(0, 16)), { iv: CryptoJS.enc.Utf8.parse(token.substr(16)), mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }).toString(CryptoJS.enc.Utf8);\n            url += \"&t=\" + new Date().valueOf();\n            var httpRequest2 = new XMLHttpRequest();\n            httpRequest2.open('GET', url, true);\n            httpRequest2.overrideMimeType(\"text/plain;charset=gb2312\");\n            httpRequest2.onerror = function () {\n\talert(\"你操作的太频繁了，请稍后再试...！\");\n                window.location.reload();\n            };",
+    "bookSourceGroup": "API,fastapi,笔趣阁",
+    "bookSourceName": "笔趣阁5200",
+    "bookSourceType": 0,
+    "bookSourceUrl": "bqxs520",
+    "bookUrlPattern": ".*/bqxs520/detail?book_id=.*",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "@js:\nvar classList = [];\npush=(title,url,type1,type2)=>classList.push({\n\ttitle: title,\n\turl: url,\n\tstyle: {\n\t\tlayout_flexGrow: type1,\n\t\tlayout_flexBasisPercent: type2\n\t}\n});\njava.toast(\"正在热更新\");\npush(\"✿                 随 机 标 签                 ✿\",\"\",1,1);\ndoc=org.jsoup.Jsoup.parse(java.ajax('https:\\/\\/www.bqxs520.com\\/tag\\/'));\ntaglist = doc.select(\".taglist a\");\nfor(i=0; i<taglist.length; i++){\n\tname = taglist[i].text();\n\turl = \"https://www.bqxs520.com\" + taglist[i].attr(\"href\") + \",{'webView': true}\";\n\tpush(name, url, 1, 0.25);\n}\nJSON.stringify(classList);",
+    "header": "",
+    "jsLib": "{\"crypto\": \"https://cdn.bootcss.com/crypto-js/3.1.9-1/crypto-js.min.js\"}",
+    "lastUpdateTime": "1734005691541",
+    "loginUrl": "https://www.bqxs520.com",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "author",
+      "canReName": "",
+      "coverUrl": "img",
+      "downloadUrls": "",
+      "init": "data",
+      "intro": "《{{book.name}}》\n最新章节：{{$.lastest_chapter_name##最新章节}}\n分类：@get:{itags},{{$..category}},{{$..status}}\n主角：{{$.protagonist}}\n标签：{{$.itag}}\n{{$.description}}",
+      "kind": "itag",
+      "lastChapter": "$.lastest_chapter_name##最新章节 (.*) .*##$1",
+      "name": "bookname",
+      "tocUrl": "@js:\nbookId = {{$..id2}}\nchapToken = java.HMacHex(bookId, \"HmacMD5\", bookId);\nresult = `https://n.bqxs520.com/read/Chapter/${bookId}.js?token=${chapToken}`;"
+    },
+    "ruleContent": {
+      "content": "<js>\n\nconst chapID = java.hexDecodeToString(result);\nvar ua = \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36\";\nvar token = java.HMacHex(chapID , 'HmacMD5', ua);\nvar headers = {\"User-Agent\": ua};\nvar option = {\n        \"headers\": headers\n};\nvar getUrl= `https://www.bqxs520.com/read/Content/${chapID}.js?token=${token}&t=${Date.now()},` + JSON.stringify(option);\nvar resp = String(java.ajax(getUrl));\nvar url = \"https://txt.yqkfqrc.com\";\nurl += CryptoJS.AES.decrypt(resp, CryptoJS.enc.Utf8.parse(token.substr(0, 16)), { iv: CryptoJS.enc.Utf8.parse(token.substr(16)), mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }).toString(CryptoJS.enc.Utf8);\nurl += \"&t=\" + Date.now();\nresult = java.ajax(url);\n</js>##\\s{2,}##<br>",
+      "nextContentUrl": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "bookList": "@js:\nvar bookList = [];\nvar nameCount = {}; \nimglist = java.getElements(\".imglist li\");\ntextlist = java.getElements(\".textlist li\");\nfor (i = 0; i < imglist.length; i++) {\n    item = imglist[i];\n    var name = item.select(\"a span\").text();\n    if (nameCount[name] !== undefined) {\n        nameCount[name]++;\n        name += \" (\" + nameCount[name] + \")\"; \n    } else {\n        nameCount[name] = 0; \n    }\n  \n    bookList.push({\n        \"name\": name,\n        \"kind\": item.select(\".tags span a\").text(),\n        \"intr\": item.select(\".desc\").text(),\n        \"cover\": item.select(\"img\").attr(\"src\"),\n        \"id1\": item.select(\"a\").attr(\"href\").match(/(\\d+)_\\d+_/)[1],\n        \"id2\": item.select(\"a\").attr(\"href\").match(/_(\\d+)_/)[1],\n        \"id3\": item.select(\"a\").attr(\"href\").match(/\\d+_\\d+_(\\d+)/)[1]\n    });\n}\nfor(i=0; i<textlist.length; i++)\n{\n\t   item = textlist[i];\n    var name = item.select(\"a span\").text();\n    if (nameCount[name] !== undefined) {\n        nameCount[name]++;\n        name += \" (\" + nameCount[name] + \")\"; \n    } else {\n        nameCount[name] = 0; \n    }\n  bookList.push({\n    \"name\": name,\n    \"kind\": \"\",\n    \"intr\": \"\",\n    \"cover\": \"\",\n    \"id1\": \"\",\n    \"id2\": \"\",\n    \"id3\": \"\"\n  });\n}\n\nresult = bookList;",
+      "bookUrl": "@put:{id1:id1,id2:id2,id3:id3}\nhttps://api.ttxz.eu.org/bqxs520/detail?book_id=@get:{id1}_@get:{id2}_@get:{id3}",
+      "coverUrl": "cover",
+      "intro": "intr",
+      "kind": "kind## ##,@put:{itags:kind}",
+      "name": "name",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "author",
+      "bookList": "<js>\nvar bookList = [];\nvar nameCount = {};\n\n// 假设src是已经存在于当前页面的JSON数据对象\nvar data = JSON.parse(src); // 将src解析为JSON对象\n\n// 检查响应状态是否成功\nif (data.c === \"200\" && data.m === \"成功响应\" && data.data) {\n    if (Array.isArray(data.data) && data.data.length > 0) {\n        // 遍历data.data数组，构建书籍列表（处理多个书籍情况）\n        data.data.forEach(function (item) {\n            var name = item.book_name || \"\";\n            // 处理同名书籍\n            if (nameCount[name]!== undefined) {\n                nameCount[name]++;\n                name += \" (\" + nameCount[name] + \")\";\n            } else {\n                nameCount[name] = 0;\n            }\n            // 构建书籍信息对象\n            bookList.push({\n                \"name\": name,\n                \"kind\": item.itag || \"\",\n                \"intr\": item.text || \"\",\n                \"cover\": item.img || \"\",\n                \"bookid\": item.id.book_id || \"\",\n                \"url\": item.url || \"\"\n            });\n        });\n    } else {\n        // 处理单个书籍信息，将其放入一个数组中\n        var singleBook = {\n            \"name\": data.data.bookname || \"\",\n            \"author\": data.data.author || \"\",\n            \"kind\": data.data.itag || \"\",\n            \"intr\": data.data.description || \"\",\n            \"lastest_chapter_name\": data.data.lastest_chapter_name || \"\",\n            \"cover\": data.data.img || \"\",\n            \"bookid\": data.data.id.book_id || \"\"\n        \n        };\n        bookList.push(singleBook);\n    }\n}\n\nresult = bookList;\n\n\n</js>",
+      "bookUrl": "@put:{bookid:bookid}\nhttps://api.ttxz.eu.org/bqxs520/detail?book_id=@get:{bookid}",
+      "checkKeyWord": "间客",
+      "coverUrl": "cover",
+      "intro": "intr",
+      "kind": "kind@put:{itags:kind}",
+      "lastChapter": "lastest_chapter_name##最新章节 ",
+      "name": "name"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nconst html = result;\nconst regex = /<a onclick=\"read\\((\\d+)\\)\">(.+?)<\\/a>/g;\nconst chapters = [];\nvar match;\nwhile ((match = regex.exec(html)) !== null) {\n    chapters.push({\n        name: match[2],\n        id: `data:chapterId;base64,${java.base64Encode(match[1])},{\"type\":\"qaq\"}`\n    });\n}\nchapters.reverse()",
+      "chapterName": "name",
+      "chapterUrl": "id",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "<js>\n(function() {\n\t\n    var url=\"https://api.ttxz.eu.org\"\n    var key = java.key; \n    var pattern = /bqxs520\\.com\\/book\\/(.*)\\.shtml/; \n    var match = key.match(pattern); \n    var finalUrl;\n\n    if (match && match.length > 1) {\n       \n        finalUrl = url+\"/bqxs520/detail?book_id=\" + match[1];\n    } else {\n       \n        finalUrl = url+\"/bqxs520/search?query=\" + key;\n    }\n\n    // 返回最终的URL\n    return finalUrl;\n})()\n</js>\n",
+    "weight": 0
+  }
+]
