@@ -1,7 +1,7 @@
 [
   {
-    "bookSourceComment": "// Error: 搜索失效\n\n// 关闭精确搜索，能搜索部分小说 头条搜索\nby_天天的鸟蛋蛋 修复\nps：原来by_旅途\n用的是搜狗搜索\n我不会弄 原这位大佬做的搜狗搜索接口崩了\n通用的搜狗也崩了\n12月12日\n头条搜索不能用了修复必应\n必应搜索列表正常了",
-    "bookSourceGroup": "🎴 小说,⌨ 自制,搜索失效",
+    "bookSourceComment": "// 关闭精确搜索，能搜索部分小说 头条搜索\nby_天天的鸟蛋蛋 修复\nps：原来by_旅途\n用的是搜狗搜索\n我不会弄 原这位大佬做的搜狗搜索接口崩了\n通用的搜狗也崩了\n12月12日\n头条搜索不能用了修复必应\n必应搜索列表正常了",
+    "bookSourceGroup": "🎴 小说,⌨ 自制",
     "bookSourceName": "🎴 四库书屋",
     "bookSourceType": 0,
     "bookSourceUrl": "http://www.4ksw.com##旅途",
@@ -13,9 +13,9 @@
     "exploreUrl": "[{\"title\":\"总排行榜\",\"url\":\"/book/allvisit-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周排行榜\",\"url\":\"/book/weekvisit-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"月排行榜\",\"url\":\"/book/monthvisit-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"总推荐榜\",\"url\":\"/book/allvote-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周推荐榜\",\"url\":\"/book/weekvote-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"月推荐榜\",\"url\":\"/book/monthvote-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"最近更新\",\"url\":\"/book/lastupdate-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"玄幻魔法\",\"url\":\"/list/1-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"仙侠修真\",\"url\":\"/list/2-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市言情\",\"url\":\"/list/3-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"历史军事\",\"url\":\"/list/4-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"网游动漫\",\"url\":\"/list/5-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻小说\",\"url\":\"/list/6-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"恐怖灵异\",\"url\":\"/list/7-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"其他类型\",\"url\":\"/list/8-{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
     "header": "{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76\"}",
     "jsLib": "",
-    "lastUpdateTime": "1734016854911",
+    "lastUpdateTime": "1734238136793",
     "loginUrl": "",
-    "respondTime": 187686,
+    "respondTime": 27774,
     "ruleBookInfo": {
       "author": "[property=\"og:novel:author\"]@content",
       "coverUrl": "[property=\"og:image\"]@content",
@@ -28,7 +28,8 @@
     },
     "ruleContent": {
       "content": ".content-body@html",
-      "imageStyle": "FULL"
+      "imageStyle": "FULL",
+      "nextContentUrl": "text.下一@href"
     },
     "ruleExplore": {
       "author": ".book_author@text||a.-1@text",
