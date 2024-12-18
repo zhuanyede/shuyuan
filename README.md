@@ -18,18 +18,18 @@
 ![shuyuan.png](icons/shuyuan.png)
 #### 🚩 效验书源链接
 ```
-http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
+https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
 ```
 
 #### 🚩 规则净化
 ```
-http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
+[https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
 ```
 #### 🚩 TTS-在线语音包生成[点我](https://tts.228088.xyz)
 详见[文档](https://github.com/shidahuilang/shuyuan/blob/shuyuan/doc.md)
 #### 🚩 TTS-70种语音包
 ```
-http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
+https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
 ```
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
@@ -37,15 +37,15 @@ http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan
 **自动更新时间** 2024-12-16 18:42:07 CST+0800
  
  ``` bash
-http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
+https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
 #### 🚩 爱阅书香书源
  ``` bash
-http://mirror.ghproxy.com/https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
+https://ghp.ci/https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
  ```
 #### 🚩 uz影视源
 ```
-http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/UZ.json
+https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/UZ.json
 ```
 #### 🚩 IPTV源
  ```
