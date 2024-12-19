@@ -1705,52 +1705,6 @@
   },
   {
     "bookSourceComment": "",
-    "bookSourceGroup": "👑静白",
-    "bookSourceName": "海棠77",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://www.haitang77.com",
-    "customOrder": 1184,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "exploreUrl": "[{\"title\":\"排  行\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"总点击榜\",\"url\":\"/top/allvisit/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"月点击榜\",\"url\":\"/top/monthvisit/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周点击榜\",\"url\":\"/top/weekvisit/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"总推荐榜\",\"url\":\"/top/allvote/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"本站推荐\",\"url\":\"/top/toptime/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"收藏排行\",\"url\":\"/top/goodnum/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"字数排行\",\"url\":\"/top/size/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"最近更新\",\"url\":\"/top/lastupdate/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"最新小说\",\"url\":\"/top/postdate/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"分  类\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},{\"title\":\"玄幻魔法\",\"url\":\"/list/1/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"武侠修真\",\"url\":\"/list/2/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"都市言情\",\"url\":\"/list/3/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"网游动漫\",\"url\":\"/list/4/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"科幻小说\",\"url\":\"/list/5/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"恐怖灵异\",\"url\":\"/list/6/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"完本小说\",\"url\":\"/wanben/{{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
-    "header": "@js:JSON.stringify({\"referer\":baseUrl})",
-    "lastUpdateTime": 1734348689246,
-    "loginUrl": "https://www.haitang77.com/login.php",
-    "respondTime": 4137,
-    "ruleBookInfo": {
-      "author": "[property$=author]@content",
-      "coverUrl": "[property$=img]@content||[property$=image]@content",
-      "intro": "[property$=description]@content",
-      "kind": "[property$=category]@content",
-      "lastChapter": "[property$=latest_chapter_name]@content||[property$=lastest_chapter_name]@content",
-      "name": "[property$=book_name]@content",
-      "wordCount": "[property$=status]@content&&[property$=update_time]@content"
-    },
-    "ruleContent": {
-      "content": ".panel-body@html"
-    },
-    "ruleExplore": {},
-    "ruleSearch": {
-      "author": "small@text##/.*",
-      "bookList": ".col-md-4.col-xs-4.book-coverlist",
-      "bookUrl": "a@href",
-      "checkKeyWord": "我的",
-      "coverUrl": "img@src",
-      "intro": "p@text",
-      "name": "h4@text"
-    },
-    "ruleToc": {
-      "chapterList": ".panel-body@dd a",
-      "chapterName": "text##全部章节目录",
-      "chapterUrl": "href",
-      "preUpdateJs": ""
-    },
-    "searchUrl": "/modules/article/search.php?searchkey={{key}},{\n  \"charset\": \"GBK\"\n}",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "",
     "bookSourceGroup": "🌸女生",
     "bookSourceName": "若初文学",
     "bookSourceType": 0,
@@ -7481,6 +7435,44 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "",
+    "bookSourceName": "疯读小说[apit]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://touchlife.cootekservice.com/",
+    "customOrder": 232,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "lastUpdateTime": 1692643929487,
+    "respondTime": 1520,
+    "ruleBookInfo": {
+      "lastChapter": ""
+    },
+    "ruleContent": {
+      "content": "@js:result"
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "$.bookAuthor",
+      "bookList": "$.result[*]",
+      "bookUrl": "/doReader/enter_bookinfo_index?_token=869b9667-c66c-44d1-bba4-73e82cf2daee&bookId={{$.bookId}}",
+      "coverUrl": "$.bookCoverImage",
+      "intro": "$.bookDesc##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "$.bookBClassificationName&&c_class_name&&{$.crazy_rating}分",
+      "lastChapter": "$.chapters_update_time##[\\(（].*[求更谢乐发推].*[）\\)]",
+      "name": "$.bookTitle",
+      "wordCount": "{$.book_words_num}字"
+    },
+    "ruleToc": {
+      "chapterList": "$..detailedBookInfo.bookChapterAllInfo[*]",
+      "chapterName": "$.chapterTitle##[\\(（].*[求更谢乐发推].*[）\\)]",
+      "chapterUrl": "$.content_url"
+    },
+    "searchUrl": "/doReader/search_book?_token=869b9667-c66c-44d1-bba4-73e82cf2daee&action=search_book&search_keyword={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
     "bookSourceName": "4020电子书①",
     "bookSourceType": 0,
     "bookSourceUrl": "http://m.wsskw.com",
@@ -8413,6 +8405,72 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "",
+    "bookSourceName": "👔 追求小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.woo15.com",
+    "bookUrlPattern": "",
+    "customOrder": 271,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "总榜::/top/allvisit-{{page}}.html\n月榜::/top/monthvisit-{{page}}.html\n总推::/top/allvote-{{page}}.html\n月推::/top/monthvote-{{page}}.html\n收藏::/top/goodnum-{{page}}.html\n字数::/top/size-{{page}}.html\n更新::/top/lastupdate-{{page}}.html\n入库::/top/postdate-{{page}}.html\n完本::/wanben-{{page}}.html\n玄幻::/sort/1-{{page}}.html\n仙侠::/sort/2-{{page}}.html\n都市::/sort/3-{{page}}.html\n穿越::/sort/4-{{page}}.html\n科幻::/sort/5-{{page}}.html\n网游::/sort/6-{{page}}.html\n精品::/sort/7-{{page}}.html",
+    "header": "",
+    "lastUpdateTime": 1685800720969,
+    "loginUrl": "",
+    "respondTime": 8517,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "init": "",
+      "intro": "[property$=description]@content##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "[property~=category|status|update_time]@content##\\s.*",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".content@html",
+      "nextContentUrl": "#pb_next@href",
+      "sourceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "span.0@text",
+      "bookList": ".topul li",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": "p@text",
+      "kind": "i@text&&span.1@text",
+      "lastChapter": "",
+      "name": "a.1@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": ".chapters.-1@li",
+      "chapterName": "a@text",
+      "chapterUrl": "a@href",
+      "isVip": "",
+      "nextTocUrl": ".right@a@href",
+      "updateTime": ""
+    },
+    "searchUrl": "/s.php,{\n  \"method\":\"POST\",\n  \"body\":\"type=articlename&searchkey={{key}}&submit=\"\n}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
     "bookSourceName": "✎ 笔趣阁",
     "bookSourceType": 0,
     "bookSourceUrl": "https://www.biqusk.com/#♤pb",
@@ -8601,6 +8659,49 @@
       "chapterUrl": "tag.a@href"
     },
     "searchUrl": "search/result.html?searchkey={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "📚 追光阅读",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://touchlife.cootekservice.com",
+    "customOrder": 278,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "现代都市::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=4\n东方玄幻::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=13\n武侠仙侠::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=12\n历史架空::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=17\n科幻末世::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=16\n游戏竞技::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=18\n西方玄幻::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=9\n豪门总裁::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=2\n古代言情::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=5\n现代言情::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=10\n青春校园::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=6\n仙侠奇缘::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=7\n婚恋情缘::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=8\n玄幻言情::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=3\n穿越重生::http://touchlife.cootekservice.com/doReader/get_books_by_classificationId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&classificationId=1\nnull",
+    "lastUpdateTime": 1685721799184,
+    "respondTime": 3081,
+    "ruleBookInfo": {},
+    "ruleContent": {
+      "content": "$..chapterContent"
+    },
+    "ruleExplore": {
+      "author": "bookAuthor",
+      "bookList": "result.classificationInfoBooks[*]",
+      "bookUrl": "http://touchlife.cootekservice.com/doReader/enter_bookinfo_index?_token=e72ca407-9caa-475d-a829-46e15d3d4834&bookId={$.bookId}",
+      "coverUrl": "bookCoverImage",
+      "intro": "bookDesc",
+      "kind": "bookBClassificationName",
+      "name": "bookTitle"
+    },
+    "ruleSearch": {
+      "author": "bookAuthor",
+      "bookList": "result",
+      "bookUrl": "http://touchlife.cootekservice.com/doReader/enter_bookinfo_index?_token=e72ca407-9caa-475d-a829-46e15d3d4834&bookId={$.bookId}",
+      "coverUrl": "bookCoverImage",
+      "intro": "bookRecommendWords||bookDesc&&copyright_owner",
+      "kind": "bookBClassificationName",
+      "name": "bookTitle"
+    },
+    "ruleToc": {
+      "chapterList": "result.detailedBookInfo.bookChapterAllInfo",
+      "chapterName": "chapterTitle",
+      "chapterUrl": "http://touchlife.cootekservice.com/doReader/get_content_by_chapterId?_token=e72ca407-9caa-475d-a829-46e15d3d4834&bookId={$.bookId}&chapterId={$.chapterId}"
+    },
+    "searchUrl": "http://touchlife.cootekservice.com/doReader/search_book?_token=e72ca407-9caa-475d-a829-46e15d3d4834&action=search_book&search_keyword={{key}}",
     "weight": 0
   },
   {
