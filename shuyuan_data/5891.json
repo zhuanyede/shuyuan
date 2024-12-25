@@ -1,0 +1,48 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🔰普通",
+    "bookSourceName": "🔰 放肆文学",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://funs.me",
+    "customOrder": 233,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"🔹推荐🔹\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"热门作品\",\"url\":\"/hot/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"最新上架\",\"url\":\"/new/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本小说\",\"url\":\"/finish/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"🔹分类🔹\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"玄幻奇幻\",\"url\":\"/fantasy/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市言情\",\"url\":\"/romance/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"武侠仙侠\",\"url\":\"/martial/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"军事历史\",\"url\":\"/strategy/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"网游竞技\",\"url\":\"/online/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻灵异\",\"url\":\"/science/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"二次う元\",\"url\":\"/nijigen/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.29,\"layout_flexGrow\":-1}},{\"title\":\"🔹标签🔹\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"重生\",\"url\":\"/?tag=重生&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"总裁\",\"url\":\"/?tag=總裁&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"美女\",\"url\":\"/?tag=美女&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"后宫\",\"url\":\"/?tag=後宮&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"甜宠\",\"url\":\"/?tag=甜寵&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"青梅竹马\",\"url\":\"/?tag=青梅竹馬&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"同人\",\"url\":\"/?tag=同人&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"系统\",\"url\":\"/?tag=系統&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"古代\",\"url\":\"/?tag=古代&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"技术流\",\"url\":\"/?tag=技術流&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"爽文\",\"url\":\"/?tag=爽文&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"爱情\",\"url\":\"/?tag=愛情&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"女强\",\"url\":\"/?tag=女強&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"甜文\",\"url\":\"/?tag=甜文&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"唐家三少\",\"url\":\"/?author=唐家三少&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"豪门\",\"url\":\"/?tag=豪門&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"风流\",\"url\":\"/?tag=風流&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"霸道\",\"url\":\"/?tag=霸道&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"现代\",\"url\":\"/?tag=現代&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"游戏\",\"url\":\"/?tag=遊戲&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"契约情人\",\"url\":\"/?tag=契約情人&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"修仙\",\"url\":\"/?tag=修仙&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"穿越\",\"url\":\"/?tag=穿越&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"无限流\",\"url\":\"/?tag=無限流&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"热血\",\"url\":\"/?tag=熱血&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"医生\",\"url\":\"/?tag=醫生&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"修真\",\"url\":\"/?tag=修真&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"女婿\",\"url\":\"/?tag=女婿&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"老婆\",\"url\":\"/?tag=老婆&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"辰东\",\"url\":\"/?author=辰東&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"三国\",\"url\":\"/?tag=三國&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"异世界\",\"url\":\"/?tag=異世界&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"天蚕土豆\",\"url\":\"/?author=天蠶土豆&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": "1735065345749",
+    "loginUrl": "",
+    "respondTime": 12236,
+    "ruleBookInfo": {
+      "init": "",
+      "name": "",
+      "tocUrl": "https://funs.me/book/showall.html,  {\n  \"headers\": {\n    \"Referer\": \"{{baseUrl}}\",\n    \"X-Requested-With\": \"XMLHttpRequest\"\n  }\n}"
+    },
+    "ruleContent": {
+      "content": "#ChSize@html@js:java.t2s(result)",
+      "nextContentUrl": "text.下一頁@href"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "text.作者@text##\\s.*@js:java.t2s(result)",
+      "bookList": "td[bgcolor$=\"#F8F9FC\"]@tbody",
+      "bookUrl": "a.0@href",
+      "coverUrl": "img@src",
+      "intro": "td[height$=\"75\"]@text@js:java.t2s(result)",
+      "kind": "",
+      "name": "td[height$=\"42\"]@a@text@js:java.t2s(result)"
+    },
+    "ruleToc": {
+      "chapterList": "a[href^=\"/text/\"]",
+      "chapterName": "text@js:java.t2s(result)",
+      "chapterUrl": "href",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "@js:\n(()=>{\n  if(page==1){\n    let url='https://funs.me/search,'+JSON.stringify({\n  \"body\": \"keyword=\"+key,\n  \"method\": \"POST\"\n});\n    return url;\n  } else {\n    return `https://funs.me/?search=${key}&page=${page}`\n  }\n})()",
+    "weight": 0
+  }
+]

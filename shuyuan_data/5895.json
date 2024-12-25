@@ -2,16 +2,16 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "常规",
-    "bookSourceName": "完本小说🎃",
+    "bookSourceName": "完本小说",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://www.wbxs.org#🎃",
-    "customOrder": -2086092395,
+    "bookSourceUrl": "https://www.wbxs.org#",
+    "customOrder": 4,
     "enabled": true,
     "enabledCookieJar": false,
     "enabledExplore": true,
     "enabledReview": false,
     "header": "",
-    "lastUpdateTime": "1734691537789",
+    "lastUpdateTime": "1735116841933",
     "respondTime": 7400,
     "ruleBookInfo": {
       "author": ".msg>em:eq(0)@text",
@@ -24,7 +24,7 @@
     "ruleContent": {
       "content": ".yd_text2@html",
       "nextContentUrl": "text.下一@href",
-      "replaceRegex": "##(本章完).*|如果您觉得《{{book.name}}》小说很精彩的话，请粘贴以下网址分享给您的好友，谢谢支持！.*|（ 本书网址：https://www.wbxs.org/a/384539 ）.*"
+      "replaceRegex": "##(本章完).*|如果您觉得《{{book.name}}》小说很精彩的话，请粘贴以下网址分享给您的好友，谢谢支持！.*|[（ 本书网址：https://www.wbxs.org/a/384539 ）].*"
     },
     "ruleExplore": [],
     "ruleReview": [],

@@ -1,0 +1,46 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "常规",
+    "bookSourceName": "精华书阁手机版",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.jhsssd.com/",
+    "customOrder": 3,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "enabledReview": false,
+    "lastUpdateTime": "1735116817110",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "p.2@text",
+      "coverUrl": "class.block_img2@tag.img@src",
+      "intro": "class.intro_info@textNodes",
+      "lastChapter": "@li.0@text",
+      "name": "class.block_txt2@a.1@text"
+    },
+    "ruleContent": {
+      "content": "#nr1@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##退出转码阅读完整内容，或请下载更好的阅读体验！！！！诚招广告合作：telegram联系@luniuniu9527.*|阅读提示：为防止内容获取不全，请勿使用浏览器阅读模式。.*|"
+    },
+    "ruleExplore": [],
+    "ruleReview": [],
+    "ruleSearch": {
+      "author": "class.author@text",
+      "bookList": "class.searchbook",
+      "bookUrl": "class.bookimg@tag.a@href",
+      "checkKeyWord": "7号基地",
+      "coverUrl": "class.bookimg@tag.img@src",
+      "name": "h4@text"
+    },
+    "ruleToc": {
+      "chapterList": "li!0:1:2:3:4@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "option!0@value"
+    },
+    "searchUrl": "/search.html?ie=utf-8&word={{key}}",
+    "weight": 0
+  }
+]
