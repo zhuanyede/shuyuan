@@ -1,0 +1,61 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "🍑 耽美",
+    "bookSourceName": "腐文小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.fuwenh.com",
+    "bookUrlPattern": "https?://m.fuwenh.com/book/\\d+/$",
+    "customOrder": 590,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::https://m.fuwenh.com/sort/1_{{page}}/\n武侠::https://m.fuwenh.com/sort/2_{{page}}/\n言情::https://m.fuwenh.com/sort/3_{{page}}/\n穿越::https://m.fuwenh.com/sort/4_{{page}}/\n都市::https://m.fuwenh.com/sort/5_{{page}}/\n科幻::https://m.fuwenh.com/sort/6_{{page}}/\n网游::https://m.fuwenh.com/sort/7_{{page}}/\n恐怖::https://m.fuwenh.com/sort/8_{{page}}/\n耽美::https://m.fuwenh.com/sort/9_{{page}}/\n校园::https://m.fuwenh.com/sort/10_{{page}}/\n高辣::https://m.fuwenh.com/sort/11_{{page}}/\n腹黑::https://m.fuwenh.com/sort/12_{{page}}/\n种田::https://m.fuwenh.com/sort/13_{{page}}/\n高干::https://m.fuwenh.com/sort/14_{{page}}/\n百合::https://m.fuwenh.com/sort/15_{{page}}/\n其他::https://m.fuwenh.com/sort/16_{{page}}/",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "lastUpdateTime": "1735344979971",
+    "respondTime": 6826,
+    "ruleBookInfo": {
+      "author": ".author@text",
+      "coverUrl": ".pic img@src",
+      "init": "",
+      "intro": ".intro@text",
+      "kind": "span.0@text&&span.1@text",
+      "lastChapter": ".lastchapter.1@text\n##类型：|更新：",
+      "name": "h1@text",
+      "tocUrl": "",
+      "wordCount": ".lastchapter.0@text"
+    },
+    "ruleContent": {
+      "content": "#content@textNodes##第.*页"
+    },
+    "ruleExplore": {
+      "author": "a.2@text",
+      "bookList": ".article",
+      "bookUrl": "a.1@href",
+      "coverUrl": "img@src",
+      "intro": "p.1@text",
+      "kind": "0",
+      "name": "h6@text"
+    },
+    "ruleSearch": {
+      "author": "class.author@text",
+      "bookList": ".topul li",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "大唐",
+      "coverUrl": "img@src",
+      "intro": "p@text",
+      "kind": "0",
+      "lastChapter": "class.other@text",
+      "name": "a.1@text",
+      "wordCount": "i@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapters.1@li@a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": ".listpage@.right a@href"
+    },
+    "searchUrl": "https://m.fuwenh.com/s.php,{\n  \"body\": \"searchkey={{key}}\",\n  \"charset\": \"utf-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
