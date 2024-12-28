@@ -253,43 +253,6 @@
   {
     "bookSourceComment": "//by:ZeroWorld",
     "bookSourceGroup": "-圣灵",
-    "bookSourceName": "三七轻小说",
-    "bookSourceType": 0,
-    "bookSourceUrl": "https://m.37yq.com/",
-    "customOrder": 0,
-    "enabled": true,
-    "enabledCookieJar": false,
-    "enabledExplore": true,
-    "lastUpdateTime": 1735139788459,
-    "respondTime": 180000,
-    "ruleBookInfo": {
-      "intro": "id.bookSummary@tag.content@html",
-      "tocUrl": "class.module module-merge@tag.a.0@href"
-    },
-    "ruleContent": {
-      "content": "id.acontent@html"
-    },
-    "ruleExplore": {},
-    "ruleSearch": {
-      "author": "class.book-cell@class.book-meta@class.book-meta-l@text##^作者",
-      "bookList": "class.module@tag.ol@tag.li",
-      "bookUrl": "tag.a.0@href",
-      "coverUrl": "img@data-src",
-      "intro": "class.book-cell@class.book-desc@text",
-      "kind": "class.book-cell@class.book-meta@class.book-meta-r@tag.span@tag.em@text##\\s##,",
-      "name": "class.book-cell@class.book-title-x@class.book-title@text"
-    },
-    "ruleToc": {
-      "chapterList": "id.catelogX@tag.ol@tag.li",
-      "chapterName": "tag.a@text",
-      "chapterUrl": "tag.a@href"
-    },
-    "searchUrl": "/so.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&searchtype=all\",\n  \"headers\": {\"origin\": \"https://m.37yq.com\",\"referer\": \"https://m.37yq.com/so.html\"}\n}",
-    "weight": 0
-  },
-  {
-    "bookSourceComment": "//by:ZeroWorld",
-    "bookSourceGroup": "-圣灵",
     "bookSourceName": "神凑轻小说文库",
     "bookSourceType": 0,
     "bookSourceUrl": "https://m.shencou.com/",
