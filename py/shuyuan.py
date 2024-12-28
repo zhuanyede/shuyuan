@@ -18,8 +18,8 @@ urls = [
 
 # 定义不同网址对应的时间范围，单位为天
 time_ranges = {
-    'https://www.yckceo.com/yuedu/shuyuan/index.html': (1, 8),
-    'https://www.yckceo.com/yuedu/shuyuans/index.html': (1, 8),
+    'https://www.yckceo.com/yuedu/shuyuan/index.html': (1, 12),
+    'https://www.yckceo.com/yuedu/shuyuans/index.html': (1, 12),
 }
 
 def parse_page(url):
