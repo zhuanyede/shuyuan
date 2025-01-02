@@ -35,7 +35,9 @@ https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tt
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
 **自动更新时间** 2025-01-01 18:36:18 CST+0800
- 
+ ``` bash
+https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/sourceModelList.xbs
+ ``` 
  ``` bash
 https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
