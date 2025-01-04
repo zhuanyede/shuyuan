@@ -1,0 +1,50 @@
+[
+  {
+    "bookSourceComment": "目录下一页指导by@小寒 \nby@天天的鸟蛋蛋\n@酷酷 升级目录下一页 防止只有两页或一页目录时报错。\n其实所有的列表规则，用到match()都需要添加判断。\n否则当只有两页或一页时，null就会进入数组\n___\n/*\n@js:\nvar res = result[0].match(/(.*_)(\\d+)/);\nvar data = [];\nfor(i = 2;i <= res[2]; i++){\n    data.push(res[1] + i + '/');\n}\ndata;\n这个方案有几率 会报错 只要只有第一页和第二页 他都会报错( 1到2页)\n*/\n\n\n\ntext.尾页@href\n@js:\nvar res = String(result[0]).match(/(.*_)(\\d+)/) || ['',0];\nvar data = [];\nfor(i = 2;i <= res[2]; i++){\n    data.push(res[1] + i + '/');\n}\ndata;\n\n\n___\n\ntext.尾页@href\n@js:\nif(result[0]&&(res = result[0].match(/(.*_)(\\d+)/))){\n  data = [];\n  for(i = 2;i <= res[2]; i++){\n    data.push(res[1] + i + '/');\n  }\n  data;\n}",
+    "bookSourceName": "辣书库",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://m.lashuku.me",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "耽美小说::http://m.lashuku.me/sort/1_{{page}}/\n海棠耽美::http://m.lashuku.me/sort/2_{{page}}/\n言情小说::http://m.lashuku.me/sort/3_{{page}}/\n海棠言情::http://m.lashuku.me/sort/4_{{page}}/\n百合小说::http://m.lashuku.me/sort/5_{{page}}/\n情欲小说::http://m.lashuku.me/sort/6_{{page}}/\n长佩小说::http://m.lashuku.me/sort/7_{{page}}/\n连城小说::http://m.lashuku.me/sort/8_{{page}}/",
+    "lastUpdateTime": "1735834696594",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".infotype > p:nth-child(1) > a@text",
+      "intro": ".intro > p@text",
+      "kind": "{{@@.infotype > p:nth-child(2)@text}}\n{{@@p:nth-child(3)@text}}##.*：",
+      "lastChapter": "p:nth-child(4) > a@text",
+      "name": ".cataloginfo > h3@text",
+      "tocUrl": "text.查看全部章节@href"
+    },
+    "ruleContent": {
+      "content": "#articlecontent@html||.articlecontent@html",
+      "nextContentUrl": "text.下一@href",
+      "replaceRegex": "##.*?下一章.*|本章尚未完结.*"
+    },
+    "ruleExplore": {
+      "author": "a.1@text",
+      "bookList": " .article",
+      "bookUrl": "a.0@href",
+      "intro": ".simple@text",
+      "name": "a.0@text"
+    },
+    "ruleSearch": {
+      "author": "a.1@text",
+      "bookList": ".sone:nth-child(n+1)",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": "li:nth-child(n+1) > a",
+      "chapterName": "text",
+      "chapterUrl": "href",
+      "nextTocUrl": "text.尾页@href\n@js:\nif(result[0]&&(res = result[0].match(/(.*_)(\\d+)/))){\n  data = [];\n  for(i = 2;i <= res[2]; i++){\n    data.push(res[1] + i + '/');\n  }\n  data;\n}"
+    },
+    "searchUrl": "/s.html,{\n  \"body\": \"s={{key}}&type=articlename\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

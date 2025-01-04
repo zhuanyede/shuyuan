@@ -1,0 +1,53 @@
+[
+  {
+    "bookSourceComment": "by@天天的鸟蛋蛋\n正文解密by@对影成一人 （怣疯）\nby@壬二酸 \n正文下一页by= =",
+    "bookSourceGroup": "",
+    "bookSourceName": "藏家小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.dhsvr.com",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"都市\",\"url\":\"/lei/dushi/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"言情\",\"url\":\"/lei/yanqing/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"玄幻\",\"url\":\"/lei/xuanhuan/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"仙侠\",\"url\":\"/lei/xianxia/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"历史\",\"url\":\"/lei/lishi/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"网游\",\"url\":\"/lei/wangyou/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"科幻\",\"url\":\"/lei/kehuan/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"女生\",\"url\":\"/lei/nvsheng/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"其它\",\"url\":\"/lei/qita/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"全本\",\"url\":\"/ben/all/{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}}]",
+    "jsLib": "{\"crypto\": \"https://cdn.bootcss.com/crypto-js/3.1.9-1/crypto-js.min.js\"}",
+    "lastUpdateTime": "1735841125659",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "{{@@.bookintro@text}}\n{{@@[property$=description]@content}}",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=lastest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "text.更多章节@href"
+    },
+    "ruleContent": {
+      "content": "@js:\nfunction x(encryptedData, key, iv) {\r\n  const ciphertext = CryptoJS.enc.Base64.parse(encryptedData);\r\n  const ivBytes = CryptoJS.enc.Base64.parse(iv);\r\n  const keyBytes = CryptoJS.enc.Utf8.parse(key);\r\n  const decrypted = CryptoJS.AES.decrypt(\r\n    { ciphertext: ciphertext },\r\n    keyBytes,\r\n    { iv: ivBytes, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.ZeroPadding }\r\n  );\r\n  const decryptedText = decrypted.toString(CryptoJS.enc.Utf8);\r\n return decryptedText;\r\n  \r\n}\nmatch=src.match(/#booktxthtml'\\).html\\((.*?\\))\\)/);\n//java.log(match[1])\nif(match){\nresult=eval(match[1])}else result",
+      "nextContentUrl": "text.下一@href<js>\n\t/_\\d+\\./.test(result)?result:''</js>\n",
+      "title": ".booktitle@text##\\(.*\\)",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "bookList": ""
+    },
+    "ruleSearch": {
+      "author": "dd > a@text",
+      "bookList": "dl:nth-child(n+1)",
+      "bookUrl": "dt > a@href",
+      "coverUrl": "img@data-src",
+      "intro": "dd:nth-child(3)@text",
+      "kind": "span:nth-child(2)@text&&span:nth-child(4)@text",
+      "name": "dt > a@title",
+      "wordCount": "span:nth-child(3)@text"
+    },
+    "ruleToc": {
+      "chapterList": ".all@ul@li@a",
+      "chapterName": "text",
+      "chapterUrl": "onclick##.*'(.*)'##$1##@js:##\\",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "{{cookie.removeCookie(source.key)}}/search,{\n  \"body\": \"searchkey={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
