@@ -1,0 +1,49 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "",
+    "bookSourceName": "西瓜小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.pdske.com",
+    "customOrder": -92819,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "[{\"title\":\"职业商战\",\"url\":\"/class/1/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"军旅生涯\",\"url\":\"/class/2/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"恐怖悬疑\",\"url\":\"/class/3/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"探险异闻\",\"url\":\"/class/4/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"变身情缘\",\"url\":\"/class/5/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"国术武技\",\"url\":\"/class/6/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"菁菁校园\",\"url\":\"/class/7/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"人文社科\",\"url\":\"/class/8/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本完结\",\"url\":\"/wanjie/{{page}}.html,{'webView': true}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
+    "lastUpdateTime": "1736052263944",
+    "respondTime": 17244,
+    "ruleBookInfo": {
+      "author": ".xas645@text",
+      "coverUrl": ".fxjais@img@src",
+      "intro": ".sc7f1w@text##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": ".8dxgao@a.1@text&&.wqo02t,.kmqi6u,.cp5dfn@text##.*：|\\s..:.*",
+      "lastChapter": ".6kcp8h@text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "name": ".h4a0bo@text",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "id.TextContent@p@html",
+      "replaceRegex": "##想要看最新章节.*"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".bookbox",
+      "bookUrl": "a.1@href##$##,{'webView': true}",
+      "checkKeyWord": "",
+      "coverUrl": "img@data-original",
+      "intro": ".update@textNodes",
+      "kind": ".author!0@text##.*：|\\s..:.*",
+      "lastChapter": "a.3@text",
+      "name": "a.1@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "id.chapter@a",
+      "chapterName": "text##正文卷.|正文.|VIP卷.|默认卷.|卷_|VIP章节.|免费章节.|章节目录.|最新章节.|[\\(（【].*?[求更票谢乐发订合补加架字修Kk].*?[】）\\)]",
+      "chapterUrl": "href##$##,{'webView': true}"
+    },
+    "searchUrl": "/search.php?searchkey={{key}}&action=login&submit=,{\n  \"method\": \"get\",\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]

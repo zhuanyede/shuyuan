@@ -1,0 +1,57 @@
+[
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋\n搜索感谢@柚屿. ",
+    "bookSourceGroup": "",
+    "bookSourceName": "完本阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.jizai22.com",
+    "customOrder": -6138,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"校园言情\",\"url\":\"/list/1/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"都市言情\",\"url\":\"/list/2/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"古代言情\",\"url\":\"/list/3/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"罗曼史\",\"url\":\"/list/4/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"耽美\",\"url\":\"/list/5/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"百合\",\"url\":\"/list/6/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"^更多小说\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},\n{\"title\":\"奇幻玄幻\",\"url\":\"/list/8/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"网游竞技\",\"url\":\"/list/9/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"科幻异能\",\"url\":\"/list/10/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"恐怖灵异\",\"url\":\"/list/11/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"惊悚推理\",\"url\":\"/list/12/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"武侠仙侠\",\"url\":\"/list/13/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"历史军事\",\"url\":\"/list/14/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"穿越重生\",\"url\":\"/list/15/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"综合其它\",\"url\":\"/list/16/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"🏅排行榜\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"点击总榜\",\"url\":\"/top/allvisit/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"推荐总榜\",\"url\":\"/top/allvote/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"点击月榜\",\"url\":\"/top/monthvisit/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"推荐月榜\",\"url\":\"/top/monthvotea/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"周排行榜\",\"url\":\"/top/weekvisit/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"周推荐榜\",\"url\":\"/top/weekvote/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"总收藏榜\",\"url\":\"/top/goodnum/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"本站推荐\",\"url\":\"/top/toptime/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"字数排行\",\"url\":\"/top/size/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"最近更新\",\"url\":\"/top/lastupdate/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"最新入库\",\"url\":\"/top/postdate/{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}}\n]",
+    "lastUpdateTime": "1736107715630",
+    "respondTime": 7019,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "wordCount": ".blue:nth-child(3)@text##.*："
+    },
+    "ruleContent": {
+      "content": "#htmlContent@html"
+    },
+    "ruleExplore": {
+      "author": " .text-muted@a.1@text||.text-muted:nth-child(3)@text##\\/",
+      "bookList": "tr:nth-child(n+2)&&.list-group-item:nth-child(n+1)",
+      "bookUrl": "a@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": ".hidden-xs:nth-child(4)@text&&td:nth-child(5)@text&&.hidden-xs:nth-child(6)@text",
+      "lastChapter": ".hidden-xs > .text-muted@text||.hidden-xs:nth-child(2)@text",
+      "name": "a.0@text",
+      "wordCount": "class.pull-right text-muted@text||td:nth-child(4)@text##\\d+\\-\\d+\\-\\d+"
+    },
+    "ruleSearch": {
+      "author": "$.author",
+      "bookList": "<js>\nvar JsDom = Packages.org.jsoup.Jsoup;\nvar Document = Packages.org.jsoup.nodes.Document;\nvar Element = Packages.org.jsoup.nodes.Element;\n\nvar document = JsDom.parse(src);\n\nfunction getText(selector, context) {\n    var elements = context ? context.select(selector) : document.select(selector);\n    return elements.size() > 0 ? elements.first().text() : \"\";\n}\n\nfunction getHref(selector, context) {\n    var elements = context ? context.select(selector) : document.select(selector);\n    return elements.size() > 0 ? elements.first().attr(\"href\") : \"\";\n}\n\nfunction getSrc(selector, context) {\n    var elements = context ? context.select(selector) : document.select(selector);\n    return elements.size() > 0 ? elements.first().attr(\"src\") : \"\";\n}\n\nfunction generateJsonList() {\n    var jsonList = [];\n    var uls = document.select(\".mySearch ul\").not(\".pagination\"); \n\n    uls.forEach(function(ul) {\n        var prevDiv = ul.previousElementSibling(); \n        var imgSrc = prevDiv ? getSrc(\"img\", prevDiv) : \"\"; \n\n        var item = {\n            \"img\": imgSrc,\n            \"name\": getText(\"li:eq(0) a.b\", ul),\n            \"author\": getText(\"li:eq(2)\", ul),\n            \"wordcount\": getText(\"li:eq(3)\", ul),\n            \"lastchaptr\": getText(\"li:eq(1) a\", ul),\n            \"kind\": getText(\"li:eq(4)\", ul)+\",\"+getText(\"li:eq(5)\", ul),\n            \"url\": getHref(\"li:eq(0) a.b\", ul)\n        };\n        jsonList.push(item);\n    });\n\n    return jsonList;\n}\n\nresult = generateJsonList();\nString(java.log(JSON.stringify(result)));\n\n\n</js>\n$[*]",
+      "bookUrl": "$.url",
+      "coverUrl": "$.img",
+      "intro": "",
+      "kind": "$.kind##状态：|更新时间：",
+      "lastChapter": "$.lastchaptr",
+      "name": "$.name",
+      "wordCount": "$.wordcount##.*："
+    },
+    "ruleToc": {
+      "chapterList": ".col-md-3:nth-child(n+1) > a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "{{url=source.getKey();cookie.removeCookie(url)}}\n/modules/article/search.php?searchkey={{key}}&page={{page}},{\n  \"charset\": \"GBK\"\n}",
+    "weight": 0
+  }
+]

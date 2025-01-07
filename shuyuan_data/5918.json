@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceName": "✈️歡享小說",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://18read.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": false,
+    "exploreUrl": "",
+    "header": "{\n\"User-Agent\":\"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\",\"referer\":\"{{baseUrl}}\",\n}",
+    "lastUpdateTime": "1736073983795",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": ".shortinfo@a@text",
+      "intro": ".desc@text",
+      "kind": ".title .c1 a@text",
+      "lastChapter": ".newestChapter@a@text",
+      "name": ".title .name@text",
+      "tocUrl": "@js:\nresult = \"/book/chapterlist?bookid=\" + baseUrl.match(/book\\/(\\d+)/)[1]+\"&pi=1\";",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".novelcontent@html",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "intro": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": ".author@text",
+      "bookList": "li",
+      "bookUrl": "a@href",
+      "coverUrl": ".imgbox@img.0@src",
+      "intro": ".desc@text",
+      "kind": "",
+      "name": "h2@text",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "li a",
+      "chapterName": "em@text",
+      "chapterUrl": "href",
+      "nextTocUrl": "@js:\nvar page = baseUrl.match(/bookid=(\\d+)&pi=(\\d)/);\nresult = \"/book/chapterlist?bookid=\" + page[1]+\"&pi=\"+(parseInt(page[2])+1);",
+      "isPay": ""
+    },
+    "searchUrl": "/api/query,{\n  \"body\": \"q={{key}}\",\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

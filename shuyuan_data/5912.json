@@ -1,6 +1,6 @@
 [
   {
-    "bookSourceComment": "by天天的鸟蛋蛋\n\n感谢这两位大佬指点\n我选择的是by@= =的\n\n正文过滤广告@6月柳\n \n##落.*[霞a].*m.*\\n|落.*?霞.*m|落霞$|[\\u{1F300}-\\u{1FAD6}\\u{1F600}-\\u{1F64F}\\u{1F680}-\\u{1F6FF}\\u{2600}-\\u{26FF}\\u{1F900}-\\u{1FAFF}]\n\n@= = \n\t\n##\\n[^\\w]*落.*[霞a].*m.*\\n|落.*?霞.*m|落霞$",
+    "bookSourceComment": "by天天的鸟蛋蛋\n\n自己改\n同模板需要更新匹配换成 by酷酷 的\n同模板：https://luoxia.com\n\n\n感谢这两位大佬指点\n我选择的是by@= =的\n\n正文过滤广告@6月柳\n \n##落.*[霞a].*m.*\\n|落.*?霞.*m|落霞$|[\\u{1F300}-\\u{1FAD6}\\u{1F600}-\\u{1F64F}\\u{1F680}-\\u{1F6FF}\\u{2600}-\\u{26FF}\\u{1F900}-\\u{1FAFF}]\n\n@= = \n\t\n##\\n[^\\w]*落.*[霞a].*m.*\\n|落.*?霞.*m|落霞$\n\n\n@酷酷 \n\n同模板匹配\n\n##[^。？！”\\w\\n]*(?:[\\u4e00-\\u9fff][^\\u4e00-\\u9fff]+){2}[小读][^\\u4e00-\\u9fff]+[说书].*",
     "bookSourceGroup": "经典文学",
     "bookSourceName": "落霞读书",
     "bookSourceType": 0,
@@ -9,7 +9,7 @@
     "enabled": true,
     "enabledCookieJar": false,
     "enabledExplore": true,
-    "lastUpdateTime": "1735970497113",
+    "lastUpdateTime": "1736111189958",
     "respondTime": 2316,
     "ruleBookInfo": {
       "author": ".book-describe > p:nth-child(2)@text",
@@ -22,7 +22,7 @@
     "ruleContent": {
       "content": "#nr1@p@textNodes",
       "imageStyle": "",
-      "replaceRegex": "##\\n[^\\w]*落.*[霞a].*m.*\\n",
+      "replaceRegex": "##\\n[^\\w]*落.*[霞a].*m.*\\n|落.*?霞.*m|落霞$",
       "sourceRegex": "",
       "title": ""
     },
