@@ -1,0 +1,47 @@
+[
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋\n//2025/1/8",
+    "bookSourceName": "青柠言情",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.qnyqw.com/chs/",
+    "concurrentRate": "",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "言情小说::/chs/store/1/{{page}}.html",
+    "lastUpdateTime": "1736279592674",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "p:nth-child(3) > a@text",
+      "coverUrl": "img@src",
+      "init": "",
+      "intro": "《{{book.name}}》\n{{@@.book-brief li:nth-child(n+1)@text}}\n简介：\n{{@@.intro-wrap@p@textNodes##\\s}}##(^|[。！？]+[”」）】]?)##$1<br>",
+      "kind": "p:nth-child(4) > a@text&&p:nth-child(5)@text&&p:nth-child(6)@text##.*：",
+      "lastChapter": "",
+      "name": "h1@text",
+      "tocUrl": "text.开始阅读@href",
+      "wordCount": "p:nth-child(7)@text##.*："
+    },
+    "ruleContent": {
+      "content": "#readcontent@html||.content@html"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".author@a@text",
+      "bookList": ".con@ul!0",
+      "bookUrl": ".article@a@href",
+      "kind": "li[-1:-4]@text",
+      "lastChapter": ".chapter@a@text",
+      "name": ".article@a@text"
+    },
+    "ruleToc": {
+      "chapterList": "<js>\nvar JsDom = Packages.org.jsoup.Jsoup;\nvar Document = Packages.org.jsoup.nodes.Document;\nvar Element = Packages.org.jsoup.nodes.Element;\n\n\nvar document = JsDom.parse(src);\n\n//获取列表\nvar links = document.select('.chap_tit > p > a');\n\nvar list = [];\nfor (var i = 0; i < links.size(); i++) {\n    var link = links.get(i);\n    list.push({\n        text: link.text(),\n        url: link.attr('href')\n    });\n}\n\n//排序\nlist.sort(function(a, b) {\n    var pageA = parseInt(a.text.match(/\\d+/)[0], 10);\n    var pageB = parseInt(b.text.match(/\\d+/)[0], 10);\n    return pageA - pageB;\n});\n\n\njava.log(JSON.stringify(list));\nlist;\n</js>",
+      "chapterName": "text",
+      "chapterUrl": "url",
+      "preUpdateJs": ""
+    },
+    "searchUrl": "{{url=source.getKey();cookie.removeCookie(url)}}\n/modules/article/search.php?searchtype=all&searchkey={{key}},{\n  \"charset\": \"GBK\"\n}",
+    "weight": 0
+  }
+]
