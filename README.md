@@ -1,7 +1,7 @@
 | **项目名称** | **站点链接**                                                                                     |
 |--------------|--------------------------------------------------------------------------------------------------|
 | **番茄书院** | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](http://doubi.tk) |
-| **QQ群**   | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://qm.qq.com/q/l54jtjMl8I) |
+| **QQ群**   | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://qm.qq.com/q/Bvrs8BPqLY) |
 | **TG交流群** | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://t.me/dahuilang888) |
 
 
