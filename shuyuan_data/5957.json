@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋\n搜索应该有限制 动不动就503\n",
+    "bookSourceName": "好汉中文",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://wapk.china-yantai.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "\n[{\"title\":\"分类\",\"url\":\"/sort/0_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":1,\"layout_flexGrow\":1}},{\"title\":\"玄幻\",\"url\":\"/sort/1_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"现代言情\",\"url\":\"/sort/2_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"轻小说\",\"url\":\"/sort/4_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"都市小说\",\"url\":\"/sort/6_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"现言\",\"url\":\"/sort/8_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"古代言情\",\"url\":\"/sort/10_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"修真小说\",\"url\":\"/sort/12_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}},{\"title\":\"科幻小说\",\"url\":\"/sort/14_{{page}}/\",\"style\":{\"layout_flexBasisPercent\":0.4,\"layout_flexGrow\":1}}]\n\n\n",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36\"\n}",
+    "lastUpdateTime": "1737050280055",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property~=las?test_chapter_name]@content",
+      "name": "[property$=book_name]@content"
+    },
+    "ruleContent": {
+      "content": "#novelcontent@textNodes",
+      "nextContentUrl": "text.下一页@href",
+      "replaceRegex": "##【本章阅读完毕.*?】|内容未完.*?下一页继续阅读",
+      "sourceRegex": ""
+    },
+    "ruleExplore": {
+      "author": ".p3@text",
+      "bookList": ".content_link:nth-child(n+1)",
+      "bookUrl": ".blue@a@href",
+      "coverUrl": ".blue@a@href@js:##_(.*?)/##http://m.china-yantai.net/img/$1.jpg###",
+      "kind": ".p1 > a@text",
+      "name": ".blue@text"
+    },
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".search_box@.search_list",
+      "bookUrl": "a.0@href",
+      "checkKeyWord": "系统",
+      "coverUrl": "a.0@href@js:##_(.*?)/##http://m.china-yantai.net/img/$1.jpg###",
+      "intro": "",
+      "lastChapter": "a.1@text",
+      "name": "a.0@text"
+    },
+    "ruleToc": {
+      "chapterList": ".p2:nth-child(5) > li:nth-child(n+1) > a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "/book/search.aspx?key={{key}}&type=articlename",
+    "weight": 0
+  }
+]

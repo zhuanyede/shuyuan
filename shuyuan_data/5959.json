@@ -1,0 +1,63 @@
+[
+  {
+    "bookSourceComment": "\nhttps://www.sewen.info/\nhttps://www.sewenwang.top/",
+    "bookSourceGroup": "绅士",
+    "bookSourceName": "涩文",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sewenwang.top/",
+    "bookUrlPattern": "",
+    "customOrder": 15,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "首页::/\n最近更新::/shuku/{{page}}\n现代都市::/list/1/{{page}}.html\n近亲乱伦::/list/2/{{page}}.html\n武侠情色::/list/3/{{page}}.html\n学生校园::/list/4/{{page}}.html\n玄幻灵异::/list/5/{{page}}.html\n言情纯爱::/list/6/{{page}}.html\n短篇小说::/modules/forum/topiclist.php?fid=1&page={{page}}",
+    "header": "",
+    "lastUpdateTime": "1737107172084",
+    "loginCheckJs": "",
+    "loginUrl": "",
+    "respondTime": 3801,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "init": "",
+      "intro": "[property=\"og:description\"]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property~=las?test_chapter_name]@content",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": ".content@html||class.c_content.0@text",
+      "title": ".title@text||h2.0@textNodes##>"
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "class.item||class.odd",
+      "bookUrl": "dt@a@href||td@a@href",
+      "coverUrl": "img@src",
+      "intro": "dd@a@text",
+      "name": "dt@a@text||td@a@text"
+    },
+    "ruleSearch": {
+      "author": ".s4@text",
+      "bookList": ".txt-list > li:nth-child(n+2)",
+      "bookUrl": ".s2 > a@href",
+      "checkKeyWord": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": ".s1@text",
+      "lastChapter": ".s3 > a@text",
+      "name": ".s2 > a@text"
+    },
+    "ruleToc": {
+      "chapterList": "#section-list@li@a||tag.html",
+      "chapterName": "textNodes||class.layout-tit.0@textNodes##>",
+      "chapterUrl": "href",
+      "formatJs": "",
+      "nextTocUrl": "option@value||text.下一页@href"
+    },
+    "searchUrl": "/modules/article/search.php,{\n\"method\":\"post\",\n\"charset\":\"gbk\",\n\"body\":\"searchkey={{key}}\"\n}",
+    "weight": 0
+  }
+]
