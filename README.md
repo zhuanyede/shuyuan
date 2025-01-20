@@ -30,7 +30,7 @@ https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/go
 
 #### 🚩 规则净化
 ```
-[https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
+https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
 ```
 #### 🚩 TTS-在线语音包生成[点我](https://tts.228088.xyz)
 详见[文档](https://github.com/shidahuilang/shuyuan/blob/shuyuan/doc.md)
