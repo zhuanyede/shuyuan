@@ -4,7 +4,14 @@
 | **QQ群**   | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://qm.qq.com/q/Bvrs8BPqLY) |
 | **TG交流群** | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://t.me/dahuilang888) |
 
-
+#### 🚩 🍅无限制书源：
+```
+https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/azyd.json
+```
+#### 🚩 番茄无密钥版本：
+```
+https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/cxyd.json
+```
 
 **自动更新时间** 2025-01-19 18:33:47 CST+0800
 #### 🚩 最新阅读书源修复-每隔3天自动更新一次（安卓阅读3.0+读不舍手+千阅+源阅读+花火阅读通用）
