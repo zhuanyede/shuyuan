@@ -6,11 +6,11 @@
 
 #### 🚩 🍅无限制书源：
 ```
-https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/azyd.json
+https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/azyd.json
 ```
 #### 🚩 番茄无密钥版本：
 ```
-https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/cxyd.json
+https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/cxyd.json
 ```
 
 **自动更新时间** 2025-01-19 18:33:47 CST+0800
@@ -25,36 +25,36 @@ https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads
 ![shuyuan.png](icons/shuyuan.png)
 #### 🚩 效验书源链接
 ```
-https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
+https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json
 ```
 
 #### 🚩 规则净化
 ```
-https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
+https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/jinghua.json
 ```
 #### 🚩 TTS-在线语音包生成[点我](https://tts.228088.xyz)
 详见[文档](https://github.com/shidahuilang/shuyuan/blob/shuyuan/doc.md)
 #### 🚩 TTS-70种语音包
 ```
-https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
+https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/tts.json
 ```
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
 **自动更新时间** 2025-01-19 18:33:47 CST+0800
  ``` bash
-https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/sourceModelList.xbs
+https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/sourceModelList.xbs
  ``` 
  ``` bash
-https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
+https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/xsreader/new/resources.txt
  ```
 #### 🚩 爱阅书香书源
  ``` bash
-https://ghp.ci/https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
+https://gh.llkk.cc/https://github.com/shidahuilang/shuyuan/raw/shuyuan/aiyueshuxiang.ibs
  ```
 #### 🚩 uz影视源
 ```
-https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/UZ.json
+https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/UZ.json
 ```
 #### 🚩 IPTV源
  ```
