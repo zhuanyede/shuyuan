@@ -1,0 +1,68 @@
+[
+  {
+    "bookSourceComment": "// 2025/1/9 by天天的鸟蛋蛋 修复搜索 原因cookie失效\n需要登录\n\n\nby:ZeroWorld",
+    "bookSourceGroup": "-圣灵",
+    "bookSourceName": "💫 360小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://h.i360xs.com/",
+    "bookUrlPattern": "",
+    "customOrder": -98778,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "",
+    "header": "",
+    "lastUpdateTime": "1737564886214",
+    "loginCheckJs": "",
+    "loginUrl": "https://h.i360xs.com",
+    "respondTime": 180220,
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "tocUrl": "text.更多目录@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "<js>\n var arr=title;\n var srt=title.replace(/ /g,\"\");\n var sft=title.replace(/第.*?章./g,\"第.*?\");\n var sfc=sft.replace(/$/g,\".*?页\");\n var sfn=sft.replace(/$/g,\".*?继续阅读。\");\n var srf=title.replace(/ /g,\"　\");\n var fdr=title.replace(/[0-9]+[\\s|\\u3000]/g,\"\");\n var dff=src.replace(new RegExp(arr,\"g\"),\"\");\n var dfc=dff.replace(new RegExp(\"\\n.{1,7}\"+fdr,\"g\"),\"\");\n result=dfc.replace(new RegExp(srf,\"g\"),\"\").replace(new RegExp(srt,\"g\"),\"\").replace(new RegExp(sfn,\"g\"),\"\").replace(new RegExp(sfc,\"g\"),\"\");\n</js>\nclass.chapter@html\n##本章由熱門小說網\\(\\.Remenxs\\.\\)提供免費閱讀！|（第[0-9]页）",
+      "imageStyle": "0",
+      "nextContentUrl": "##\\_\\_\\_XSXSXS\\|[0-9]+\\|book\\|([0-9a-zA-Z\\-\\_\\/+]{6,30})\\|x360xs##\\/$1###\n<js>\nlet bookId=baseUrl.replace(\"https://h.i360xs.com/book/\",\"\").split(\"/\")[0];\nlet arr= \"https://h.i360xs.com/book/\"+bookId+\"/\"\nvar srt=result\nresult=arr + srt + '.html';\n</js>",
+      "replaceRegex": "##\\u3000+（第[0-9]页）\\n|（本章节完结）[\\s\\S]*|（本章节未完结，点击下一页翻页继续阅读）",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "tag.a.1@href",
+      "coverUrl": "img@src",
+      "intro": "tag.p.1@text##简介.|各位书友.*",
+      "kind": "",
+      "lastChapter": "tag.a.3@text##.*\\.",
+      "name": "",
+      "wordCount": "tag.p.0@text##.*字数.|K\n@js:'约' + parseInt(result*0.052) + '万'"
+    },
+    "ruleSearch": {
+      "author": "$.authorname",
+      "bookList": "$.Data.search_response.books[*]",
+      "bookUrl": "https://h.i360xs.com/book/{{$.bookid}}/",
+      "coverUrl": "$.coverurl",
+      "intro": "$.description",
+      "kind": "$.raw_categoryname##\\|##,",
+      "lastChapter": "$.lastvipchaptername",
+      "name": "$.bookname",
+      "wordCount": "$.wordscount"
+    },
+    "ruleToc": {
+      "chapterList": "id.chapterlist@class.dtl-cell",
+      "chapterName": "class.dc-cap@tag.a@text",
+      "chapterUrl": "class.dc-cap@tag.a@href",
+      "isVip": "class.dc-point red",
+      "nextTocUrl": "class.pageselect@tag.select@option@value"
+    },
+    "searchUrl": "https://h.i360xs.com/book/,{\n  \"body\": \"ajaxMethod=getsearchbooks&page={{page}}&pagesize=10&isvip=-1&cid=-1&sort=0&flag=-1&searchkey={{key}}&site=-1&again=0&range=-1\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]

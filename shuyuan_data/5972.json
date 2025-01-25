@@ -1,0 +1,55 @@
+[
+  {
+    "bookSourceComment": "//2024.11.27 by辞晨\n\n//2025/1/22 by天天的鸟蛋蛋 废除webview 方式进入正文 感谢@河鹅和 提供的解密 正文改用解密更新",
+    "bookSourceGroup": "PO18",
+    "bookSourceName": "🌐52P0小说",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.po52.cc/",
+    "bookUrlPattern": "https:\\/\\/www.po52\\.cc\\/book\\/\\d+\\/",
+    "customOrder": -98580,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"全部🏷分类\",\"url\":\"\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1}},\n{\"title\":\"全部\",\"url\":\"/category/0/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"古代言情\",\"url\":\"/category/120487041773637/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"现代言情\",\"url\":\"/category/120487041830982/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"幻想言情\",\"url\":\"/category/120487041876038/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"古言\",\"url\":\"/category/13256349831237/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"现言\",\"url\":\"/category/13256349900871/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"PO18\",\"url\":\"/category/168322154594373/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"科幻\",\"url\":\"/category/13256349970502/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"青春\",\"url\":\"/category/13256349896776/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"幻情\",\"url\":\"/category/13256349884486/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"悬疑\",\"url\":\"/category/13256349941832/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"仙侠\",\"url\":\"/category/13256349872198/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"游戏\",\"url\":\"/category/13256349880390/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"现实\",\"url\":\"/category/13256350855240/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"轻小说\",\"url\":\"/category/13256349958216/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"纯爱\",\"url\":\"/category/13256366919752/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"同人\",\"url\":\"/category/120487041863750/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"短篇\",\"url\":\"/category/13256366833737/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n{\"title\":\"其他\",\"url\":\"/category/120487043702854/{{page}}.html\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},\n]",
+    "header": "",
+    "lastUpdateTime": "1737555125383",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property=\"og:novel:author\"]@content",
+      "coverUrl": "[property=\"og:image\"]@content",
+      "intro": "&nbsp;\n📖 书名：{{@@p.0@text}}\n👤 作者：{{@@p.1@text}}\n🕰 最新：{{@@p.4@text##最新章节：}}\n🏷 简介：{{@@p.5@text}}",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property~=las?test_chapter_name]@content@js:result\n.replace(/^(\\d+)\\./,'第$1章 ')\n.replace(/^最新章节：/,'')",
+      "name": "[property=\"og:novel:book_name\"]@content",
+      "tocUrl": "text.章节目录@href",
+      "wordCount": "[property$=status]@content"
+    },
+    "ruleContent": {
+      "content": "<js>\nmatch=result.match(/d\\(\".+\"[^\"]+\".+\"\\)/)\nfunction d(a, b){\n\tb = java.md5Encode(b)\n\tiv = b.substring(0, 16)\n\tkey = b.substring(16)\n\tCipher=java.createSymmetricCrypto(\"AES/CBC/PKCS7Padding\" ,key,iv)\n\treturn Cipher.decryptStr(a)}\neval(match[0])\n</js>\np@text"
+    },
+    "ruleExplore": {
+      "author": "span@a.0@text",
+      "bookList": ".CGsectionTwo-right-content-unit",
+      "bookUrl": "a.0@href",
+      "intro": "p.-2@text",
+      "lastChapter": "p.-1@text##最近更新",
+      "name": "a.0@text"
+    },
+    "ruleSearch": {
+      "author": "a.2@text",
+      "bookList": ".SHsectionThree-middle@p",
+      "bookUrl": "a.1@href",
+      "checkKeyWord": "我的",
+      "coverUrl": "",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "ol li a\n<js>\ntry {\na=src.match(/var originalOrder = \\[.*\\];/)[0]\neval(String(a))\n\nlist=[]\nfor (i in result) {\n\tlist[originalOrder[i]]=result[i]\n\t}\n\t\nlist\n} catch(err) {\n\tresult\n\t}\n</js>",
+      "chapterName": "a@text\n@js:result\n.replace(/^(\\d+)\\./,'第$1章 ')\n.replace(/^(\\d+)\\、\\s/,'第$1章')",
+      "chapterUrl": "a@href",
+      "nextTocUrl": "text.下一页@href"
+    },
+    "searchUrl": "/search/{{key}}/page={{page}}",
+    "weight": 0
+  }
+]
