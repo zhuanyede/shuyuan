@@ -1,5 +1,54 @@
 [
   {
+    "bookSourceComment": "//2025.1.24 by天天的鸟蛋蛋 修复搜索\n//2025.1.8\nBuding 修复搜索 部分书籍目录\n感谢= =大佬提供的目录规则\n//2024.10.9\n感谢明月照大江大佬与朱振亿大佬提供正文规则\nby墨殇&明月照大江&朱振亿",
+    "bookSourceGroup": "漫",
+    "bookSourceName": "KM漫画",
+    "bookSourceType": 2,
+    "bookSourceUrl": "https://kmh004.com/#",
+    "bookUrlPattern": "https?://kmh004.com/comic/\\w+",
+    "customOrder": 1398,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "[{\"title\":\"首页\",\"url\":\"/home\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":1.00}},{\"title\":\"周一\",\"url\":\"/weekly/1\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周二\",\"url\":\"/weekly/2\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周三\",\"url\":\"/weekly/3\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周四\",\"url\":\"/weekly/4\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周五\",\"url\":\"/weekly/5\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周六\",\"url\":\"/weekly/6\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"周日\",\"url\":\"/weekly/0\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}},{\"title\":\"完本\",\"url\":\"/complete?page={{page}}\",\"style\":{\"layout_flexGrow\":1,\"layout_flexBasisPercent\":0.25}}]",
+    "header": "{\"Referer\":\"https://kmh004.com/\"}",
+    "jsLib": "function _init(condition, callback) {\n  let {\n    java\n  } = this;\n  const separator = \"<-separator->\"\n  let __next_f_text = this.src.match(/__next_f\\.push\\(\\[1,\\s*\".+?\"\\]\\)/gi).map(item => item = item.match(/__next_f\\.push\\(\\[1,\\s*\"(.+?)\"\\]\\)/)[1]).join(\"\").replace(/^[0-9a-zA-Z]+:\\w{0,3}/g, ``).replace(/\\\\\"/g, `\"`).replace(/(?:\\\\n)?(?:\\w+:)(?:(?:(?:\\w{0,3})(\\[|\\{|\"\\$))|(null))/g, `${separator}$1$2`);\n  //java.log(__next_f_text+\"\\n\\n======\");\n\n  return __next_f_text.split(separator).reduce((arr, item, index) => {\n    item = item.replace(/\\\\n$/, \"\");\n    try {\n      //java.log(`${index}  ${item}\\n\\n`);\n      item = item == \"null\" ? [] : JSON.parse(item);\n    } catch (err) {\n      // java.log(`${index}  错误  ${item}\\n${err}\\n\\n`);\n      item = [];\n    }\n    try {\n      // java.log(`${index}  ${JSON.stringify(item)}\\n\\n`)\n      if (condition && eval(condition)) {\n        typeof callback == \"function\" && callback(item, index, arr);\n      }\n    } catch (err) {\n      java.log(`${index}  =错误=  ${item}\\n${err}\\n\\n`);\n    }\n    // java.log(item + \"\\n\\n\")\n    return arr\n  }, [])\n}\n\nfunction jsonpath(json) {\n  return com.jayway.jsonpath.JsonPath.parse(JSON.stringify(json))\n}",
+    "lastUpdateTime": "1737801022883",
+    "loginUrl": "/",
+    "respondTime": 182730,
+    "ruleBookInfo": {
+      "author": "span.2@text##作者：",
+      "coverUrl": ".swiper-slide.0@img@src",
+      "intro": "<br>\n标签：{{@.p-1 a@text##\\n|\\>}}\n简介：\n{{@@p.0@text}}",
+      "kind": "",
+      "lastChapter": "span.3@text",
+      "name": "span.0@text"
+    },
+    "ruleContent": {
+      "content": "<js>\nthis._init(`JSON.stringify(item).includes(\"FREEXCOMIC\")`, ($) => {\n  $ = jsonpath($);\n  result = $.read(\"$..images[?(@.sourceName == 'FREEXCOMIC')]\");\n  result = result.toArray().map((item, index) => {\n    return `<img src=\"${item.url}\">`\n  });\n});\nresult.join('\\n')\n</js>"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "佚名{{@@}}",
+      "bookList": "<js>\nvar JsDom = Packages.org.jsoup.Jsoup;\nvar Document = Packages.org.jsoup.nodes.Document;\nvar Element = Packages.org.jsoup.nodes.Element;\n\nvar document = JsDom.parse(src);\n\nvar scripts = document.select(\"script\");\n\nvar result = []; // 用于存储最终的 JSON 数据\n\nfor (var i = 0; i < scripts.size(); i++) {\n    var script = scripts.get(i);\n    var scriptContent = script.data();\n\n    // 匹配 self.__next_f.push 的内容\n    var regex = /self\\.__next_f\\.push\\((.*)\\)/gs; // 使用 /gs 修饰符匹配多行\n    var matches = [];\n    var match;\n\n    // 遍历所有匹配结果，保留最后一个\n    while ((match = regex.exec(scriptContent)) !== null) {\n        matches.push(match[1]);\n    }\n\n    // 只处理最后一个匹配的内容\n    if (matches.length > 0) {\n        var content = matches[matches.length - 1]; // 获取最后一个匹配的内容\n\n        // 预处理：将英文逗号（,）替换为 \",\\n\"\n        content = content.replace(/,/g, \",\\n\");\n\n        // 打印预处理后的结果\n        //java.log(content);\n\n        // 匹配 \"children\":\"(.*)\" 和 \"href\":\"(.*)\" 的正则表达式\n        var childrenRegex = /.*?\"children.*?\":.*?\"(.*)\\\\\"/g;\n        var hrefRegex = /.*?\"href.*?\":.*?\"(.*)\\\\\"/g;\n        var imgRegex = /.*?\"src.*?\":.*?\"(.*)\\\\/g;\n\n        var childrenMatches = [];\n        var hrefMatches = [];\n        var imgMatches = [];\n\n        // 提取匹配的内容\n        while ((match = childrenRegex.exec(content)) !== null) {\n            // 过滤掉以 \"$\" 开头的 children 内容\n            if (!match[1].startsWith(\"$\")) {\n                childrenMatches.push(match[1]);\n            }\n        }\n        while ((match = hrefRegex.exec(content)) !== null) {\n            // 只匹配以 \"/comic.*\" 开头的 href 内容\n            if (match[1].startsWith(\"/comic\")) {\n                hrefMatches.push(match[1]);\n            }\n        }\n        while ((match = imgRegex.exec(content)) !== null) {\n            // 只匹配以 \".jpg\" 结尾的 src 内容\n            if (match[1].endsWith(\".jpg\")) {\n                imgMatches.push(match[1]);\n            }\n        }\n\n        // 从第2个 \"children\" 开始处理\n        var startIdx = 2; // 第2个元素的索引为12\n        if (childrenMatches.length > startIdx) {\n            // 按每5个children分组\n            for (var j = 0; j < hrefMatches.length; j++) {\n                var group = {\n                    name: childrenMatches[startIdx + j * 5] || \"\",\n                    latestChapterTitle: childrenMatches[startIdx + j * 5 + 1] || \"\",\n                    kind: childrenMatches.slice(startIdx + j * 5 + 2, startIdx + j * 5 + 5).join(\", \"),\n                    url: hrefMatches[j] || \"\",\n                    img: imgMatches[j] || \"\" // 如果没有图片，使用默认值\n                };\n                result.push(group);\n            }\n        }\n    }\n}\n\n// 输出 JSON 模板\nvar jsonTemplate = JSON.stringify(result, null, 4);\njava.log(jsonTemplate); // 或者其他方式输出\n\n</js>\n$[*]",
+      "bookUrl": "$.url",
+      "checkKeyWord": "",
+      "coverUrl": "$.img",
+      "intro": "",
+      "kind": "$.kind##连载状态：|更新时间：| ##,",
+      "lastChapter": "$.lastChapterTitle",
+      "name": "$.name",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "a[href~=chapter]",
+      "chapterName": "span!-1@text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://kmh004.com/search?key={{key}}",
+    "weight": 0
+  },
+  {
     "bookSourceComment": "//打不开挂梯\n//检验不通过\n//字体编码\n//by Buding \n//by天天的鸟蛋蛋 字体解密 2025/1/14\n//目前已知问题不能搜索\ni=[\"%uAD16\",\"%uAD17\",\"%uAD5B\",\"%uAD5C\",\"%uAD9D\",\"%uADF7\",\"%uADF8\",\"%uADF9\",\"%uAE47\",\"%uAE4A\",\"%uAE85\",\"%uAE86\",\"%uAE97\",\"%uAE98\",\"%uAE9B\",\"%uAEB1\",\"%uAEB2\",\"%uAEB3\",\"%uAEB4\",\"%uAEB5\",\"%uAEB6\",\"%uAED7\",\"%uAED8\",\"%uAED9\",\"%uAEDA\",\"%uAEDB\",\"%uAEDC\",\"%uAEE1\",\"%uAEE3\",\"%uAEE5\",\"%uAEE6\",\"%uAEE7\",\"%uAEE9\",\"%uAF06\",\"%uAF07\",\"%uAF0A\",\"%uAF0B\",\"%uAF0C\",\"%uAF0D\",\"%uAF0E\",\"%uAF10\",\"%uAF57\",\"%uAF6C\",\"%uAF6D\",\"%uAF6E\",\"%uAF71\",\"%uAF89\",\"%uAF8A\",\"%uAFA6\",\"%uAFA8\",\"%uAFA9\",\"%uAFAB\",\"%uAFAC\",\"%uAFAD\",\"%uAFAE\",\"%uAFBF\",\"%uAFC0\",\"%uAFC1\",\"%uAFC2\",\"%uAFD7\",\"%uAFDB\",\"%uAFE2\",\"%uAFE4\",\"%uAFE6\",\"%uAFE7\",\"%uAFE8\",\"%uAFE9\",\"%uAFEB\",\"%uAFED\",\"%uAFEE\",\"%uAFEF\",\"%uAFF0\",\"%uAFF5\",\"%uAFF7\",\"%uAFF8\",\"%uAFF9\",\"%uAFFB\",\"%uB010\",\"%uB011\",\"%uB014\",\"%uB016\",\"%uB017\",\"%uB018\",\"%uB019\",\"%uB01E\",\"%uB01F\",\"%uB027\",\"%uB02A\",\"%uB02B\",\"%uB02C\",\"%uB0EA\",\"%uB0EB\",\"%uB0EC\",\"%uB0ED\",\"%uB148\",\"%uB149\",\"%uB14A\",\"%uB14C\",\"%uB14D\",\"%uB160\",\"%uB161\",\"%uB162\",\"%uB164\",\"%uB166\",\"%uB167\",\"%uB168\",\"%uB16A\",\"%uB17F\",\"%uB180\",\"%uB182\",\"%uB185\",\"%uB186\",\"%uB187\",\"%uB18A\",\"%uB18B\",\"%uB18C\",\"%uB196\",\"%uB198\",\"%uB199\",\"%uB19A\",\"%uB19B\",\"%uB1FD\",\"%uB1FE\",\"%uB201\",\"%uB202\",\"%uB203\",\"%uB204\",\"%uB211\",\"%uB212\",\"%uB213\",\"%uB215\",\"%uB280\",\"%uB281\",\"%uB282\",\"%uB284\",\"%uB285\",\"%uB289\",\"%uB28C\",\"%uB2B3\",\"%uB2B5\",\"%uB37F\",\"%uB380\",\"%uB383\",\"%uB3D7\",\"%uB561\",\"%uB562\",\"%uB563\",\"%uB564\",\"%uB598\",\"%uB59A\"];\n//字体文本\nz=\"一二十丁七八人入九了刀力又三干土工才寸丈大上小口山巾千亡之已弓己也乞川么久勺丸凡及叉夫天元扎五支犬尤匹巨牙屯互切止少日中手午升仁片化仇仍斤爪反介父今凶乏氏欠丹勾六文方火心尺巴以允予幻玉末未打巧正功扔甘世古本可丙左石右布平的是在不有和我由只要他叫用四失生到代作地出就分平令成句外冬包主市年它百同能而下子\";\n\t\n\t//变成unicode编码\nhtml = escape(result);\n//替换\nfunction ti(html,i,z){\n\treg = new RegExp(i,'g');\n\treturn html.replace(reg,z);\n\t}\nfor(x in i){\n\thtml = ti(html,i[x],z[x])\n\t}\n//解unicode编码（变成文字）\nunescape(html)",
     "bookSourceGroup": "",
     "bookSourceName": "提莫書屋",
