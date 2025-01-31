@@ -173,49 +173,60 @@
   {
     "bookSourceComment": "",
     "bookSourceGroup": "同人",
-    "bookSourceName": "幻想姬",
+    "bookSourceName": "全本同人🎃",
     "bookSourceType": 0,
-    "bookSourceUrl": "https://www.huanxiangji.net/",
-    "customOrder": -98959,
+    "bookSourceUrl": "http://www.qbtr.cc#🎃",
+    "bookUrlPattern": "",
+    "customOrder": -157,
     "enabled": true,
-    "enabledCookieJar": true,
+    "enabledCookieJar": false,
     "enabledExplore": true,
     "enabledReview": false,
-    "exploreUrl": "[{\"title\":\"玄幻奇幻\",\"url\":\"/list/1_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"武侠仙侠\",\"url\":\"/list/2_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市言情\",\"url\":\"/list/3_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史军事\",\"url\":\"/list/4_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻灵异\",\"url\":\"/list/5_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"网游竞技\",\"url\":\"/list/6_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"女生频道\",\"url\":\"/list/7_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"其他小说\",\"url\":\"/list/8_{{page}}.html\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"\",\"url\":\"\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
-    "lastUpdateTime": 1737991262921,
-    "respondTime": 33647,
+    "exploreUrl": "同人小说::/tongren/<,index_{{page}}.html>\n常规小说::/changgui/<,index_{{page}}.html>\n同人榜单::/hot/<,index_{{page}}.html>",
+    "header": "",
+    "lastUpdateTime": 1716612789712,
+    "loginUrl": "",
+    "respondTime": 7084,
     "ruleBookInfo": {
-      "author": ".info p.0@text",
-      "coverUrl": ".imgbox img@src",
+      "author": ".date span@text##.*：",
+      "coverUrl": ".pic img@src",
       "init": "",
-      "intro": ".desc@html",
-      "kind": ".info p.1:2:4@text##.*：|小说|\\s.*",
-      "lastChapter": "class.section-list.0@a.0@text",
-      "name": ".top h1@text"
+      "intro": ".infos p@html",
+      "kind": ".menNav a.1@text&&.date@textNodes##.*：|小说",
+      "lastChapter": ".book_list a.-1@text",
+      "name": ".infos h1@text##\\(\\S+"
     },
     "ruleContent": {
-      "content": "#content@html",
-      "replaceRegex": "##[????]|\\♂.*|\\<<.*>>|\\<<.*<<|小说免费.*平台|.*分享给你们的好友！|https.*\\/|"
+      "content": ".read_chapterDetail@html",
+      "nextContentUrl": ""
     },
     "ruleExplore": {
-      "bookList": ""
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": ""
     },
     "ruleReview": {},
     "ruleSearch": {
-      "author": ".s4@text",
-      "bookList": ".txt-list-row5 li!0",
+      "author": ".booknews@ownText##.*：",
+      "bookList": ".bk",
       "bookUrl": "a.0@href",
-      "coverUrl": "a.0@href<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\n'http://www.huanxiangji.com/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
-      "kind": ".s1@text&&.s5@text##\\[|\\]|小说",
-      "lastChapter": "a.1@text",
-      "name": "a.0@text"
+      "coverUrl": "img@src",
+      "intro": "p@text##简介.",
+      "kind": "label@text",
+      "lastChapter": "h3@text##\\S+\\(|\\)",
+      "name": "h3@text##\\(\\S+"
     },
     "ruleToc": {
-      "chapterList": "#section-list li a",
+      "chapterList": ".book_list a",
       "chapterName": "text",
       "chapterUrl": "href"
     },
-    "searchUrl": "/modules/article/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}",
+    "searchUrl": "/e/search/index.php,{\n  \"charset\": \"gb2312\",\n  \"method\": \"POST\",\n  \"body\": \"keyboard={{key}}&show=title&classid=0\"\n}",
     "weight": 0
   },
   {
