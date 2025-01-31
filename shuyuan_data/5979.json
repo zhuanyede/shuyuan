@@ -1,0 +1,56 @@
+[
+  {
+    "bookSourceComment": "搜索过快容易宕机\nhttps://5088b.bi14.cc",
+    "bookSourceGroup": "🌟 精品,游客",
+    "bookSourceName": "番茄小说123",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.fqxs123.com",
+    "bookUrlPattern": "https?://m.fqxs123.com/book/\\d+/",
+    "concurrentRate": "5/1000",
+    "customOrder": 270,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/xuanhuan/<,{{page}}.html>\n武侠::/wuxia/<,{{page}}.html>\n都市::/dushi/<,{{page}}.html>\n历史::/lishi/<,{{page}}.html>\n网游::/wangyou/<,{{page}}.html>\n科幻::/kehuan/<,{{page}}.html>\n女生::/mm/<,{{page}}.html>\n全本::/finish/<,{{page}}.html>",
+    "header": "{ \"User-Agent\": \"Mozilla/5.0 (Linux; Android 9) Mobile Safari/537.36\"}",
+    "jsLib": "番茄小说123 = function () {\n\tconst { source } = this\n\tlet ss = source.getVariable()\n\tlet su = ss == \"\" ? source.getKey() : ss\n\treturn su.split(\"/\")[2]\n}",
+    "lastUpdateTime": "1738288220080",
+    "loginCheckJs": "java.log(result.url())\n\nif (java.key || /\\/book\\/\\d+\\/$/.test(result.url())) {\n\tss = source.getVariable()\n\tsu = ss == \"\" ? source.getKey() : ss\n\turl = String(result.url()).replace(/\\b\\/.+/, \"\")\n\tif (su != url) {\n\t\tsource.setVariable(url)\n\t\tif (key) {\n\t\tjava.initUrl()\n\t\tresult = java.getStrResponse()\n\t\t}\n\t}\n}\nresult",
+    "loginUrl": "https://m.fqxs123.com/login.html",
+    "respondTime": 7481,
+    "ruleBookInfo": {
+      "author": "text.作者@text",
+      "coverUrl": "[property$=image]@content",
+      "init": "@js:\nif (baseUrl != java.redirectUrl) {\n\t//重定向 重新设置书籍地址\n\tjava.setBaseUrl(java.redirectUrl)\n\t//java.getBook().bookUrl = java.redirectUrl\n\tbook.bookUrl = java.redirectUrl\n}\nresult;",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "class.name@text",
+      "tocUrl": "/userverify/{{String(baseUrl.match(/book\\/\\d+/))}}/list.html",
+      "wordCount": "class.dd_box.1@span.1@text##字数："
+    },
+    "ruleContent": {
+      "content": "#chaptercontent@html",
+      "nextContentUrl": "text.下一@href",
+      "replaceRegex": "##请收藏.*https.*|.*请关闭畅读或阅读模式.*|请记住本书首发.*|[\\【|「]看书.*|.*领现金红包.*|.*本章由于字数太少.*"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "span@text",
+      "bookList": "class.item",
+      "bookUrl": "a.1@href@js:`//{\\{番茄小说123()}}${result}`",
+      "checkKeyWord": "剑来",
+      "coverUrl": "img@src",
+      "intro": "dd@text",
+      "kind": "0",
+      "name": "a.1@text"
+    },
+    "ruleToc": {
+      "chapterList": "dl@dd!0",
+      "chapterName": "a@text##请假_.*",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "{{source.getVariable()}}/s?q={{key}},{\n  \"webView\": true\n}",
+    "weight": 0
+  }
+]

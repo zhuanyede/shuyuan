@@ -12,7 +12,7 @@
     "enabledExplore": true,
     "exploreUrl": "[{\"title\":\"玄幻奇幻\",\"url\":\"/xuanhuan?order=all&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"武侠仙侠\",\"url\":\"/xianxia?order=all&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"都市言情\",\"url\":\"/dushi?order=all&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"历史军事\",\"url\":\"/lishi?order=all&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"科幻传奇\",\"url\":\"/kehuan?order=all&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"恐怖灵异\",\"url\":\"/kongbu?order=all&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"其他类型\",\"url\":\"/qita?order=all&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全本小说\",\"url\":\"/quanben?order=all&page={{page}}\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}},{\"title\":\"全部小说\",\"url\":\"/shuku<,?page={{page}}>\",\"style\":{\"layout_flexBasisPercent\":0.25,\"layout_flexGrow\":1}}]",
     "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.4080.0 Safari/537.36 Edg/82.0.453.0\"\n}",
-    "lastUpdateTime": "1738058230490",
+    "lastUpdateTime": "1738075723497",
     "loginUrl": "",
     "respondTime": 1951,
     "ruleBookInfo": {
@@ -56,10 +56,10 @@
       "wordCount": ""
     },
     "ruleToc": {
-      "chapterList": ".col-md-3 a",
+      "chapterList": "<js>\nwhile(src.match(/文章不存在/)){\n\tPackages.java.lang.Thread.sleep(10)\n\tsrc=java.ajax(baseUrl)\n\t}\nresult\n</js>\n.col-md-3 a",
       "chapterName": "text##[\\(（【].*?[求更票谢乐发订合补加Kk].*?[】）\\)]",
       "chapterUrl": "href",
-      "preUpdateJs": "<js>\nwhile(src.match(/文章不存在/)){\n\tPackages.java.lang.Thread.sleep(10)\n\tsrc=java.ajax(baseUrl)\n\t}\nresult\n</js>",
+      "preUpdateJs": "",
       "updateTime": ""
     },
     "searchUrl": "@js:\nvar su=source.key,\nhtml=java.ajax(su),\ntoken=org.jsoup.Jsoup.parse(html)\n.select('input[name=_token]')\n.attr('value');\nso=su+\"/search,\"\nbody=`keyword=${key}&page={{page}}&_token=${token}`;\npost=JSON.stringify({\n  \"body\": String(body),\n  \"method\": \"POST\"\n});\n\nso+post",
