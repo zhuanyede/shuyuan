@@ -1,0 +1,34 @@
+[
+  {
+    "bookSourceName": "全本小说网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.quanben.io",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻::/c/xuanhuan_{{page}}.html\n都市::/c/dushi_{{page}}.html\n言情::/c/yanqing_{{page}}.html\n穿越::/c/chuanyue_{{page}}.html\n青春::/c/qingchun_{{page}}.html\n仙侠::/c/xianxia_{{page}}.html\n灵异::/c/lingyi_{{page}}.html\n悬疑::/c/xuanyi_{{page}}.html\n历史::/c/lishi_{{page}}.html\n军事::/c/junshi_{{page}}.html\n游戏::/c/youxi_{{page}}.html\n竞技::/c/jingji_{{page}}.html\n科幻::/c/kehuan_{{page}}.html\n职场::/c/zhichang_{{page}}.html\n官场::/c/guanchang_{{page}}.html\n现言::/c/xianyan_{{page}}.html\n耽美::/c/danmei_{{page}}.html\n其它::/c/qita_{{page}}.html",
+    "lastUpdateTime": "1738721183770",
+    "respondTime": 180000,
+    "ruleBookInfo": [],
+    "ruleContent": {
+      "content": "#content p@text"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": "[itemprop=\"author\"]@text",
+      "bookList": ".box .list2",
+      "bookUrl": "h3 a@href##$##list.html",
+      "coverUrl": "img@src",
+      "intro": "[itemprop=\"description\"]@text",
+      "name": "h3 a@text"
+    },
+    "ruleToc": {
+      "chapterList": "@js:\nfunction load_more(book){\n  return `/index.php?c=book&a=list.jsonp&callback=${callback}&book_id=${book}&b=${base64(callback)}`\n}\n\nfunction base64(_str){var staticchars=\"PXhw7UT1B0a9kQDKZsjIASmOezxYG4CHo5Jyfg2b8FLpEvRr3WtVnlqMidu6cN\";var encodechars=\"\";for(var i=0;i<_str.length;i++){var num0=staticchars.indexOf(_str[i]);if(num0==-1){var code=_str[i]}else{var code=staticchars[(num0+3)%62]}var num1=parseInt(Math.random()*62,10);var num2=parseInt(Math.random()*62,10);encodechars+=staticchars[num1]+code+staticchars[num2]}return encodechars}\n\nconst callback = result.match(/var callback='(.*?)'/)?.[1]\nconst more = result.match(/\"(load_more\\(.*?\\))\"/)?.[1]\nlet url = eval(more)\nurl = source.getKey() + url + \",\" + JSON.stringify({headers:{\n\t \"User-Agent\": \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Mobile/15E148 Safari/604.1\",\n  \"Referer\": baseUrl\n}})\nlet html = java.ajax(url)\nhtml = html.match(/\\((\\{.*\\})\\)/)?.[1]\nhtml = JSON.parse(html).content\nlet list = java.getElements(\".list3\")\njava.setContent(html)\nlet moreList = java.getElement(\".list3\")\nlist = Array.from(list).map(String)\nmoreList = String(moreList)\nlist.splice(1, 0, moreList)\njava.setContent(list.join(\"\"))\n java.getElements(\"li\")",
+      "chapterName": "span@text",
+      "chapterUrl": "a@href"
+    },
+    "searchUrl": "/index.php?c=book&a=search&keywords={{key}}",
+    "weight": 0
+  }
+]
