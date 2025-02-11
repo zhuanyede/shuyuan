@@ -191,6 +191,10 @@
         "remark": ""
     },
     {
+        "api": "https://cj.rycjapi.com/api.php/provide/vod",
+        "name": "🔵如意"
+    },
+    {
         "api": "https://json.heimuer.xyz/api.php/provide/vod/",
         "name": "🔵黑木耳"
     },
