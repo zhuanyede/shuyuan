@@ -1,0 +1,45 @@
+[
+  {
+    "bookSourceComment": "by天天的鸟蛋蛋 2025/2/12",
+    "bookSourceName": "看书阁",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://m.xseeshu.net",
+    "customOrder": 0,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "enabledExplore": true,
+    "lastUpdateTime": "1739335719643",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "[property$=author]@content",
+      "coverUrl": "[property$=image]@content",
+      "intro": "[property$=description]@content",
+      "kind": "[property~=category|status|update_time]@content",
+      "lastChapter": "[property$=latest_chapter_name]@content",
+      "name": "[property$=book_name]@content",
+      "tocUrl": "text.章节目录@href"
+    },
+    "ruleContent": {
+      "content": ".txt@html",
+      "nextContentUrl": "text.下章@href",
+      "replaceRegex": "##.*本章完.*|看书阁『.*』.*?為您提供精彩小說閱讀"
+    },
+    "ruleExplore": [],
+    "ruleSearch": {
+      "author": ".s3@text",
+      "bookList": ".sort_list@li",
+      "bookUrl": "a@href",
+      "kind": ".s1@text&&.s5@text##\\[|\\]",
+      "lastChapter": ".s4@text",
+      "name": ".s2@text"
+    },
+    "ruleToc": {
+      "chapterList": ".chapter-list@li@a",
+      "chapterName": "text##章节目录",
+      "chapterUrl": "href",
+      "nextTocUrl": "option@value"
+    },
+    "searchUrl": "{{url=source.getKey();cookie.removeCookie(url)}}\n/search.html,{\n  \"body\": \"s={{key}}\",\n  \"method\": \"POST\"\n}",
+    "weight": 0
+  }
+]
