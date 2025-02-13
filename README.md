@@ -13,7 +13,7 @@ https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/h
 https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/cxyd.json
 ```
 
-**自动更新时间** 2025-02-10 18:30:10 CST+0800
+**自动更新时间** 2025-02-13 18:05:37 CST+0800
 #### 🚩 最新阅读书源修复-每隔3天自动更新一次（安卓阅读3.0+读不舍手+千阅+源阅读+花火阅读通用）
 #### 🚩 获取后的书源会自动效验
 
@@ -41,7 +41,7 @@ https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyua
 
 #### 🚩 香色闺阁-每隔3天自动更新一次
 
-**自动更新时间** 2025-02-10 18:30:10 CST+0800
+**自动更新时间** 2025-02-13 18:05:37 CST+0800
  ``` bash
 https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/sourceModelList.xbs
  ``` 
