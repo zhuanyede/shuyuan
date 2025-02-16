@@ -9,7 +9,7 @@
 ```
 https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/azyd.json
 ```
-#### 🚩🍅 番茄七猫等IOS书源：
+#### 🚩🍅 番茄七猫等IOS书源：（读不舍手+千阅+源阅读+花火阅读）
 ```
 https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/cxyd.json
 ```
