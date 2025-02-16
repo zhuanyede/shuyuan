@@ -5,7 +5,7 @@
 | **QQ群组**   | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://qm.qq.com/q/Bvrs8BPqLY) |
 | **TG交流群** | [![下载链接](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://t.me/dahuilang888) |
 
-#### 🚩 🍅 番茄、七猫、哔哩哔哩轻小说、得间、QQ、熊猫、起点（69追书帮、塔读、喜马拉雅、看书听书漫画短剧书源）：
+#### 🚩 🍅 番茄 阅读/源阅：七猫、哔哩哔哩轻小说、得间、QQ、熊猫、起点（69追书帮、塔读、喜马拉雅、看书听书漫画短剧书源）：
 ```
 https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/azyd.json
 ```
@@ -13,7 +13,7 @@ https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/h
 ```
 https://gh.llkk.cc/https://raw.githubusercontent.com/shidahuilang/shuyuan/refs/heads/shuyuan/cxyd.json
 ```
-#### 🚩 🍅 番茄香色闺阁书源：看书听书漫画短剧
+#### 🚩 🍅 番茄香色闺阁书源：看书、听书、漫画、短剧
 ```
 https://gh.llkk.cc/https://github.com/shidahuilang/shuyuan/blob/shuyuan/%E5%A4%A7%E7%81%B0%E7%8B%BC%E8%9E%8D%E5%90%882.0.xbs
 ```
